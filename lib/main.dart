@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light ,
         scaffoldBackgroundColor: AppColor.scaffoldBackgroundColor
       ),
-      initialRoute: RouteName.home,
+      initialRoute: RouteName.daily,
       onGenerateRoute: AppRoute.generate,
       localizationsDelegates: [
         S.delegate,
