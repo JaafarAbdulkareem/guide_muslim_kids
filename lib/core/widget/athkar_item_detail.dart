@@ -6,8 +6,8 @@ import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/size_extension.dart';
 import 'package:guide_muslim_kids/core/widget/audio_button.dart';
 
-class ItemAthkar extends StatelessWidget {
-  const ItemAthkar({super.key, required this.data});
+class AthkarItemDetail extends StatelessWidget {
+  const AthkarItemDetail({super.key, required this.data});
   final AthkarEntity data;
 
   @override
