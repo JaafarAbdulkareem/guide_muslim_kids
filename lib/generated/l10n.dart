@@ -55,6 +55,126 @@ class S {
   }
 
   /// ``
+  String get titleSleeping {
+    return Intl.message('', name: 'titleSleeping', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleWakingUpFromSleep {
+    return Intl.message('', name: 'titleWakingUpFromSleep', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleBeforeWudu {
+    return Intl.message('', name: 'titleBeforeWudu', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleAfterWudu {
+    return Intl.message('', name: 'titleAfterWudu', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleAdhan {
+    return Intl.message('', name: 'titleAdhan', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleEnteringMarket {
+    return Intl.message('', name: 'titleEnteringMarket', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleWearingClothes {
+    return Intl.message('', name: 'titleWearingClothes', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleWearingNewClothes {
+    return Intl.message('', name: 'titleWearingNewClothes', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleBeforeEating {
+    return Intl.message('', name: 'titleBeforeEating', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleAfterEating {
+    return Intl.message('', name: 'titleAfterEating', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleEnteringBathroom {
+    return Intl.message('', name: 'titleEnteringBathroom', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleLeavingBathroom {
+    return Intl.message('', name: 'titleLeavingBathroom', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleLeavingHome {
+    return Intl.message('', name: 'titleLeavingHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleEnteringHome {
+    return Intl.message('', name: 'titleEnteringHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleEnteringMosque {
+    return Intl.message('', name: 'titleEnteringMosque', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleLeavingMosque {
+    return Intl.message('', name: 'titleLeavingMosque', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleRidingCar {
+    return Intl.message('', name: 'titleRidingCar', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleHearingThunder {
+    return Intl.message('', name: 'titleHearingThunder', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleRainfall {
+    return Intl.message('', name: 'titleRainfall', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleAfterRainfall {
+    return Intl.message('', name: 'titleAfterRainfall', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleSneezing {
+    return Intl.message('', name: 'titleSneezing', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleVisitingSick {
+    return Intl.message('', name: 'titleVisitingSick', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleKafaratAlMajlis {
+    return Intl.message('', name: 'titleKafaratAlMajlis', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleDogsBarking {
+    return Intl.message('', name: 'titleDogsBarking', desc: '', args: []);
+  }
+
+  /// ``
   String get sleeping {
     return Intl.message('', name: 'sleeping', desc: '', args: []);
   }

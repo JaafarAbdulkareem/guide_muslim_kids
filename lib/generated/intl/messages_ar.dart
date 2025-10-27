@@ -76,6 +76,60 @@ class MessageLookup extends MessageLookupByLibrary {
     "sneezing": MessageLookupByLibrary.simpleMessage(
       "إِذَا عَطَسَ أَحَدُكُم فَلْيَقُلِ الْحَمْدُ لِلَّهِ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ: يَرْحَمُكَ اللَّهُ، فَإِذَا قَالَ لَهُ: يَرحَمُكَ اللَّهُ، فَلْيَقُلْ: يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
     ),
+    "titleAdhan": MessageLookupByLibrary.simpleMessage("دعاء الأذان"),
+    "titleAfterEating": MessageLookupByLibrary.simpleMessage("دعاء بعد الطعام"),
+    "titleAfterRainfall": MessageLookupByLibrary.simpleMessage(
+      "دعاء بعد المطر",
+    ),
+    "titleAfterWudu": MessageLookupByLibrary.simpleMessage("دعاء بعد الوضوء"),
+    "titleBeforeEating": MessageLookupByLibrary.simpleMessage(
+      "دعاء قبل الطعام",
+    ),
+    "titleBeforeWudu": MessageLookupByLibrary.simpleMessage("دعاء قبل الوضوء"),
+    "titleDogsBarking": MessageLookupByLibrary.simpleMessage(
+      "دعاء عند سماع نباح الكلاب",
+    ),
+    "titleEnteringBathroom": MessageLookupByLibrary.simpleMessage(
+      "دعاء دخول الحمام",
+    ),
+    "titleEnteringHome": MessageLookupByLibrary.simpleMessage(
+      "دعاء دخول المنزل",
+    ),
+    "titleEnteringMarket": MessageLookupByLibrary.simpleMessage(
+      "دعاء دخول السوق",
+    ),
+    "titleEnteringMosque": MessageLookupByLibrary.simpleMessage(
+      "دعاء دخول المسجد",
+    ),
+    "titleHearingThunder": MessageLookupByLibrary.simpleMessage(
+      "دعاء عند سماع الرعد",
+    ),
+    "titleKafaratAlMajlis": MessageLookupByLibrary.simpleMessage(
+      "دعاء كفارة المجلس",
+    ),
+    "titleLeavingBathroom": MessageLookupByLibrary.simpleMessage(
+      "دعاء الخروج من الحمام",
+    ),
+    "titleLeavingHome": MessageLookupByLibrary.simpleMessage(
+      "دعاء الخروج من المنزل",
+    ),
+    "titleLeavingMosque": MessageLookupByLibrary.simpleMessage(
+      "دعاء الخروج من المسجد",
+    ),
+    "titleRainfall": MessageLookupByLibrary.simpleMessage("دعاء نزول المطر"),
+    "titleRidingCar": MessageLookupByLibrary.simpleMessage("دعاء ركوب السيارة"),
+    "titleSleeping": MessageLookupByLibrary.simpleMessage("دعاء النوم"),
+    "titleSneezing": MessageLookupByLibrary.simpleMessage("دعاء عند العطس"),
+    "titleVisitingSick": MessageLookupByLibrary.simpleMessage(
+      "دعاء زيارة المريض",
+    ),
+    "titleWakingUpFromSleep": MessageLookupByLibrary.simpleMessage(
+      "دعاء الاستيقاظ من النوم",
+    ),
+    "titleWearingClothes": MessageLookupByLibrary.simpleMessage("دعاء اللباس"),
+    "titleWearingNewClothes": MessageLookupByLibrary.simpleMessage(
+      "دعاء اللباس الجديد",
+    ),
     "visitingSick": MessageLookupByLibrary.simpleMessage(
       "أَسْأَلُ اللَّهَ الْعَظيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفيَكَ (سبع مرات)",
     ),
