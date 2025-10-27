@@ -6,6 +6,8 @@ class AppImage {
 
   static const String imagesAfterEating = "assets/images/afterEating.png";
 
+  static const String imagesAfterRainfall = "assets/images/afterRainfall.png";
+
   static const String imagesAfterWudu = "assets/images/afterWudu.png";
 
   static const String imagesAthkarDaily = "assets/images/athkarDaily.png";
@@ -13,6 +15,8 @@ class AppImage {
   static const String imagesBeforeEating = "assets/images/beforeEating.png";
 
   static const String imagesBeforeWudu = "assets/images/beforeWudu.png";
+
+  static const String imagesDogsBarking = "assets/images/dogsBarking.png";
 
   static const String imagesEnteringBathroom = "assets/images/enteringBathroom.png";
 
