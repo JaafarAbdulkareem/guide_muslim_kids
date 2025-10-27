@@ -32,9 +32,9 @@ class AthkarItemDetail extends StatelessWidget {
               right: 0,
               child: Container(
                 width: context.width,
-                margin: EdgeInsets.symmetric(horizontal: 8),
+                margin: const EdgeInsets.symmetric(horizontal: 8),
                 alignment: Alignment.center,
-                padding: EdgeInsets.symmetric(horizontal: 6, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
                 decoration: BoxDecoration(
                   color: AppColor.athkarContainTap,
                   borderRadius: BorderRadius.circular(12),
@@ -46,7 +46,7 @@ class AthkarItemDetail extends StatelessWidget {
                       child: Text(
                         "{ ${data.title} }",
                         textAlign: TextAlign.center,
-                        style: AppTextStyle.fontBold24(context)
+                        style: AppTextStyle.fontBold24(context),
                       ),
                     ),
                     const SizedBox(height: 6),

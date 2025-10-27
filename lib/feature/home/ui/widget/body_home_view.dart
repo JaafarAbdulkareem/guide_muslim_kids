@@ -6,6 +6,6 @@ class BodyHomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AthkarList();
+    return const AthkarList();
   }
 }
