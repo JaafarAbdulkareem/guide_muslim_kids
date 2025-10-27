@@ -31,6 +31,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "afterEating": MessageLookupByLibrary.simpleMessage(
       "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا، وَرَزَقَنِيهِ، مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ",
     ),
+    "afterPrayer": MessageLookupByLibrary.simpleMessage(
+      "أَسْتَغْفِرُ اللَّهَ (ثَلاَثَاً) اللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَالْإِكْرَامِ، اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الجَدُّ.",
+    ),
     "afterRainfall": MessageLookupByLibrary.simpleMessage(
       "مُطِرْنَا بِفَضْلِ اللَّهِ وَرَحْمَتِهِ",
     ),
@@ -38,7 +41,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
     ),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
+    "beforeSalam": MessageLookupByLibrary.simpleMessage(
+      "اللَّهُــمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
+    ),
     "beforeWudu": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
+    "betweenTwoSujoods": MessageLookupByLibrary.simpleMessage(
+      "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي",
+    ),
     "dogsBarking": MessageLookupByLibrary.simpleMessage(
       "أَعُوذُ بِاللَّهِ الْعَظِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
@@ -54,8 +63,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "enteringMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
     ),
+    "fastingArgumentResponse": MessageLookupByLibrary.simpleMessage(
+      "إِنِّي صَائِمٌ، إِنِّي صَائِمٌ",
+    ),
+    "finalTashahhud": MessageLookupByLibrary.simpleMessage(
+      "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَواتُ، وَالطَّيِّباتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ. اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+    ),
+    "firstTashahhud": MessageLookupByLibrary.simpleMessage(
+      "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَواتُ، وَالطَّيِّباتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسولُهُ",
+    ),
     "hearingThunder": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
+    ),
+    "iftarAtHome": MessageLookupByLibrary.simpleMessage(
+      "أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ، وَأَكَلَ طَعَامَكُمُ الْأَبْرَارُ، وَصَلَّتْ عَلَيْكُمُ الْمَلاَئِكَةُ",
+    ),
+    "iftarSupplication": MessageLookupByLibrary.simpleMessage(
+      "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ العُرُوقُ، وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
     ),
     "kafaratAlMajlis": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
@@ -67,11 +91,29 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "openingSupplication": MessageLookupByLibrary.simpleMessage(
+      "سُبْحانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ",
+    ),
+    "prostrationOfRecitation": MessageLookupByLibrary.simpleMessage(
+      "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ، ﴿فَتَبارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ",
+    ),
+    "qunootWitr": MessageLookupByLibrary.simpleMessage(
+      "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ، وَعَافِنِي فِيمَنْ عَافَيْتَ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ، وَبَارِكْ لِي فِيمَا أَعْطَيْتَ، وَقِنِي شَرَّ مَا قَضَيْتَ؛ فَإِنَّكَ تَقْضِي وَلاَ يُقْضَى عَلَيْكَ، إِنَّهُ لاَ يَذِلُّ مَنْ وَالَيْتَ، وَلاَ يَعِزُّ مَنْ عَادَيْتَ، تَبارَكْتَ رَبَّنا وَتَعَالَيْتَ",
+    ),
     "rainfall": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ صَيِّباً نَافِعاً",
     ),
     "ridingCar": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ، وَالْحَمْدُ للَّهِ سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ",
+    ),
+    "risingFromRuku": MessageLookupByLibrary.simpleMessage(
+      "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ رَبَّنَا وَلَكَ الْحَمْدُ، حَمْداً كَثيراً طَيِّباً مُبارَكاً فِيهِ، مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ، وَمَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيءٍ بَعْدُ.",
+    ),
+    "ruku": MessageLookupByLibrary.simpleMessage(
+      "سُبْحانَ رَبِّيَ الْعَظِيمِ (ثلاث مرَّاتٍ)",
+    ),
+    "seeingCrescent": MessageLookupByLibrary.simpleMessage(
+      "اللَّهُ أَكْبَرُ، اللَّهُمَّ أَهِلَّهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ، وَالسَّلاَمَةِ وَالْإِسْلاَمِ، وَالتَّوْفِيقِ لِمَا تُحِبُّ رَبَّنَا وَتَرْضَى، رَبُّنَا وَرَبُّكَ اللَّهُ",
     ),
     "sleeping": MessageLookupByLibrary.simpleMessage(
       "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِن أَمْسَكْتَ نَفْسِي فارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
@@ -79,8 +121,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "sneezing": MessageLookupByLibrary.simpleMessage(
       "إِذَا عَطَسَ أَحَدُكُم فَلْيَقُلِ الْحَمْدُ لِلَّهِ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ: يَرْحَمُكَ اللَّهُ، فَإِذَا قَالَ لَهُ: يَرحَمُكَ اللَّهُ، فَلْيَقُلْ: يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
     ),
+    "sujood": MessageLookupByLibrary.simpleMessage(
+      "سُبْحَانَ رَبِّيَ الأَعْلَى (ثلاث مرَّاتٍ)",
+    ),
     "titleAdhan": MessageLookupByLibrary.simpleMessage("دعاء الأذان"),
     "titleAfterEating": MessageLookupByLibrary.simpleMessage("دعاء بعد الطعام"),
+    "titleAfterPrayer": MessageLookupByLibrary.simpleMessage(
+      "دعاء بعد السلام من الصلاة",
+    ),
     "titleAfterRainfall": MessageLookupByLibrary.simpleMessage(
       "دعاء بعد المطر",
     ),
@@ -88,7 +136,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "titleBeforeEating": MessageLookupByLibrary.simpleMessage(
       "دعاء قبل الطعام",
     ),
+    "titleBeforeSalam": MessageLookupByLibrary.simpleMessage(
+      "دعاء بعد التشهد الأخير قبل السلام",
+    ),
     "titleBeforeWudu": MessageLookupByLibrary.simpleMessage("دعاء قبل الوضوء"),
+    "titleBetweenTwoSujoods": MessageLookupByLibrary.simpleMessage(
+      "دعاء الجلسة بين السجدتين",
+    ),
     "titleDogsBarking": MessageLookupByLibrary.simpleMessage(
       "دعاء عند سماع نباح الكلاب",
     ),
@@ -104,8 +158,21 @@ class MessageLookup extends MessageLookupByLibrary {
     "titleEnteringMosque": MessageLookupByLibrary.simpleMessage(
       "دعاء دخول المسجد",
     ),
+    "titleFastingArgumentResponse": MessageLookupByLibrary.simpleMessage(
+      "ما يقول الصائم إذا سابه أحد",
+    ),
+    "titleFinalTashahhud": MessageLookupByLibrary.simpleMessage(
+      "التشهد الأخير",
+    ),
+    "titleFirstTashahhud": MessageLookupByLibrary.simpleMessage("التشهد الأول"),
     "titleHearingThunder": MessageLookupByLibrary.simpleMessage(
       "دعاء عند سماع الرعد",
+    ),
+    "titleIftarAtHome": MessageLookupByLibrary.simpleMessage(
+      "دعاء إذا أفطر عند أهل بيت",
+    ),
+    "titleIftarSupplication": MessageLookupByLibrary.simpleMessage(
+      "دعاء عند إفطار الصائم",
     ),
     "titleKafaratAlMajlis": MessageLookupByLibrary.simpleMessage(
       "دعاء كفارة المجلس",
@@ -119,10 +186,28 @@ class MessageLookup extends MessageLookupByLibrary {
     "titleLeavingMosque": MessageLookupByLibrary.simpleMessage(
       "دعاء الخروج من المسجد",
     ),
+    "titleOpeningSupplication": MessageLookupByLibrary.simpleMessage(
+      "دعاء الاستفتاح",
+    ),
+    "titleProstrationOfRecitation": MessageLookupByLibrary.simpleMessage(
+      "دعاء سجود التلاوة",
+    ),
+    "titleQunootWitr": MessageLookupByLibrary.simpleMessage("دعاء قنوت الوتر"),
     "titleRainfall": MessageLookupByLibrary.simpleMessage("دعاء نزول المطر"),
     "titleRidingCar": MessageLookupByLibrary.simpleMessage("دعاء ركوب السيارة"),
+    "titleRisingFromRuku": MessageLookupByLibrary.simpleMessage(
+      "دعاء الرفع من الركوع",
+    ),
+    "titleRuku": MessageLookupByLibrary.simpleMessage("دعاء الركوع"),
+    "titleSeeingCrescent": MessageLookupByLibrary.simpleMessage(
+      "دعاء رؤية الهلال",
+    ),
     "titleSleeping": MessageLookupByLibrary.simpleMessage("دعاء النوم"),
     "titleSneezing": MessageLookupByLibrary.simpleMessage("دعاء عند العطس"),
+    "titleSujood": MessageLookupByLibrary.simpleMessage("دعاء السجود"),
+    "titleVisitingGraves": MessageLookupByLibrary.simpleMessage(
+      "دعاء زيارة القبور",
+    ),
     "titleVisitingSick": MessageLookupByLibrary.simpleMessage(
       "دعاء زيارة المريض",
     ),
@@ -132,6 +217,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "titleWearingClothes": MessageLookupByLibrary.simpleMessage("دعاء اللباس"),
     "titleWearingNewClothes": MessageLookupByLibrary.simpleMessage(
       "دعاء اللباس الجديد",
+    ),
+    "visitingGraves": MessageLookupByLibrary.simpleMessage(
+      "السَّلاَمُ عَلَيْكُمْ أَهْلَ الدِّيَارِ، مِنَ الْمُؤْمِنِينَ وَالْمُسْلِمِينَ، وَإِنَّا إِنْ شَاءَ اللَّهُ بِكُمْ لاَحِقُونَ، وَيَرْحَمُ اللَّهُ الْمُسْتَقدِمِينَ مِنَّا وَالْمُسْتأْخِرِينَ، أَسْاَلُ اللَّهَ لَنَا وَلَكُمُ الْعَافِيَةَ",
     ),
     "visitingSick": MessageLookupByLibrary.simpleMessage(
       "أَسْأَلُ اللَّهَ الْعَظيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفيَكَ (سبع مرات)",

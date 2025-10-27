@@ -175,6 +175,101 @@ class S {
   }
 
   /// ``
+  String get titleVisitingGraves {
+    return Intl.message('', name: 'titleVisitingGraves', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleOpeningSupplication {
+    return Intl.message(
+      '',
+      name: 'titleOpeningSupplication',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get titleRuku {
+    return Intl.message('', name: 'titleRuku', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleRisingFromRuku {
+    return Intl.message('', name: 'titleRisingFromRuku', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleSujood {
+    return Intl.message('', name: 'titleSujood', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleBetweenTwoSujoods {
+    return Intl.message('', name: 'titleBetweenTwoSujoods', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleFirstTashahhud {
+    return Intl.message('', name: 'titleFirstTashahhud', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleFinalTashahhud {
+    return Intl.message('', name: 'titleFinalTashahhud', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleBeforeSalam {
+    return Intl.message('', name: 'titleBeforeSalam', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleProstrationOfRecitation {
+    return Intl.message(
+      '',
+      name: 'titleProstrationOfRecitation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get titleAfterPrayer {
+    return Intl.message('', name: 'titleAfterPrayer', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleQunootWitr {
+    return Intl.message('', name: 'titleQunootWitr', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleIftarSupplication {
+    return Intl.message('', name: 'titleIftarSupplication', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleFastingArgumentResponse {
+    return Intl.message(
+      '',
+      name: 'titleFastingArgumentResponse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get titleIftarAtHome {
+    return Intl.message('', name: 'titleIftarAtHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleSeeingCrescent {
+    return Intl.message('', name: 'titleSeeingCrescent', desc: '', args: []);
+  }
+
+  /// ``
   String get sleeping {
     return Intl.message('', name: 'sleeping', desc: '', args: []);
   }
@@ -292,6 +387,96 @@ class S {
   /// ``
   String get dogsBarking {
     return Intl.message('', name: 'dogsBarking', desc: '', args: []);
+  }
+
+  /// ``
+  String get visitingGraves {
+    return Intl.message('', name: 'visitingGraves', desc: '', args: []);
+  }
+
+  /// ``
+  String get openingSupplication {
+    return Intl.message('', name: 'openingSupplication', desc: '', args: []);
+  }
+
+  /// ``
+  String get ruku {
+    return Intl.message('', name: 'ruku', desc: '', args: []);
+  }
+
+  /// ``
+  String get risingFromRuku {
+    return Intl.message('', name: 'risingFromRuku', desc: '', args: []);
+  }
+
+  /// ``
+  String get sujood {
+    return Intl.message('', name: 'sujood', desc: '', args: []);
+  }
+
+  /// ``
+  String get betweenTwoSujoods {
+    return Intl.message('', name: 'betweenTwoSujoods', desc: '', args: []);
+  }
+
+  /// ``
+  String get firstTashahhud {
+    return Intl.message('', name: 'firstTashahhud', desc: '', args: []);
+  }
+
+  /// ``
+  String get finalTashahhud {
+    return Intl.message('', name: 'finalTashahhud', desc: '', args: []);
+  }
+
+  /// ``
+  String get beforeSalam {
+    return Intl.message('', name: 'beforeSalam', desc: '', args: []);
+  }
+
+  /// ``
+  String get prostrationOfRecitation {
+    return Intl.message(
+      '',
+      name: 'prostrationOfRecitation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get afterPrayer {
+    return Intl.message('', name: 'afterPrayer', desc: '', args: []);
+  }
+
+  /// ``
+  String get qunootWitr {
+    return Intl.message('', name: 'qunootWitr', desc: '', args: []);
+  }
+
+  /// ``
+  String get iftarSupplication {
+    return Intl.message('', name: 'iftarSupplication', desc: '', args: []);
+  }
+
+  /// ``
+  String get fastingArgumentResponse {
+    return Intl.message(
+      '',
+      name: 'fastingArgumentResponse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get iftarAtHome {
+    return Intl.message('', name: 'iftarAtHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get seeingCrescent {
+    return Intl.message('', name: 'seeingCrescent', desc: '', args: []);
   }
 
   /// ``
