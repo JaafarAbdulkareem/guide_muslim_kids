@@ -1,10 +1,57 @@
 import 'package:flutter/material.dart';
+import 'package:guide_muslim_kids/core/entities/athkar_entity.dart';
+import 'package:guide_muslim_kids/core/route/extension.dart';
+import 'package:guide_muslim_kids/core/route/route_name.dart';
+import 'package:guide_muslim_kids/core/utils/app_color.dart';
+import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 
 class AthkarItem extends StatelessWidget {
-  const AthkarItem({super.key});
+  final AthkarEntity data;
+
+  const AthkarItem({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return AspectRatio(
+      aspectRatio: 4,
+      child: GestureDetector(
+        onTap: () {
+          RouteName.dailyDetails.pushNamed(context, arguments: data);
+        },
+        child: Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: AppColor.athkarContainTap,
+            borderRadius: BorderRadius.circular(12),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                blurRadius: 6,
+                offset: const Offset(0, 3),
+              ),
+            ],
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                flex: 2,
+                child: Text(
+                  data.title,
+                  style: AppTextStyle.fontBold24(context),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                flex: 1,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.asset(data.imageCharacter, fit: BoxFit.cover),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
