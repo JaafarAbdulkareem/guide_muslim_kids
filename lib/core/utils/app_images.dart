@@ -2,82 +2,82 @@
 class AppImage {
   AppImage._();
   
-  static const String imagesAdhan = "assets/images/adhan.png";
+  static const String imagesAdhan = "assets/images/adhan.webp";
 
-  static const String imagesAfterEating = "assets/images/afterEating.png";
+  static const String imagesAfterEating = "assets/images/afterEating.webp";
 
-  static const String imagesAfterPrayer = "assets/images/afterPrayer.png";
+  static const String imagesAfterPrayer = "assets/images/afterPrayer.webp";
 
-  static const String imagesAfterRainfall = "assets/images/afterRainfall.png";
+  static const String imagesAfterRainfall = "assets/images/afterRainfall.webp";
 
-  static const String imagesAfterWudu = "assets/images/afterWudu.png";
+  static const String imagesAfterWudu = "assets/images/afterWudu.webp";
 
-  static const String imagesAthkarDaily = "assets/images/athkarDaily.png";
+  static const String imagesAthkarDaily = "assets/images/athkarDaily.webp";
 
-  static const String imagesBeforeEating = "assets/images/beforeEating.png";
+  static const String imagesBeforeEating = "assets/images/beforeEating.webp";
 
-  static const String imagesBeforeWudu = "assets/images/beforeWudu.png";
+  static const String imagesBeforeWudu = "assets/images/beforeWudu.webp";
 
-  static const String imagesDogsBarking = "assets/images/dogsBarking.png";
+  static const String imagesDogsBarking = "assets/images/dogsBarking.webp";
 
-  static const String imagesEnteringBathroom = "assets/images/enteringBathroom.png";
+  static const String imagesEnteringBathroom = "assets/images/enteringBathroom.webp";
 
-  static const String imagesEnteringHome = "assets/images/enteringHome.png";
+  static const String imagesEnteringHome = "assets/images/enteringHome.webp";
 
-  static const String imagesEnteringMarket = "assets/images/enteringMarket.png";
+  static const String imagesEnteringMarket = "assets/images/enteringMarket.webp";
 
-  static const String imagesEnteringMosque = "assets/images/enteringMosque.png";
+  static const String imagesEnteringMosque = "assets/images/enteringMosque.webp";
 
-  static const String imagesFastingArgumentResponse = "assets/images/fastingArgumentResponse.png";
+  static const String imagesFastingArgumentResponse = "assets/images/fastingArgumentResponse.webp";
 
-  static const String imagesHearingThunder = "assets/images/hearingThunder.png";
+  static const String imagesHearingThunder = "assets/images/hearingThunder.webp";
 
-  static const String imagesIftarAtHome = "assets/images/iftarAtHome.png";
+  static const String imagesIftarAtHome = "assets/images/iftarAtHome.webp";
 
-  static const String imagesIftarSupplication = "assets/images/iftarSupplication.png";
+  static const String imagesIftarSupplication = "assets/images/iftarSupplication.webp";
 
-  static const String imagesKafaratAlMajlis = "assets/images/kafaratAlMajlis.png";
+  static const String imagesKafaratAlMajlis = "assets/images/kafaratAlMajlis.webp";
 
-  static const String imagesLeavingBathroom = "assets/images/leavingBathroom.png";
+  static const String imagesLeavingBathroom = "assets/images/leavingBathroom.webp";
 
-  static const String imagesLeavingHome = "assets/images/leavingHome.png";
+  static const String imagesLeavingHome = "assets/images/leavingHome.webp";
 
-  static const String imagesLeavingMosque = "assets/images/leavingMosque.png";
+  static const String imagesLeavingMosque = "assets/images/leavingMosque.webp";
 
-  static const String imagesOpeningSupplication = "assets/images/openingSupplication.png";
+  static const String imagesOpeningSupplication = "assets/images/openingSupplication.webp";
 
-  static const String imagesPaper = "assets/images/paper.png";
+  static const String imagesPaper = "assets/images/paper.webp";
 
-  static const String imagesPrayer = "assets/images/prayer.png";
+  static const String imagesPrayer = "assets/images/prayer.webp";
 
-  static const String imagesQunootWitr = "assets/images/qunootWitr.png";
+  static const String imagesQunootWitr = "assets/images/qunootWitr.webp";
 
-  static const String imagesRainfall = "assets/images/rainfall.png";
+  static const String imagesRainfall = "assets/images/rainfall.webp";
 
-  static const String imagesRidingCar = "assets/images/ridingCar.png";
+  static const String imagesRidingCar = "assets/images/ridingCar.webp";
 
-  static const String imagesRisingFromRuku = "assets/images/risingFromRuku.png";
+  static const String imagesRisingFromRuku = "assets/images/risingFromRuku.webp";
 
-  static const String imagesRuku = "assets/images/ruku.png";
+  static const String imagesRuku = "assets/images/ruku.webp";
 
-  static const String imagesSeeingCrescent = "assets/images/seeingCrescent.png";
+  static const String imagesSeeingCrescent = "assets/images/seeingCrescent.webp";
 
-  static const String imagesSleeping = "assets/images/sleeping.png";
+  static const String imagesSleeping = "assets/images/sleeping.webp";
 
-  static const String imagesSneezing = "assets/images/sneezing.png";
+  static const String imagesSneezing = "assets/images/sneezing.webp";
 
-  static const String imagesSujood = "assets/images/sujood.png";
+  static const String imagesSujood = "assets/images/sujood.webp";
 
-  static const String imagesTashahhud = "assets/images/tashahhud.png";
+  static const String imagesTashahhud = "assets/images/tashahhud.webp";
 
-  static const String imagesVisitingGraves = "assets/images/visitingGraves.png";
+  static const String imagesVisitingGraves = "assets/images/visitingGraves.webp";
 
-  static const String imagesVisitingSick = "assets/images/visitingSick.png";
+  static const String imagesVisitingSick = "assets/images/visitingSick.webp";
 
-  static const String imagesWakingUpFromSleep = "assets/images/wakingUpFromSleep.png";
+  static const String imagesWakingUpFromSleep = "assets/images/wakingUpFromSleep.webp";
 
-  static const String imagesWearingClothes = "assets/images/wearingClothes.png";
+  static const String imagesWearingClothes = "assets/images/wearingClothes.webp";
 
-  static const String imagesWearingNewClothes = "assets/images/wearingNewClothes.png";
+  static const String imagesWearingNewClothes = "assets/images/wearingNewClothes.webp";
 }
 
