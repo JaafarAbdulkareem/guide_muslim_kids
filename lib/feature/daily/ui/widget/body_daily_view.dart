@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guide_muslim_kids/feature/daily/data/daily.dart';
 import 'package:guide_muslim_kids/core/widget/athkar_list.dart';
 
 class BodyDailyView extends StatelessWidget {
@@ -6,6 +7,6 @@ class BodyDailyView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AthkarList();
+    return AthkarList(data: getDataDaily(context));
   }
 }

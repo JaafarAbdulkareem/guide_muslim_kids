@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/entities/athkar_entity.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
+import 'package:guide_muslim_kids/core/utils/app_images.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/size_extension.dart';
 import 'package:guide_muslim_kids/core/widget/audio_button.dart';
@@ -64,9 +65,9 @@ class AthkarItemDetail extends StatelessWidget {
         Expanded(
           child: Container(
             alignment: Alignment.center,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(data.imageBackground),
+                image: AssetImage(AppImage.imagesPaper),
                 fit: BoxFit.fill,
               ),
             ),
