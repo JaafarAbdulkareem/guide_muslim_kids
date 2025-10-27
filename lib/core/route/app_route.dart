@@ -3,6 +3,8 @@ import 'package:guide_muslim_kids/core/entities/athkar_entity.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/widget/athkar_detail_view.dart';
 import 'package:guide_muslim_kids/feature/daily/ui/daily_view.dart';
+import 'package:guide_muslim_kids/feature/fast/ui/fast_view.dart';
+import 'package:guide_muslim_kids/feature/prayer/ui/prayer_view.dart';
 
 class AppRoute {
   static Route<dynamic> generate(RouteSettings settings) {
@@ -15,6 +17,10 @@ class AppRoute {
         );
       case RouteName.daily:
         return MaterialPageRoute(builder: (_) => const DailyView());
+      case RouteName.prayer:
+        return MaterialPageRoute(builder: (_) => const PrayerView());
+      case RouteName.fast:
+        return MaterialPageRoute(builder: (_) => const FastView());
       case RouteName.dailyDetails:
         final args = settings.arguments;
         return MaterialPageRoute(
