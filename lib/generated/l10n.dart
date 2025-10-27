@@ -293,6 +293,11 @@ class S {
   String get dogsBarking {
     return Intl.message('', name: 'dogsBarking', desc: '', args: []);
   }
+
+  /// ``
+  String get AlertNoDataProvided {
+    return Intl.message('', name: 'AlertNoDataProvided', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
