@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
       title: 'Guide Muslim Kids',
       locale: const Locale('ar'),
       theme: ThemeData(
-        brightness: Brightness.light ,
-        scaffoldBackgroundColor: AppColor.scaffoldBackgroundColor
+        brightness: Brightness.light,
+        scaffoldBackgroundColor: AppColor.scaffoldBackgroundColor,
       ),
-      initialRoute: RouteName.daily,
+      initialRoute: RouteName.fast,
       onGenerateRoute: AppRoute.generate,
       localizationsDelegates: [
         S.delegate,
