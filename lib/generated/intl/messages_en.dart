@@ -21,5 +21,30 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "adhan": MessageLookupByLibrary.simpleMessage(""),
+    "afterEating": MessageLookupByLibrary.simpleMessage(""),
+    "afterRainfall": MessageLookupByLibrary.simpleMessage(""),
+    "afterWudu": MessageLookupByLibrary.simpleMessage(""),
+    "beforeEating": MessageLookupByLibrary.simpleMessage(""),
+    "beforeWudu": MessageLookupByLibrary.simpleMessage(""),
+    "dogsBarking": MessageLookupByLibrary.simpleMessage(""),
+    "enteringBathroom": MessageLookupByLibrary.simpleMessage(""),
+    "enteringHome": MessageLookupByLibrary.simpleMessage(""),
+    "enteringMarket": MessageLookupByLibrary.simpleMessage(""),
+    "enteringMosque": MessageLookupByLibrary.simpleMessage(""),
+    "hearingThunder": MessageLookupByLibrary.simpleMessage(""),
+    "kafaratAlMajlis": MessageLookupByLibrary.simpleMessage(""),
+    "leavingBathroom": MessageLookupByLibrary.simpleMessage(""),
+    "leavingHome": MessageLookupByLibrary.simpleMessage(""),
+    "leavingMosque": MessageLookupByLibrary.simpleMessage(""),
+    "rainfall": MessageLookupByLibrary.simpleMessage(""),
+    "ridingCar": MessageLookupByLibrary.simpleMessage(""),
+    "sleeping": MessageLookupByLibrary.simpleMessage(""),
+    "sneezing": MessageLookupByLibrary.simpleMessage(""),
+    "visitingSick": MessageLookupByLibrary.simpleMessage(""),
+    "wakingUpFromSleep": MessageLookupByLibrary.simpleMessage(""),
+    "wearingClothes": MessageLookupByLibrary.simpleMessage(""),
+    "wearingNewClothes": MessageLookupByLibrary.simpleMessage(""),
+  };
 }

@@ -1,1 +1,26 @@
-{}
+{
+    "sleeping": "",
+    "wakingUpFromSleep": "",
+    "beforeWudu": "",
+    "afterWudu": "",
+    "adhan": "",
+    "enteringMarket": "",
+    "wearingClothes": "",
+    "wearingNewClothes": "",
+    "beforeEating": "",
+    "afterEating": "",
+    "enteringBathroom": "",
+    "leavingBathroom": "",
+    "leavingHome": "",
+    "enteringHome": "",
+    "enteringMosque": "",
+    "leavingMosque": "",
+    "ridingCar": "",
+    "hearingThunder": "",
+    "rainfall": "",
+    "afterRainfall": "",
+    "sneezing": "",
+    "visitingSick": "",
+    "kafaratAlMajlis": "",
+    "dogsBarking": ""
+}

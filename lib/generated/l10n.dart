@@ -53,13 +53,136 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// ``
+  String get sleeping {
+    return Intl.message('', name: 'sleeping', desc: '', args: []);
+  }
+
+  /// ``
+  String get wakingUpFromSleep {
+    return Intl.message('', name: 'wakingUpFromSleep', desc: '', args: []);
+  }
+
+  /// ``
+  String get beforeWudu {
+    return Intl.message('', name: 'beforeWudu', desc: '', args: []);
+  }
+
+  /// ``
+  String get afterWudu {
+    return Intl.message('', name: 'afterWudu', desc: '', args: []);
+  }
+
+  /// ``
+  String get adhan {
+    return Intl.message('', name: 'adhan', desc: '', args: []);
+  }
+
+  /// ``
+  String get enteringMarket {
+    return Intl.message('', name: 'enteringMarket', desc: '', args: []);
+  }
+
+  /// ``
+  String get wearingClothes {
+    return Intl.message('', name: 'wearingClothes', desc: '', args: []);
+  }
+
+  /// ``
+  String get wearingNewClothes {
+    return Intl.message('', name: 'wearingNewClothes', desc: '', args: []);
+  }
+
+  /// ``
+  String get beforeEating {
+    return Intl.message('', name: 'beforeEating', desc: '', args: []);
+  }
+
+  /// ``
+  String get afterEating {
+    return Intl.message('', name: 'afterEating', desc: '', args: []);
+  }
+
+  /// ``
+  String get enteringBathroom {
+    return Intl.message('', name: 'enteringBathroom', desc: '', args: []);
+  }
+
+  /// ``
+  String get leavingBathroom {
+    return Intl.message('', name: 'leavingBathroom', desc: '', args: []);
+  }
+
+  /// ``
+  String get leavingHome {
+    return Intl.message('', name: 'leavingHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get enteringHome {
+    return Intl.message('', name: 'enteringHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get enteringMosque {
+    return Intl.message('', name: 'enteringMosque', desc: '', args: []);
+  }
+
+  /// ``
+  String get leavingMosque {
+    return Intl.message('', name: 'leavingMosque', desc: '', args: []);
+  }
+
+  /// ``
+  String get ridingCar {
+    return Intl.message('', name: 'ridingCar', desc: '', args: []);
+  }
+
+  /// ``
+  String get hearingThunder {
+    return Intl.message('', name: 'hearingThunder', desc: '', args: []);
+  }
+
+  /// ``
+  String get rainfall {
+    return Intl.message('', name: 'rainfall', desc: '', args: []);
+  }
+
+  /// ``
+  String get afterRainfall {
+    return Intl.message('', name: 'afterRainfall', desc: '', args: []);
+  }
+
+  /// ``
+  String get sneezing {
+    return Intl.message('', name: 'sneezing', desc: '', args: []);
+  }
+
+  /// ``
+  String get visitingSick {
+    return Intl.message('', name: 'visitingSick', desc: '', args: []);
+  }
+
+  /// ``
+  String get kafaratAlMajlis {
+    return Intl.message('', name: 'kafaratAlMajlis', desc: '', args: []);
+  }
+
+  /// ``
+  String get dogsBarking {
+    return Intl.message('', name: 'dogsBarking', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
-    return const <Locale>[Locale.fromSubtags(languageCode: 'en')];
+    return const <Locale>[
+      Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
+    ];
   }
 
   @override
