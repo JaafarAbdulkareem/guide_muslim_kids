@@ -55,6 +55,31 @@ class S {
   }
 
   /// ``
+  String get titleHome {
+    return Intl.message('', name: 'titleHome', desc: '', args: []);
+  }
+
+  /// ``
+  String get homeAzkar {
+    return Intl.message('', name: 'homeAzkar', desc: '', args: []);
+  }
+
+  /// ``
+  String get homeSalah {
+    return Intl.message('', name: 'homeSalah', desc: '', args: []);
+  }
+
+  /// ``
+  String get homeSawm {
+    return Intl.message('', name: 'homeSawm', desc: '', args: []);
+  }
+
+  /// ``
+  String get homeNames {
+    return Intl.message('', name: 'homeNames', desc: '', args: []);
+  }
+
+  /// ``
   String get titleSleeping {
     return Intl.message('', name: 'titleSleeping', desc: '', args: []);
   }
@@ -477,11 +502,6 @@ class S {
   /// ``
   String get seeingCrescent {
     return Intl.message('', name: 'seeingCrescent', desc: '', args: []);
-  }
-
-  /// ``
-  String get names {
-    return Intl.message('', name: 'names', desc: '', args: []);
   }
 
   /// ``
