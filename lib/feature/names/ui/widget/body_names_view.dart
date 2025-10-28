@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/core/utils/app_color.dart';
-import 'package:guide_muslim_kids/core/utils/app_images.dart';
-import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/widget/custom_app_bar.dart';
 import 'package:guide_muslim_kids/feature/names/data/names.dart';
 import 'package:guide_muslim_kids/feature/names/ui/widget/names_item.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
@@ -17,21 +15,7 @@ class BodyNamesView extends StatelessWidget {
         const SizedBox(height: 8),
         AspectRatio(
           aspectRatio: 6,
-          child: Container(
-            alignment: Alignment.center,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(AppImage.imagesPaper),
-                fit: BoxFit.cover,
-              ),
-            ),
-            child: Text(
-              S.of(context).names,
-              style: AppTextStyle.fontBold24(
-                context,
-              ).copyWith(color: AppColor.secondaryText),
-            ),
-          ),
+          child: CustomAppBar(title: S.of(context).homeNames),
         ),
         Expanded(
           child: GridView.builder(
