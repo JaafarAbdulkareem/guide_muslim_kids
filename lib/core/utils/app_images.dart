@@ -46,6 +46,8 @@ class AppImage {
 
   static const String imagesLeavingMosque = "assets/images/leavingMosque.webp";
 
+  static const String imagesNames = "assets/images/names.webp";
+
   static const String imagesOpeningSupplication = "assets/images/openingSupplication.webp";
 
   static const String imagesPaper = "assets/images/paper.webp";
