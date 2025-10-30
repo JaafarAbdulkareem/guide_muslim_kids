@@ -354,6 +354,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "hearingThunder": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
     ),
+    "homeAzkar": MessageLookupByLibrary.simpleMessage("الأذكار اليومية"),
+    "homeNames": MessageLookupByLibrary.simpleMessage("أسماء الله الحسنى"),
+    "homeSalah": MessageLookupByLibrary.simpleMessage("الصلاة"),
+    "homeSawm": MessageLookupByLibrary.simpleMessage("الصوم"),
     "iftarAtHome": MessageLookupByLibrary.simpleMessage(
       "أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ، وَأَكَلَ طَعَامَكُمُ الْأَبْرَارُ، وَصَلَّتْ عَلَيْكُمُ الْمَلاَئِكَةُ",
     ),
@@ -370,7 +374,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
-    "names": MessageLookupByLibrary.simpleMessage("أسماء الله الحسنى"),
     "openingSupplication": MessageLookupByLibrary.simpleMessage(
       "سُبْحانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ",
     ),
@@ -545,6 +548,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "titleFirstTashahhud": MessageLookupByLibrary.simpleMessage("التشهد الأول"),
     "titleHearingThunder": MessageLookupByLibrary.simpleMessage(
       "دعاء عند سماع الرعد",
+    ),
+    "titleHome": MessageLookupByLibrary.simpleMessage(
+      "اجعل الذكر رفيقك الدائم",
     ),
     "titleIftarAtHome": MessageLookupByLibrary.simpleMessage(
       "دعاء إذا أفطر عند أهل بيت",
