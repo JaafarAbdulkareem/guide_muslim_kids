@@ -1,4 +1,9 @@
 {
+    "titleHome": "",
+    "homeAzkar": "",
+    "homeSalah": "",
+    "homeSawm": "",
+    "homeNames": "",
     "titleSleeping": "",
     "titleWakingUpFromSleep": "",
     "titleBeforeWudu": "",
@@ -79,7 +84,6 @@
     "fastingArgumentResponse": "",
     "iftarAtHome": "",
     "seeingCrescent": "",
-    "names": "",
     "titleAllah": "",
     "titleArRahman": "",
     "titleArRahim": "",

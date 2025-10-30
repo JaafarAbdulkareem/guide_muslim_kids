@@ -4,6 +4,7 @@ import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/widget/athkar_detail_view.dart';
 import 'package:guide_muslim_kids/feature/daily/ui/daily_view.dart';
 import 'package:guide_muslim_kids/feature/fast/ui/fast_view.dart';
+import 'package:guide_muslim_kids/feature/home/ui/home_view.dart';
 import 'package:guide_muslim_kids/feature/names/logic/entities/names_entity.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_detail_view.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_view.dart';
@@ -15,9 +16,7 @@ class AppRoute {
       // case RouteName.splash:
       // return MaterialPageRoute(builder: (_) => const SplashView());
       case RouteName.home:
-        return MaterialPageRoute(
-          builder: (_) => const Center(child: Text("home")),
-        );
+        return MaterialPageRoute(builder: (_) => const HomeView());
       case RouteName.daily:
         return MaterialPageRoute(builder: (_) => const DailyView());
       case RouteName.prayer:
