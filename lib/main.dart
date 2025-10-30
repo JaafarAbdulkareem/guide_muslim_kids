@@ -6,6 +6,7 @@ import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
 
 void main() {
+  
   runApp(const MyApp());
 }
 
