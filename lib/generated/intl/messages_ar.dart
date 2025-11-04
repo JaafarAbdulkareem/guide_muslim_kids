@@ -34,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "afterWudu": MessageLookupByLibrary.simpleMessage(
       "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
     ),
+    "appName": MessageLookupByLibrary.simpleMessage("نور الجيل"),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "beforeWudu": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "dogsBarking": MessageLookupByLibrary.simpleMessage(
