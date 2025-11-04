@@ -46,6 +46,8 @@ class AppImage {
 
   static const String imagesSneezing = "assets/images/sneezing.png";
 
+  static const String imagesSplash = "assets/images/splash.png";
+
   static const String imagesVisitingSick = "assets/images/visitingSick.png";
 
   static const String imagesWakingUpFromSleep = "assets/images/wakingUpFromSleep.png";
