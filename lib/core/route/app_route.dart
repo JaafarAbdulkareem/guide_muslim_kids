@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/feature/home/ui/home_view.dart';
+import 'package:guide_muslim_kids/feature/splash/ui/splash_view.dart';
 
 class AppRoute {
   static Route<dynamic> generate(RouteSettings settings) {
     switch (settings.name) {
-      // case RouteName.splash:
-      // return MaterialPageRoute(builder: (_) => const SplashView());
+      case RouteName.splash:
+        return MaterialPageRoute(builder: (_) => const SplashView());
       case RouteName.home:
-      return MaterialPageRoute(builder: (_) => const HomeView());
+        return MaterialPageRoute(builder: (_) => const HomeView());
       default:
         return MaterialPageRoute(builder: (_) => const Center());
     }
