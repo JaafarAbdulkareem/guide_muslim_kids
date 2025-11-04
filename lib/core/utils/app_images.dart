@@ -46,6 +46,8 @@ class AppImage {
 
   static const String imagesLeavingMosque = "assets/images/leavingMosque.webp";
 
+  static const String imagesLogo = "assets/images/logo.png";
+
   static const String imagesNames = "assets/images/names.webp";
 
   static const String imagesOpeningSupplication = "assets/images/openingSupplication.webp";
@@ -69,6 +71,8 @@ class AppImage {
   static const String imagesSleeping = "assets/images/sleeping.webp";
 
   static const String imagesSneezing = "assets/images/sneezing.webp";
+
+  static const String imagesSplash = "assets/images/splash.png";
 
   static const String imagesSujood = "assets/images/sujood.webp";
 

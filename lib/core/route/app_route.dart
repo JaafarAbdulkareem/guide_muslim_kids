@@ -9,12 +9,13 @@ import 'package:guide_muslim_kids/feature/names/logic/entities/names_entity.dart
 import 'package:guide_muslim_kids/feature/names/ui/names_detail_view.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_view.dart';
 import 'package:guide_muslim_kids/feature/prayer/ui/prayer_view.dart';
+import 'package:guide_muslim_kids/feature/splash/ui/splash_view.dart';
 
 class AppRoute {
   static Route<dynamic> generate(RouteSettings settings) {
     switch (settings.name) {
-      // case RouteName.splash:
-      // return MaterialPageRoute(builder: (_) => const SplashView());
+      case RouteName.splash:
+        return MaterialPageRoute(builder: (_) => const SplashView());
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
       case RouteName.daily:
@@ -39,7 +40,7 @@ class AppRoute {
               NamesDetailView(data: args is NamesEntity ? args : null),
         );
       default:
-        return MaterialPageRoute(builder: (_) => const Center());
+        return MaterialPageRoute(builder: (_) => const SplashView());
     }
   }
 }

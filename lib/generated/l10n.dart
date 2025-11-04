@@ -55,6 +55,11 @@ class S {
   }
 
   /// ``
+  String get appName {
+    return Intl.message('', name: 'appName', desc: '', args: []);
+  }
+
+  /// ``
   String get titleHome {
     return Intl.message('', name: 'titleHome', desc: '', args: []);
   }

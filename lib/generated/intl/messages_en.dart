@@ -28,6 +28,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "afterPrayer": MessageLookupByLibrary.simpleMessage(""),
     "afterRainfall": MessageLookupByLibrary.simpleMessage(""),
     "afterWudu": MessageLookupByLibrary.simpleMessage(""),
+    "appName": MessageLookupByLibrary.simpleMessage(""),
     "beforeEating": MessageLookupByLibrary.simpleMessage(""),
     "beforeSalam": MessageLookupByLibrary.simpleMessage(""),
     "beforeWudu": MessageLookupByLibrary.simpleMessage(""),
