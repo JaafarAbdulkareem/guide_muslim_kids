@@ -22,9 +22,6 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "AlertNoDataProvided": MessageLookupByLibrary.simpleMessage(
-      "عذرًا، لا توجد بيانات للعرض 😅",
-    ),
     "adhan": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلاَةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامَاً مَحمُوداً الَّذِي وَعَدْتَهُ، إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ",
     ),
@@ -39,6 +36,12 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "afterWudu": MessageLookupByLibrary.simpleMessage(
       "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
+    ),
+    "alertNoDataProvided": MessageLookupByLibrary.simpleMessage(
+      "عذرًا، لا توجد بيانات للعرض 😅",
+    ),
+    "alertTryAgain": MessageLookupByLibrary.simpleMessage(
+      "أوه لا! 🐥 دعنا نعيد المحاولة!",
     ),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "beforeSalam": MessageLookupByLibrary.simpleMessage(
@@ -373,6 +376,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
+    ),
+    "loadingAudio": MessageLookupByLibrary.simpleMessage(
+      "الصوت سيجهز بعد قليل… 🐰",
     ),
     "openingSupplication": MessageLookupByLibrary.simpleMessage(
       "سُبْحانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلاَ إِلَهَ غَيْرُكَ",
