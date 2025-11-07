@@ -3,13 +3,13 @@ class AudioKeys {
 
   static const sleeping = '$_path/sleeping.mp3';
   static const wakingUpFromSleep = '$_path/wakingUpFromSleep.mp3';
-  static const beforeWudu = '$_path/beforeWudu.mp3';
+  static const beforeWudu = '$_path/before.mp3';
   static const afterWudu = '$_path/afterWudu.mp3';
   static const adhan = '$_path/adhan.mp3';
   static const enteringMarket = '$_path/enteringMarket.mp3';
   static const wearingClothes = '$_path/wearingClothes.mp3';
   static const wearingNewClothes = '$_path/wearingNewClothes.mp3';
-  static const beforeEating = '$_path/beforeEating.mp3';
+  static const beforeEating = '$_path/before.mp3';
   static const afterEating = '$_path/afterEating.mp3';
   static const enteringBathroom = '$_path/enteringBathroom.mp3';
   static const leavingBathroom = '$_path/leavingBathroom.mp3';
