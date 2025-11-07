@@ -1465,8 +1465,18 @@ class S {
   }
 
   /// ``
-  String get AlertNoDataProvided {
-    return Intl.message('', name: 'AlertNoDataProvided', desc: '', args: []);
+  String get alertNoDataProvided {
+    return Intl.message('', name: 'alertNoDataProvided', desc: '', args: []);
+  }
+
+  /// ``
+  String get alertTryAgain {
+    return Intl.message('', name: 'alertTryAgain', desc: '', args: []);
+  }
+
+  /// ``
+  String get loadingAudio {
+    return Intl.message('', name: 'loadingAudio', desc: '', args: []);
   }
 }
 

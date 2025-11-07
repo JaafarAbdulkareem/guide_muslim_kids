@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:guide_muslim_kids/core/manage/cubit/audio_cubit.dart';
 import 'package:guide_muslim_kids/core/route/app_route.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
@@ -16,8 +17,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => SplashBloc(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => SplashBloc()),
+        BlocProvider(create: (context) => AudioCubit()),
+      ],
+
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Guide Muslim Kids',

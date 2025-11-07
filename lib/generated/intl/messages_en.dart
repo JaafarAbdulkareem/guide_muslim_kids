@@ -22,13 +22,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "AlertNoDataProvided": MessageLookupByLibrary.simpleMessage(""),
     "adhan": MessageLookupByLibrary.simpleMessage(""),
     "afterEating": MessageLookupByLibrary.simpleMessage(""),
     "afterPrayer": MessageLookupByLibrary.simpleMessage(""),
     "afterRainfall": MessageLookupByLibrary.simpleMessage(""),
     "afterWudu": MessageLookupByLibrary.simpleMessage(""),
     "appName": MessageLookupByLibrary.simpleMessage(""),
+    "alertNoDataProvided": MessageLookupByLibrary.simpleMessage(""),
+    "alertTryAgain": MessageLookupByLibrary.simpleMessage(""),
     "beforeEating": MessageLookupByLibrary.simpleMessage(""),
     "beforeSalam": MessageLookupByLibrary.simpleMessage(""),
     "beforeWudu": MessageLookupByLibrary.simpleMessage(""),
@@ -147,6 +148,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingBathroom": MessageLookupByLibrary.simpleMessage(""),
     "leavingHome": MessageLookupByLibrary.simpleMessage(""),
     "leavingMosque": MessageLookupByLibrary.simpleMessage(""),
+    "loadingAudio": MessageLookupByLibrary.simpleMessage(""),
     "openingSupplication": MessageLookupByLibrary.simpleMessage(""),
     "prostrationOfRecitation": MessageLookupByLibrary.simpleMessage(""),
     "qunootWitr": MessageLookupByLibrary.simpleMessage(""),

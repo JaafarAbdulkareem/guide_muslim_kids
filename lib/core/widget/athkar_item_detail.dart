@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/entities/athkar_entity.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
-import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_images.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/size_extension.dart';
-import 'package:guide_muslim_kids/core/widget/audio_button.dart';
+import 'package:guide_muslim_kids/core/widget/bloc_audio_buttons.dart';
 
 class AthkarItemDetail extends StatelessWidget {
   const AthkarItemDetail({super.key, required this.data});
@@ -72,14 +71,7 @@ class AthkarItemDetail extends StatelessWidget {
               ),
             ),
 
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                AudioButton(icon: AppIcon.pause, onPressed: () {}),
-                AudioButton(icon: AppIcon.play, onPressed: () {}),
-              ],
-            ),
+            child: BlocAudioButtons(audioKey: data.audioKey),
           ),
         ),
       ],

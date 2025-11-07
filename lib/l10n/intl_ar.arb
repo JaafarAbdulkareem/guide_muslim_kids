@@ -275,5 +275,7 @@
     "descAlBaqi": "الباقي الذي لا يفنى",
     "descArRashid": "الرشيد المرشد إلى الخير",
     "descAlWarith": "الوارث الباقي بعد فناء خلقه ومالك كل شيء",
-    "AlertNoDataProvided": "عذرًا، لا توجد بيانات للعرض 😅"
+    "alertNoDataProvided": "عذرًا، لا توجد بيانات للعرض 😅",
+    "alertTryAgain": "أوه لا! 🐥 دعنا نعيد المحاولة!",
+    "loadingAudio": "الصوت سيجهز بعد قليل… 🐰"
 }

@@ -9,4 +9,5 @@ class AppColor {
   static const Color borderNames = Color(0xFFccb992);
   static const Color secondaryText = Color(0xFFFFFFFF);
   static const Color shadowText = Color(0x73000000);
+  static const Color error = Color(0xFFFF5252);
 }

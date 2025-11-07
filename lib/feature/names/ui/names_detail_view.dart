@@ -12,7 +12,7 @@ class NamesDetailView extends StatelessWidget {
     final args = data ?? ModalRoute.of(context)?.settings.arguments;
     if (args is! NamesEntity) {
       return Scaffold(
-        body: Center(child: Text(S.of(context).AlertNoDataProvided)),
+        body: Center(child: Text(S.of(context).alertNoDataProvided)),
       );
     }
 

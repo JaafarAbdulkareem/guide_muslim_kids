@@ -275,5 +275,7 @@
     "descAlBaqi": "",
     "descArRashid": "",
     "descAlWarith": "",
-    "AlertNoDataProvided": ""
+    "alertNoDataProvided": "",
+    "alertTryAgain": "",
+    "loadingAudio": ""
 }
