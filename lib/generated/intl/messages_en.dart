@@ -156,6 +156,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "finalTashahhud": MessageLookupByLibrary.simpleMessage(""),
     "firstTashahhud": MessageLookupByLibrary.simpleMessage(""),
     "hearingThunder": MessageLookupByLibrary.simpleMessage(""),
+    "homeAboutUs": MessageLookupByLibrary.simpleMessage(""),
     "homeAzkar": MessageLookupByLibrary.simpleMessage(""),
     "homeNames": MessageLookupByLibrary.simpleMessage(""),
     "homeSalah": MessageLookupByLibrary.simpleMessage(""),

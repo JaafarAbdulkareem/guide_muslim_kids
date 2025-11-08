@@ -404,6 +404,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "hearingThunder": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
     ),
+    "homeAboutUs": MessageLookupByLibrary.simpleMessage("عنا"),
     "homeAzkar": MessageLookupByLibrary.simpleMessage("الأذكار اليومية"),
     "homeNames": MessageLookupByLibrary.simpleMessage("أسماء الله الحسنى"),
     "homeSalah": MessageLookupByLibrary.simpleMessage("الصلاة"),

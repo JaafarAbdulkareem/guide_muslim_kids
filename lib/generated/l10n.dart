@@ -85,6 +85,11 @@ class S {
   }
 
   /// ``
+  String get homeAboutUs {
+    return Intl.message('', name: 'homeAboutUs', desc: '', args: []);
+  }
+
+  /// ``
   String get titleSleeping {
     return Intl.message('', name: 'titleSleeping', desc: '', args: []);
   }
