@@ -375,6 +375,16 @@ class S {
   }
 
   /// ``
+  String get aboutVisionTitle {
+    return Intl.message('', name: 'aboutVisionTitle', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutVisionText {
+    return Intl.message('', name: 'aboutVisionText', desc: '', args: []);
+  }
+
+  /// ``
   String get aboutMessageTitle {
     return Intl.message('', name: 'aboutMessageTitle', desc: '', args: []);
   }

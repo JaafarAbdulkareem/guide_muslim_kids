@@ -38,6 +38,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "aboutGoalsTitle": MessageLookupByLibrary.simpleMessage(""),
     "aboutMessage": MessageLookupByLibrary.simpleMessage(""),
     "aboutMessageTitle": MessageLookupByLibrary.simpleMessage(""),
+    "aboutVisionText": MessageLookupByLibrary.simpleMessage(""),
+    "aboutVisionTitle": MessageLookupByLibrary.simpleMessage(""),
     "adhan": MessageLookupByLibrary.simpleMessage(""),
     "afterEating": MessageLookupByLibrary.simpleMessage(""),
     "afterRainfall": MessageLookupByLibrary.simpleMessage(""),

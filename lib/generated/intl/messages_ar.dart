@@ -61,9 +61,13 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "aboutGoalsTitle": MessageLookupByLibrary.simpleMessage("أهدافنا"),
     "aboutMessage": MessageLookupByLibrary.simpleMessage(
-      "تأهيل أجيال راسخة في القراءة والكتابة تربط بين أصالة اللغة العربية وحداثة العصر. المركز المتميز في تعليم القراءة والكتابة وبث حب الهوية العربية الإسلامية للأجيال.",
+      "تأهيل أجيال راسخة في القراءة والكتابة تربط بين أصالة اللغة العربية وحداثة العصر .",
     ),
     "aboutMessageTitle": MessageLookupByLibrary.simpleMessage("رسالتنا"),
+    "aboutVisionText": MessageLookupByLibrary.simpleMessage(
+      "المركز المتميز في تعليم القراءة والكتابة وبث حب الهوية العربية الاسلامية للأجيال.",
+    ),
+    "aboutVisionTitle": MessageLookupByLibrary.simpleMessage("رؤيتنا"),
     "adhan": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلاَةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامَاً مَحمُوداً الَّذِي وَعَدْتَهُ، إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ",
     ),
