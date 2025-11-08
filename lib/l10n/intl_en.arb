@@ -46,5 +46,21 @@
     "sneezing": "",
     "visitingSick": "",
     "kafaratAlMajlis": "",
-    "dogsBarking": ""
+    "dogsBarking": "",
+    "aboutCenterName": "",
+    "aboutCenterAddress": "",
+    "aboutEducationLevelsTitle": "",
+    "aboutEducationLevelsDescription": "",
+    "aboutEducationLevel1": "",
+    "aboutEducationLevel2": "",
+    "aboutEducationLevel3": "",
+    "aboutGoalsTitle": "",
+    "aboutGoalsPoint1": "",
+    "aboutGoalsPoint2": "",
+    "aboutGoalsPoint3": "",
+    "aboutGoalsPoint4": "",
+    "aboutGoalsPoint5": "",
+    "aboutGoalsPoint6": "",
+    "aboutMessageTitle": "",
+    "aboutMessage": ""
 }

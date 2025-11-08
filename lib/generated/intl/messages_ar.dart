@@ -22,6 +22,48 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "aboutCenterAddress": MessageLookupByLibrary.simpleMessage("تريم - عيديد"),
+    "aboutCenterName": MessageLookupByLibrary.simpleMessage(
+      "مركز المعرفة لتعليم القراءة والكتابة بمسجد البشائر",
+    ),
+    "aboutEducationLevel1": MessageLookupByLibrary.simpleMessage(
+      "المرحلة الأولى: يتم فيها تعليم الحروف العربية وبعض مبادئ الحساب.",
+    ),
+    "aboutEducationLevel2": MessageLookupByLibrary.simpleMessage(
+      "المرحلة الثانية: يتم فيها تعليم الكلمات العربية بالطريقتين الفردية والجماعية.",
+    ),
+    "aboutEducationLevel3": MessageLookupByLibrary.simpleMessage(
+      "المرحلة الثالثة: يتم فيها تعليم النورانية ومن ثم القراءة في المصحف، يرافق ذلك بعض الدروس المعينة لقراءة القرآن الكريم.",
+    ),
+    "aboutEducationLevelsDescription": MessageLookupByLibrary.simpleMessage(
+      "على ثلاث مراحل بحسب قدرة الطالب على القراءة والكتابة",
+    ),
+    "aboutEducationLevelsTitle": MessageLookupByLibrary.simpleMessage(
+      "الدراسة في المركز",
+    ),
+    "aboutGoalsPoint1": MessageLookupByLibrary.simpleMessage(
+      "تعليم النشء القراءة والكتابة.",
+    ),
+    "aboutGoalsPoint2": MessageLookupByLibrary.simpleMessage(
+      "غرس حب اللغة العربية في نفوس الطلاب.",
+    ),
+    "aboutGoalsPoint3": MessageLookupByLibrary.simpleMessage(
+      "تقوية اعتزاز الطالب بانتمائه إلى الأمة العربية الإسلامية ذات التراث الثقافي والحضاري الكبير.",
+    ),
+    "aboutGoalsPoint4": MessageLookupByLibrary.simpleMessage(
+      "الارتقاء بالمستوى التعليمي للطلاب من خلال القراءة والكتابة.",
+    ),
+    "aboutGoalsPoint5": MessageLookupByLibrary.simpleMessage(
+      "اكساب التلاميذ مهارة القراءة والكتابة بطريقة صحيحة في ضوء قواعد اللغة العربية.",
+    ),
+    "aboutGoalsPoint6": MessageLookupByLibrary.simpleMessage(
+      "جعل الطالب قادرًا على أن يتلو كتاب الله تعالى.",
+    ),
+    "aboutGoalsTitle": MessageLookupByLibrary.simpleMessage("أهدافنا"),
+    "aboutMessage": MessageLookupByLibrary.simpleMessage(
+      "تأهيل أجيال راسخة في القراءة والكتابة تربط بين أصالة اللغة العربية وحداثة العصر. المركز المتميز في تعليم القراءة والكتابة وبث حب الهوية العربية الإسلامية للأجيال.",
+    ),
+    "aboutMessageTitle": MessageLookupByLibrary.simpleMessage("رسالتنا"),
     "adhan": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلاَةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامَاً مَحمُوداً الَّذِي وَعَدْتَهُ، إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ",
     ),

@@ -293,6 +293,96 @@ class S {
   String get dogsBarking {
     return Intl.message('', name: 'dogsBarking', desc: '', args: []);
   }
+
+  /// ``
+  String get aboutCenterName {
+    return Intl.message('', name: 'aboutCenterName', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutCenterAddress {
+    return Intl.message('', name: 'aboutCenterAddress', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutEducationLevelsTitle {
+    return Intl.message(
+      '',
+      name: 'aboutEducationLevelsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get aboutEducationLevelsDescription {
+    return Intl.message(
+      '',
+      name: 'aboutEducationLevelsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get aboutEducationLevel1 {
+    return Intl.message('', name: 'aboutEducationLevel1', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutEducationLevel2 {
+    return Intl.message('', name: 'aboutEducationLevel2', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutEducationLevel3 {
+    return Intl.message('', name: 'aboutEducationLevel3', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsTitle {
+    return Intl.message('', name: 'aboutGoalsTitle', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint1 {
+    return Intl.message('', name: 'aboutGoalsPoint1', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint2 {
+    return Intl.message('', name: 'aboutGoalsPoint2', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint3 {
+    return Intl.message('', name: 'aboutGoalsPoint3', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint4 {
+    return Intl.message('', name: 'aboutGoalsPoint4', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint5 {
+    return Intl.message('', name: 'aboutGoalsPoint5', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint6 {
+    return Intl.message('', name: 'aboutGoalsPoint6', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutMessageTitle {
+    return Intl.message('', name: 'aboutMessageTitle', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutMessage {
+    return Intl.message('', name: 'aboutMessage', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
