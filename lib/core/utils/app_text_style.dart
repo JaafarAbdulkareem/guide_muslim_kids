@@ -18,4 +18,13 @@ class AppTextStyle {
         ) ??
         const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   }
+
+  /// ContentAthkar
+  static TextStyle fontBold16(BuildContext context) {
+    return Theme.of(context).textTheme.bodyLarge?.copyWith(
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+        ) ??
+        const TextStyle(fontSize: 16, fontWeight: FontWeight.w600);
+  }
 }
