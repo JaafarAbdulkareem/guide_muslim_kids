@@ -4,6 +4,7 @@ import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/widget/athkar_detail_view.dart';
 import 'package:guide_muslim_kids/feature/daily/ui/daily_view.dart';
 import 'package:guide_muslim_kids/feature/fast/ui/fast_view.dart';
+import 'package:guide_muslim_kids/feature/about_us/ui/about_us_view.dart';
 import 'package:guide_muslim_kids/feature/home/ui/home_view.dart';
 import 'package:guide_muslim_kids/feature/names/logic/entities/names_entity.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_detail_view.dart';
@@ -39,6 +40,8 @@ class AppRoute {
           builder: (_) =>
               NamesDetailView(data: args is NamesEntity ? args : null),
         );
+      case RouteName.aboutUs:
+        return MaterialPageRoute(builder: (_) => const AboutUsView());
       default:
         return MaterialPageRoute(builder: (_) => const SplashView());
     }

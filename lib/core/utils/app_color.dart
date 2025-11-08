@@ -10,4 +10,6 @@ class AppColor {
   static const Color secondaryText = Color(0xFFFFFFFF);
   static const Color shadowText = Color(0x73000000);
   static const Color error = Color(0xFFFF5252);
+  static const Color cardColor = Color(0xFFFFFFFF);
+  static const Color titleAboutUs = Color(0xFFFF5722);
 }

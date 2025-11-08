@@ -20,6 +20,8 @@ class AppImage {
 
   static const String imagesDogsBarking = "assets/images/dogsBarking.webp";
 
+  static const String imagesEducationLogo = "assets/images/educationLogo.png";
+
   static const String imagesEnteringBathroom = "assets/images/enteringBathroom.webp";
 
   static const String imagesEnteringHome = "assets/images/enteringHome.webp";
