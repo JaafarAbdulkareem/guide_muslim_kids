@@ -27,5 +27,10 @@ List<HomeEntity> getDataHome(BuildContext context) {
       title: s.homeNames,
       pageName: RouteName.names,
     ),
+    HomeEntity(
+      image: AppImage.imagesLogo,
+      title: s.homeAboutUs,
+      pageName: RouteName.aboutUs,
+    ),
   ];
 }

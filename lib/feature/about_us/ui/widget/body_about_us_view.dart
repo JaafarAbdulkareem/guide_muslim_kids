@@ -14,7 +14,7 @@ class BodyAboutUsView extends StatelessWidget {
 
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(AppImage.imagesPaper),
             fit: BoxFit.cover,
@@ -35,19 +35,17 @@ class BodyAboutUsView extends StatelessWidget {
                 const SizedBox(height: 20),
                 Text(
                   s.aboutCenterName,
-                  //second text
                   style: AppTextStyle.fontBold24(
                     context,
-                  ).copyWith(color: AppColor.cardColor),
+                  ).copyWith(color: AppColor.secondaryText),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
-                //second text
                 Text(
                   s.aboutCenterAddress,
                   style: AppTextStyle.fontBold20(
                     context,
-                  ).copyWith(color: AppColor.cardColor),
+                  ).copyWith(color: AppColor.secondaryText),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 30),
