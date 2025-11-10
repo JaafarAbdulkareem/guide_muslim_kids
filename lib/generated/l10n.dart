@@ -65,6 +65,11 @@ class S {
   }
 
   /// ``
+  String get homeMaratibAdDeen {
+    return Intl.message('', name: 'homeMaratibAdDeen', desc: '', args: []);
+  }
+
+  /// ``
   String get homeAzkar {
     return Intl.message('', name: 'homeAzkar', desc: '', args: []);
   }
@@ -82,6 +87,11 @@ class S {
   /// ``
   String get homeNames {
     return Intl.message('', name: 'homeNames', desc: '', args: []);
+  }
+
+  /// ``
+  String get ahsaan {
+    return Intl.message('', name: 'ahsaan', desc: '', args: []);
   }
 
   /// ``

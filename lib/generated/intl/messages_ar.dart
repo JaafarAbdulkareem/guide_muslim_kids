@@ -37,13 +37,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "afterWudu": MessageLookupByLibrary.simpleMessage(
       "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
     ),
-    "appName": MessageLookupByLibrary.simpleMessage("نور الجيل"),
+    "ahsaan": MessageLookupByLibrary.simpleMessage(
+      "أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ.",
+    ),
     "alertNoDataProvided": MessageLookupByLibrary.simpleMessage(
       "عذرًا، لا توجد بيانات للعرض 😅",
     ),
     "alertTryAgain": MessageLookupByLibrary.simpleMessage(
       "أوه لا! 🐥 دعنا نعيد المحاولة!",
     ),
+    "appName": MessageLookupByLibrary.simpleMessage("نور الجيل"),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "beforeSalam": MessageLookupByLibrary.simpleMessage(
       "اللَّهُــمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
@@ -359,6 +362,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
     ),
     "homeAzkar": MessageLookupByLibrary.simpleMessage("الأذكار اليومية"),
+    "homeMaratibAdDeen": MessageLookupByLibrary.simpleMessage("مراتب الدين"),
     "homeNames": MessageLookupByLibrary.simpleMessage("أسماء الله الحسنى"),
     "homeSalah": MessageLookupByLibrary.simpleMessage("الصلاة"),
     "homeSawm": MessageLookupByLibrary.simpleMessage("الصوم"),
