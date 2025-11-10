@@ -12,6 +12,10 @@ class AppImage {
 
   static const String imagesAfterWudu = "assets/images/afterWudu.webp";
 
+  static const String imagesAlayman = "assets/images/alayman.jpg";
+
+  static const String imagesAldeen = "assets/images/aldeen.webp";
+
   static const String imagesAthkarDaily = "assets/images/athkarDaily.webp";
 
   static const String imagesBeforeEating = "assets/images/beforeEating.webp";
@@ -37,6 +41,8 @@ class AppImage {
   static const String imagesIftarAtHome = "assets/images/iftarAtHome.webp";
 
   static const String imagesIftarSupplication = "assets/images/iftarSupplication.webp";
+
+  static const String imagesIslam = "assets/images/islam.png";
 
   static const String imagesKafaratAlMajlis = "assets/images/kafaratAlMajlis.webp";
 
