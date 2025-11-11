@@ -70,9 +70,7 @@ extension RouteX on String {
 
   static Route<dynamic> _defaultRouteBuilder(RouteSettings settings) {
     log('No onGenerateRoute provided. Animated named routes require it.');
-    throw Exception(
-      S.current.alertTryAgain
-    );
+    throw Exception(S.current.alertTryAgain);
   }
 }
 
