@@ -14,6 +14,7 @@ class HomeItem extends StatelessWidget {
         data.pageName.pushNamed(context);
       },
       child: Card(
+        color: Theme.of(context).cardColor,
         clipBehavior: Clip.antiAlias,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         child: Stack(
