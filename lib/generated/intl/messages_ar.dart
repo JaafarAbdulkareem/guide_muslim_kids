@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Ihsan": MessageLookupByLibrary.simpleMessage(
+      "أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ.",
+    ),
     "aboutCenterAddress": MessageLookupByLibrary.simpleMessage("تريم - عيديد"),
     "aboutCenterName": MessageLookupByLibrary.simpleMessage(
       "مركز المعرفة لتعليم القراءة والكتابة بمسجد البشائر",
@@ -83,6 +86,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "afterWudu": MessageLookupByLibrary.simpleMessage(
       "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
     ),
+    "aldeenIhsan": MessageLookupByLibrary.simpleMessage("ركن الإحسان"),
+    "aldeenIman": MessageLookupByLibrary.simpleMessage("أركان الإيمان"),
+    "aldeenIslam": MessageLookupByLibrary.simpleMessage("أركان الإسلام"),
     "alertNoDataProvided": MessageLookupByLibrary.simpleMessage(
       "عذرًا، لا توجد بيانات للعرض 😅",
     ),

@@ -7,6 +7,11 @@ import 'package:guide_muslim_kids/generated/l10n.dart';
 List<HomeEntity> getDataHome(BuildContext context) {
   final s = S.of(context);
   return [
+    const HomeEntity(
+      image: AppImage.imagesAldeen,
+      title: "",
+      pageName: RouteName.aldeen,
+    ),
     HomeEntity(
       image: AppImage.imagesAthkarDaily,
       title: s.homeAzkar,

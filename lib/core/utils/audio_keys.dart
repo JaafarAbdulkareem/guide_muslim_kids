@@ -41,4 +41,7 @@ class AudioKeys {
   static const fastingArgumentResponse = '$_path/fastingArgumentResponse.mp3';
   static const iftarAtHome = '$_path/iftarAtHome.mp3';
   static const seeingCrescent = '$_path/seeingCrescent.mp3';
+  static const islam = '$_path/islam.mp3';
+  static const iman = '$_path/iman.mp3';
+  static const ihsan = '$_path/ihsan.mp3';
 }

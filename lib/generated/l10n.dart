@@ -90,6 +90,26 @@ class S {
   }
 
   /// ``
+  String get aldeenIslam {
+    return Intl.message('', name: 'aldeenIslam', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIman {
+    return Intl.message('', name: 'aldeenIman', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIhsan {
+    return Intl.message('', name: 'aldeenIhsan', desc: '', args: []);
+  }
+
+  /// ``
+  String get Ihsan {
+    return Intl.message('', name: 'Ihsan', desc: '', args: []);
+  }
+
+  /// ``
   String get titleSleeping {
     return Intl.message('', name: 'titleSleeping', desc: '', args: []);
   }
