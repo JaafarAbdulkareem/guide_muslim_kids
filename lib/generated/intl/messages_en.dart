@@ -22,12 +22,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "Ihsan": MessageLookupByLibrary.simpleMessage(""),
     "adhan": MessageLookupByLibrary.simpleMessage(""),
     "afterEating": MessageLookupByLibrary.simpleMessage(""),
     "afterPrayer": MessageLookupByLibrary.simpleMessage(""),
     "afterRainfall": MessageLookupByLibrary.simpleMessage(""),
     "afterWudu": MessageLookupByLibrary.simpleMessage(""),
-    "ahsaan": MessageLookupByLibrary.simpleMessage(""),
+    "aldeenIhsan": MessageLookupByLibrary.simpleMessage(""),
+    "aldeenIman": MessageLookupByLibrary.simpleMessage(""),
+    "aldeenIslam": MessageLookupByLibrary.simpleMessage(""),
     "alertNoDataProvided": MessageLookupByLibrary.simpleMessage(""),
     "alertTryAgain": MessageLookupByLibrary.simpleMessage(""),
     "appName": MessageLookupByLibrary.simpleMessage(""),
@@ -140,7 +143,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "firstTashahhud": MessageLookupByLibrary.simpleMessage(""),
     "hearingThunder": MessageLookupByLibrary.simpleMessage(""),
     "homeAzkar": MessageLookupByLibrary.simpleMessage(""),
-    "homeMaratibAdDeen": MessageLookupByLibrary.simpleMessage(""),
     "homeNames": MessageLookupByLibrary.simpleMessage(""),
     "homeSalah": MessageLookupByLibrary.simpleMessage(""),
     "homeSawm": MessageLookupByLibrary.simpleMessage(""),

@@ -65,11 +65,6 @@ class S {
   }
 
   /// ``
-  String get homeMaratibAdDeen {
-    return Intl.message('', name: 'homeMaratibAdDeen', desc: '', args: []);
-  }
-
-  /// ``
   String get homeAzkar {
     return Intl.message('', name: 'homeAzkar', desc: '', args: []);
   }
@@ -90,8 +85,23 @@ class S {
   }
 
   /// ``
-  String get ahsaan {
-    return Intl.message('', name: 'ahsaan', desc: '', args: []);
+  String get aldeenIslam {
+    return Intl.message('', name: 'aldeenIslam', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIman {
+    return Intl.message('', name: 'aldeenIman', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIhsan {
+    return Intl.message('', name: 'aldeenIhsan', desc: '', args: []);
+  }
+
+  /// ``
+  String get Ihsan {
+    return Intl.message('', name: 'Ihsan', desc: '', args: []);
   }
 
   /// ``
