@@ -50,7 +50,10 @@ class SplashViewState extends State<SplashView>
       body: BlocListener<SplashBloc, SplashState>(
         listener: (context, state) {
           if (state is SplashCompleted) {
-            RouteName.home.pushReplacementNamed(context);
+            RouteName.home.pushReplacementAnimatedNamed(
+              context,
+              type: RouteType.fade,
+            );
           }
         },
         child: Center(

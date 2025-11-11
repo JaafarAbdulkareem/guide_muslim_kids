@@ -11,7 +11,7 @@ class HomeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        data.pageName.pushNamed(context);
+        data.pageName.pushAnimatedNamed(context);
       },
       child: Card(
         color: Theme.of(context).cardColor,

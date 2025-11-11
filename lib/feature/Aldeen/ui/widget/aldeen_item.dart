@@ -17,7 +17,7 @@ class AldeenItem extends StatelessWidget {
       aspectRatio: 4,
       child: GestureDetector(
         onTap: () {
-          RouteName.aldeenDetails.pushNamed(context, arguments: data);
+          RouteName.aldeenDetails.pushAnimatedNamed(context, arguments: data);
         },
         child: Container(
           padding: const EdgeInsets.all(8),

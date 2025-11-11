@@ -16,7 +16,7 @@ class AthkarItem extends StatelessWidget {
       aspectRatio: 4,
       child: GestureDetector(
         onTap: () {
-          RouteName.dailyDetails.pushNamed(context, arguments: data);
+          RouteName.dailyDetails.pushAnimatedNamed(context, arguments: data);
         },
         child: Container(
           padding: const EdgeInsets.all(8),
