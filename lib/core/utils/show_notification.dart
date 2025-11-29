@@ -82,4 +82,19 @@ class ShowNotification {
       },
     );
   }
+
+  static void showFeedbackSnackBar(BuildContext context, bool isCorrect) {
+    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          isCorrect ? "أحسنت! إجابة صحيحة" : "انتبه! هذه الكلمة لا تحتوي على سكون",
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: isCorrect ? Colors.green : Colors.redAccent,
+        duration: Duration(milliseconds: isCorrect ? 1000 : 1500),
+        behavior: SnackBarBehavior.floating,
+      ),
+    );
+  }
 }
