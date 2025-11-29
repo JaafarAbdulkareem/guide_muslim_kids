@@ -46,5 +46,10 @@
     "sneezing": "",
     "visitingSick": "",
     "kafaratAlMajlis": "",
-    "dogsBarking": ""
+    "dogsBarking": "",
+    "questionContectLetter": "",
+    "dialogTitleCorrect": "",
+    "dialogTitleIncorrect": "",
+    "dialogMessageCorrect": "",
+    "dialogMessageIncorrect": ""
 }

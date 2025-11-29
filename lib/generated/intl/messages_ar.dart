@@ -36,6 +36,16 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "beforeWudu": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
+    "dialogMessageCorrect": MessageLookupByLibrary.simpleMessage(
+      "أنت بطل! لقد قمت بوصل الحروف بشكل صحيح.",
+    ),
+    "dialogMessageIncorrect": MessageLookupByLibrary.simpleMessage(
+      "لا بأس! هذه الحروف تحتاج مزيداً من التدريب.",
+    ),
+    "dialogTitleCorrect": MessageLookupByLibrary.simpleMessage("مـمـتـاز! 🎉"),
+    "dialogTitleIncorrect": MessageLookupByLibrary.simpleMessage(
+      "حاول مجدداً 🧐",
+    ),
     "dogsBarking": MessageLookupByLibrary.simpleMessage(
       "أَعُوذُ بِاللَّهِ الْعَظِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
@@ -64,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "questionContectLetter": MessageLookupByLibrary.simpleMessage(""),
     "rainfall": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ صَيِّباً نَافِعاً",
     ),

@@ -293,6 +293,31 @@ class S {
   String get dogsBarking {
     return Intl.message('', name: 'dogsBarking', desc: '', args: []);
   }
+
+  /// ``
+  String get questionContectLetter {
+    return Intl.message('', name: 'questionContectLetter', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogTitleCorrect {
+    return Intl.message('', name: 'dialogTitleCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogTitleIncorrect {
+    return Intl.message('', name: 'dialogTitleIncorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogMessageCorrect {
+    return Intl.message('', name: 'dialogMessageCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogMessageIncorrect {
+    return Intl.message('', name: 'dialogMessageIncorrect', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
