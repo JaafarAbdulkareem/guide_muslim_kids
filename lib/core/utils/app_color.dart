@@ -5,4 +5,13 @@ class AppColor {
   static const scaffoldBackgroundColor = Color(0xFFFFFFFF);
   static const athkarContainTap = Color(0xFFccb992);
   static const audioButton = Color(0xFFFFFFFF);
+  static const questionCard = Color(0xFFF6FBFB);
+  static const lettersBackground = Color(0xFFE0F2F1);
+  static const lettersBorder = Color(0xFF80CBC4);
+  static const lettersText = Color(0xFF009688);
+  static const letterButtonBackground = Color(0xFFFFFFFF);
+  static const correctBorder = Color(0xFF388E3C);
+  static const incorrectBorder = Color(0xFFD32F2F);
+  static const correctBackground = Color(0xFFF1F8E9);
+  static const incorrectBackground = Color(0xFFFFEBEE);
 }
