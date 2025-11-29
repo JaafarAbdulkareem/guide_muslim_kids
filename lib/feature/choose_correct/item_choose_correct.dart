@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/choose_correct/logic/entities/choose_correct_entity.dart';
 import 'package:guide_muslim_kids/feature/choose_correct/logic/manage/cubit/choose_correct_cubit.dart';
-import 'package:guide_muslim_kids/feature/choose_correct/ui/widget/grid_word_choose_correct.dart';
-import 'package:guide_muslim_kids/feature/choose_correct/ui/widget/question_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/choose_correct/widget/grid_word_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/choose_correct/widget/question_choose_correct.dart';
 
 class ItemChooseCorrect extends StatelessWidget {
   final String question;
