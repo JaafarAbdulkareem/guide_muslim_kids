@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guide_muslim_kids/feature/game/logic/entities/question_two_button_entity.dart';
+import 'package:guide_muslim_kids/feature/game/two_button/logic/entities/question_two_button_entity.dart';
 
 part 'question_two_button_state.dart';
 
