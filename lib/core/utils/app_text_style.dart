@@ -2,8 +2,47 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 
 class AppTextStyle {
+  //charDrop
+  static TextStyle fontBold65(BuildContext context) {
+    return Theme.of(context).textTheme.headlineMedium?.copyWith(
+          fontSize: 65,
+          fontWeight: FontWeight.bold,
+        ) ??
+        TextStyle(fontSize: 65, fontWeight: FontWeight.bold);
+  }
+
+  //wordDrop
+  static TextStyle fontthick48(BuildContext context) {
+    return Theme.of(context).textTheme.headlineMedium?.copyWith(
+          fontSize: 48,
+          fontWeight: FontWeight.w900,
+          color: AppColor.lettersText,
+          letterSpacing: 2.0,
+        ) ??
+        const TextStyle(
+          fontSize: 48,
+          fontWeight: FontWeight.w900,
+          color: AppColor.lettersText,
+          letterSpacing: 2.0,
+        );
+  }
+
+  //mutaharrik sakin
+  static TextStyle fontSemiBold48(BuildContext context) {
+    return Theme.of(context).textTheme.headlineMedium?.copyWith(
+          fontSize: 48,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 2.0,
+        ) ??
+        const TextStyle(
+          fontSize: 48,
+          fontWeight: FontWeight.w600,
+          letterSpacing: 2.0,
+        );
+  }
+
+  //letters game
   static TextStyle fontthick32(BuildContext context) {
-    //letters game
     return Theme.of(context).textTheme.titleLarge?.copyWith(
           fontSize: 32,
           fontWeight: FontWeight.w900,
@@ -34,5 +73,19 @@ class AppTextStyle {
           fontSize: 20,
         ) ??
         const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
+  }
+
+  //instracture
+  static TextStyle fontSemiBold16(BuildContext context) {
+    return Theme.of(context).textTheme.bodyLarge?.copyWith(
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+          color: AppColor.lettersBorder,
+        ) ??
+        TextStyle(
+          fontWeight: FontWeight.w600,
+          fontSize: 16,
+          color: AppColor.lettersBorder,
+        );
   }
 }
