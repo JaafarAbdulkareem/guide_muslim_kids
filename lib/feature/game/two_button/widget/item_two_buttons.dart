@@ -8,40 +8,12 @@ import 'package:guide_muslim_kids/feature/game/two_button/widget/letter_containe
 import 'package:guide_muslim_kids/feature/game/two_button/widget/question_title.dart';
 import 'package:guide_muslim_kids/feature/game/two_button/widget/two_answer_button.dart';
 
-class QuizPage extends StatelessWidget {
-  const QuizPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    // We provide the Cubit to the widget tree here
-    return BlocProvider(
-      create: (context) => QuestionTwoButtonCubit(),
-      child: const Scaffold(
-        backgroundColor: Color(0xFFF5F5F5),
-        body: Center(
-          child: Padding(
-            padding: EdgeInsets.all(20.0),
-            child: ItemTwoButtons(),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
 class ItemTwoButtons extends StatelessWidget {
-  const ItemTwoButtons({super.key});
-
+  const ItemTwoButtons({super.key, required this.data});
+  final QuestionTwoButtonEntity data;
   @override
   Widget build(BuildContext context) {
     // Define the question data here (or pass it in from a repository)
-    const question = QuestionTwoButtonEntity(
-      instruction: "صل بين الحروف",
-      letters: "غ - س - ل",
-      optionA: "غسل", // Correct
-      optionB: "غس ل", // Wrong
-      correctOption: "غسل",
-    );
 
     return BlocListener<QuestionTwoButtonCubit, QuestionTwoButtonState>(
       listener: (context, state) {
@@ -62,15 +34,15 @@ class ItemTwoButtons extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Instruction Text
-              QuestionTitle(question: question.instruction),
+              QuestionTitle(question: data.instruction),
               const SizedBox(height: 20),
 
               // The Letters Container
-              LetterContainer(letters: question.letters),
+              LetterContainer(letters: data.letters),
               const SizedBox(height: 40),
 
               // Buttons Row
-              TwoAnswerButton(question: question),
+              TwoAnswerButton(question: data),
             ],
           ),
         ),
