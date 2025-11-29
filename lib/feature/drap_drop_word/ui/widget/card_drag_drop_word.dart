@@ -52,7 +52,7 @@ class CardDragDropWord extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            AppIcon.done,
+            AppIcon.check,
             size: 80,
             color: AppColor.lettersText.withValues(alpha: 0.5),
           ),
