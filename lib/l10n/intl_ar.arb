@@ -55,5 +55,6 @@
     "instructionsDragWord": "اسحب البطاقة العلوية إلى الصندوق الصحيح",
     "doneDragging": "ممتاز!",
     "letterSakin": "الحرف ساكن",
-    "letterMutaharrik": "الحرف متحرك"
+    "letterMutaharrik": "الحرف متحرك",
+    "questionChooseSakin": "استخرج الكلمات التي فيها سكون"
 }

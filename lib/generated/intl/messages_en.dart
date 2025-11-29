@@ -46,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(""),
     "letterMutaharrik": MessageLookupByLibrary.simpleMessage(""),
     "letterSakin": MessageLookupByLibrary.simpleMessage(""),
+    "questionChooseSakin": MessageLookupByLibrary.simpleMessage(""),
     "questionContectLetter": MessageLookupByLibrary.simpleMessage(""),
     "rainfall": MessageLookupByLibrary.simpleMessage(""),
     "ridingCar": MessageLookupByLibrary.simpleMessage(""),

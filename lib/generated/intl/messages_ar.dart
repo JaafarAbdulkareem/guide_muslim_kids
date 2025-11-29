@@ -80,6 +80,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "letterMutaharrik": MessageLookupByLibrary.simpleMessage("الحرف متحرك"),
     "letterSakin": MessageLookupByLibrary.simpleMessage("الحرف ساكن"),
+    "questionChooseSakin": MessageLookupByLibrary.simpleMessage(
+      "استخرج الكلمات التي فيها سكون",
+    ),
     "questionContectLetter": MessageLookupByLibrary.simpleMessage(""),
     "rainfall": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ صَيِّباً نَافِعاً",

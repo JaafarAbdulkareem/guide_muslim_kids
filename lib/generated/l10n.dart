@@ -338,6 +338,11 @@ class S {
   String get letterMutaharrik {
     return Intl.message('', name: 'letterMutaharrik', desc: '', args: []);
   }
+
+  /// ``
+  String get questionChooseSakin {
+    return Intl.message('', name: 'questionChooseSakin', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
