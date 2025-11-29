@@ -51,5 +51,9 @@
     "dialogTitleCorrect": "مـمـتـاز! 🎉",
     "dialogTitleIncorrect": "حاول مجدداً 🧐",
     "dialogMessageCorrect": "أنت بطل! لقد قمت بوصل الحروف بشكل صحيح.",
-    "dialogMessageIncorrect": "لا بأس! هذه الحروف تحتاج مزيداً من التدريب."
+    "dialogMessageIncorrect": "لا بأس! هذه الحروف تحتاج مزيداً من التدريب.",
+    "instructionsDragWord": "اسحب البطاقة العلوية إلى الصندوق الصحيح",
+    "doneDragging": "ممتاز!",
+    "letterSakin": "الحرف ساكن",
+    "letterMutaharrik": "الحرف متحرك"
 }

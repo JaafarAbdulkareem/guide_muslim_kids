@@ -14,4 +14,9 @@ class AppColor {
   static const incorrectBorder = Color(0xFFD32F2F);
   static const correctBackground = Color(0xFFF1F8E9);
   static const incorrectBackground = Color(0xFFFFEBEE);
+  static const dragging = Color(0xFFFFC107);
+  static const dropZoneBorderSakin = Color(0xFFFF9800);
+  static const dropZoneBGSakin = Color(0xFFFFF3E0);
+  static const dropZoneBorderMutaharrik = Color(0xFF2196F3);
+  static const dropZoneBGMutaharrik = Color(0xFFE3F2FD);
 }

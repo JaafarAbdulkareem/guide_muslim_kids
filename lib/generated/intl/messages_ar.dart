@@ -49,6 +49,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "dogsBarking": MessageLookupByLibrary.simpleMessage(
       "أَعُوذُ بِاللَّهِ الْعَظِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "doneDragging": MessageLookupByLibrary.simpleMessage("ممتاز!"),
     "enteringBathroom": MessageLookupByLibrary.simpleMessage(
       "[بِسْمِ اللَّهِ] اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبائِث",
     ),
@@ -64,6 +65,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "hearingThunder": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
     ),
+    "instructionsDragWord": MessageLookupByLibrary.simpleMessage(
+      "اسحب البطاقة العلوية إلى الصندوق الصحيح",
+    ),
     "kafaratAlMajlis": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
     ),
@@ -74,6 +78,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "letterMutaharrik": MessageLookupByLibrary.simpleMessage("الحرف متحرك"),
+    "letterSakin": MessageLookupByLibrary.simpleMessage("الحرف ساكن"),
     "questionContectLetter": MessageLookupByLibrary.simpleMessage(""),
     "rainfall": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ صَيِّباً نَافِعاً",
