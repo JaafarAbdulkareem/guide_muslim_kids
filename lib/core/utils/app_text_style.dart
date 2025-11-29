@@ -18,6 +18,20 @@ class AppTextStyle {
         );
   }
 
+//chooseCorrectWords
+  static TextStyle fontSemiBold32(BuildContext context) {
+    return Theme.of(context).textTheme.titleLarge?.copyWith(
+          fontSize: 32,
+          fontWeight: FontWeight.w600,
+          color: AppColor.lettersText,
+        ) ??
+        TextStyle(
+          fontSize: 32,
+          fontWeight: FontWeight.w600,
+          color: AppColor.lettersText,
+        );
+  }
+
   /// TitleAthkar
   static TextStyle fontBold24(BuildContext context) {
     return Theme.of(context).textTheme.titleLarge?.copyWith(
