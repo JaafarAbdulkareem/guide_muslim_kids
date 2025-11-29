@@ -1,4 +1,4 @@
-import 'package:guide_muslim_kids/feature/drap_drop_word/logic/entities/letter_item_entity.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/entities/letter_item_entity.dart';
 
 class DragDropEntity {
   final String word;

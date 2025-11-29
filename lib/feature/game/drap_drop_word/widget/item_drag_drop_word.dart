@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/logic/entities/drag_drop_entity.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/logic/manage/cubit/drap_drop_word_cubit.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/widget/card_drag_drop_word.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/widget/drop_zones.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/widget/title_word_drag_drop.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/entities/drag_drop_entity.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/manage/cubit/drap_drop_word_cubit.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/card_drag_drop_word.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/drop_zones.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/title_word_drag_drop.dart';
 
 class SortingGamePage extends StatelessWidget {
   const SortingGamePage({super.key, required this.levelData});

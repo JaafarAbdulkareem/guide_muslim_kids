@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/logic/entities/drag_drop_entity.dart';
-import 'package:guide_muslim_kids/feature/drap_drop_word/logic/entities/letter_item_entity.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/entities/drag_drop_entity.dart';
+import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/entities/letter_item_entity.dart';
 
 part 'drap_drop_word_state.dart';
 
