@@ -51,5 +51,9 @@
     "dialogTitleCorrect": "",
     "dialogTitleIncorrect": "",
     "dialogMessageCorrect": "",
-    "dialogMessageIncorrect": ""
+    "dialogMessageIncorrect": "",
+    "instructionsDragWord": "",
+    "doneDragging": "",
+    "letterSakin": "",
+    "letterMutaharrik": ""
 }

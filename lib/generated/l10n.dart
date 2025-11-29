@@ -318,6 +318,26 @@ class S {
   String get dialogMessageIncorrect {
     return Intl.message('', name: 'dialogMessageIncorrect', desc: '', args: []);
   }
+
+  /// ``
+  String get instructionsDragWord {
+    return Intl.message('', name: 'instructionsDragWord', desc: '', args: []);
+  }
+
+  /// ``
+  String get doneDragging {
+    return Intl.message('', name: 'doneDragging', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterSakin {
+    return Intl.message('', name: 'letterSakin', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterMutaharrik {
+    return Intl.message('', name: 'letterMutaharrik', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
