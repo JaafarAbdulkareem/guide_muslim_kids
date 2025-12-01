@@ -12,7 +12,7 @@ class TitleWordDragDrop extends StatelessWidget {
 
         const SizedBox(height: 10),
         Text(
-          "اسحب البطاقة العلوية إلى الصندوق الصحيح",
+          "اسحب البطاقة العلوية إلى الصندوق الصحيح",//S.of(context).instructionsDragWord,
           style: AppTextStyle.fontSemiBold16(context),
         ),
       ],

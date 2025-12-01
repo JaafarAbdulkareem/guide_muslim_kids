@@ -15,7 +15,7 @@ class DropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "الحرف ساكن",
+            label: "الحرف ساكن", //S.of(context).letterSakin
             color: AppColor.dropZoneBGSakin,
             borderColor: AppColor.dropZoneBorderSakin,
             type: LetterType.sakin,
@@ -24,7 +24,7 @@ class DropZones extends StatelessWidget {
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: "الحرف متحرك",
+            label: "الحرف متحرك", //S.of(context).letterMutaharrik
             color: AppColor.dropZoneBGMutaharrik,
             borderColor: AppColor.dropZoneBorderMutaharrik,
             type: LetterType.mutaharrik,
