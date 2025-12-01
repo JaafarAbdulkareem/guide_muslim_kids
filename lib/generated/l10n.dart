@@ -295,11 +295,6 @@ class S {
   }
 
   /// ``
-  String get questionContectLetter {
-    return Intl.message('', name: 'questionContectLetter', desc: '', args: []);
-  }
-
-  /// ``
   String get dialogTitleCorrect {
     return Intl.message('', name: 'dialogTitleCorrect', desc: '', args: []);
   }
@@ -320,13 +315,28 @@ class S {
   }
 
   /// ``
+  String get doneDragging {
+    return Intl.message('', name: 'doneDragging', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionTWoOption {
+    return Intl.message('', name: 'instructionTWoOption', desc: '', args: []);
+  }
+
+  /// ``
   String get instructionsDragWord {
     return Intl.message('', name: 'instructionsDragWord', desc: '', args: []);
   }
 
   /// ``
-  String get doneDragging {
-    return Intl.message('', name: 'doneDragging', desc: '', args: []);
+  String get instructionChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionChooseCorrect',
+      desc: '',
+      args: [],
+    );
   }
 
   /// ``
@@ -340,8 +350,43 @@ class S {
   }
 
   /// ``
-  String get questionChooseSakin {
-    return Intl.message('', name: 'questionChooseSakin', desc: '', args: []);
+  String get firstLevel {
+    return Intl.message('', name: 'firstLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get secondLevel {
+    return Intl.message('', name: 'secondLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get thirdLevel {
+    return Intl.message('', name: 'thirdLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get stage {
+    return Intl.message('', name: 'stage', desc: '', args: []);
+  }
+
+  /// ``
+  String get studentStage {
+    return Intl.message('', name: 'studentStage', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonFinish {
+    return Intl.message('', name: 'buttonFinish', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonNext {
+    return Intl.message('', name: 'buttonNext', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonClose {
+    return Intl.message('', name: 'buttonClose', desc: '', args: []);
   }
 }
 

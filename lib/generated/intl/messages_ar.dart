@@ -36,11 +36,14 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "beforeWudu": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
+    "buttonClose": MessageLookupByLibrary.simpleMessage("إغلاق"),
+    "buttonFinish": MessageLookupByLibrary.simpleMessage("إنهاء"),
+    "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
     "dialogMessageCorrect": MessageLookupByLibrary.simpleMessage(
-      "أنت بطل! لقد قمت بوصل الحروف بشكل صحيح.",
+      "أنت بطل! إجابة صحيحة.",
     ),
     "dialogMessageIncorrect": MessageLookupByLibrary.simpleMessage(
-      "لا بأس! هذه الحروف تحتاج مزيداً من التدريب.",
+      "لا بأس! حاول مرة أخرى.",
     ),
     "dialogTitleCorrect": MessageLookupByLibrary.simpleMessage("مـمـتـاز! 🎉"),
     "dialogTitleIncorrect": MessageLookupByLibrary.simpleMessage(
@@ -62,8 +65,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "enteringMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ، وَالصَّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
     ),
+    "firstLevel": MessageLookupByLibrary.simpleMessage("المستوى الاول"),
     "hearingThunder": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
+    ),
+    "instructionChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمة الصحيحة",
+    ),
+    "instructionTWoOption": MessageLookupByLibrary.simpleMessage(
+      "صل بين الحروف",
     ),
     "instructionsDragWord": MessageLookupByLibrary.simpleMessage(
       "اسحب البطاقة العلوية إلى الصندوق الصحيح",
@@ -78,24 +88,24 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
-    "letterMutaharrik": MessageLookupByLibrary.simpleMessage("الحرف متحرك"),
+    "letterMutaharrik": MessageLookupByLibrary.simpleMessage("الحرف المتحرك"),
     "letterSakin": MessageLookupByLibrary.simpleMessage("الحرف ساكن"),
-    "questionChooseSakin": MessageLookupByLibrary.simpleMessage(
-      "استخرج الكلمات التي فيها سكون",
-    ),
-    "questionContectLetter": MessageLookupByLibrary.simpleMessage(""),
     "rainfall": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ صَيِّباً نَافِعاً",
     ),
     "ridingCar": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ، وَالْحَمْدُ للَّهِ سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ، وَإِنَّا إِلَى رَبِّنَا لَمُنقَلِبُونَ",
     ),
+    "secondLevel": MessageLookupByLibrary.simpleMessage("المستوى الثاني"),
     "sleeping": MessageLookupByLibrary.simpleMessage(
       "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِن أَمْسَكْتَ نَفْسِي فارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
     ),
     "sneezing": MessageLookupByLibrary.simpleMessage(
       "إِذَا عَطَسَ أَحَدُكُم فَلْيَقُلِ الْحَمْدُ لِلَّهِ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ: يَرْحَمُكَ اللَّهُ، فَإِذَا قَالَ لَهُ: يَرحَمُكَ اللَّهُ، فَلْيَقُلْ: يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
     ),
+    "stage": MessageLookupByLibrary.simpleMessage("المرحلة"),
+    "studentStage": MessageLookupByLibrary.simpleMessage("الطالب في المرحلة: "),
+    "thirdLevel": MessageLookupByLibrary.simpleMessage("المستوى الثالث"),
     "titleAdhan": MessageLookupByLibrary.simpleMessage("دعاء الأذان"),
     "titleAfterEating": MessageLookupByLibrary.simpleMessage("دعاء بعد الطعام"),
     "titleAfterRainfall": MessageLookupByLibrary.simpleMessage(
