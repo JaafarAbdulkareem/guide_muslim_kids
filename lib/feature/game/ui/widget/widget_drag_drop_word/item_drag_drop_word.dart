@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/drag_drop_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/drag_drop_word_cubit/drag_drop_word_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/card_drag_drop_word.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/drop_zones.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/title_word_drag_drop.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/card_drag_drop_word.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/drop_zones.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/title_word_drag_drop.dart';
 
 class SortingGamePage extends StatelessWidget {
   const SortingGamePage({

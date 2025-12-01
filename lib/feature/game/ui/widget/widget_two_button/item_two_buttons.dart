@@ -4,9 +4,9 @@ import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/question_two_button_cubit/question_two_button_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/two_button/widget/letter_container.dart';
-import 'package:guide_muslim_kids/feature/game/two_button/widget/question_title.dart';
-import 'package:guide_muslim_kids/feature/game/two_button/widget/two_answer_button.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/letter_container.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/question_title.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/two_answer_button.dart';
 
 class ItemTwoButtons extends StatelessWidget {
   const ItemTwoButtons({

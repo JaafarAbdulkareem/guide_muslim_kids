@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/char_letter_card.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/char_letter_card.dart';
 
 class DraggableLetterCard extends StatelessWidget {
   final LetterItemEntity letter;

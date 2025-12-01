@@ -4,8 +4,8 @@ import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/choose_correct_cubit/choose_correct_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/choose_correct/widget/grid_word_choose_correct.dart';
-import 'package:guide_muslim_kids/feature/game/choose_correct/widget/question_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_choose_correct/grid_word_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_choose_correct/question_choose_correct.dart';
 
 // class ItemChooseCorrect extends StatelessWidget {
 //   final String question;

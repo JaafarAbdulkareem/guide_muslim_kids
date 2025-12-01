@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/question_two_button_cubit/question_two_button_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/two_button/widget/answer_button.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/answer_button.dart';
 
 class TwoAnswerButton extends StatelessWidget {
   const TwoAnswerButton({super.key, required this.question});

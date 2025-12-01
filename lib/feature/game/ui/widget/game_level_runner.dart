@@ -3,14 +3,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
-import 'package:guide_muslim_kids/feature/game/choose_correct/widget/item_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_choose_correct/item_choose_correct.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/drag_drop_entity.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/item_drag_drop_word.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/item_drag_drop_word.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
-import 'package:guide_muslim_kids/feature/game/two_button/widget/item_two_buttons.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/item_two_buttons.dart';
 
 class GameLevelRunner extends StatefulWidget {
   final GameLevelEntity level;

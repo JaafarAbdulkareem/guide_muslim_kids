@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
-import 'package:guide_muslim_kids/core/widget/game_level_runner.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/game_level_runner.dart';
 
 class ItemGameLevel extends StatelessWidget {
   const ItemGameLevel({

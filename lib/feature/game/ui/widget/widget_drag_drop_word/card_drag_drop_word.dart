@@ -3,8 +3,8 @@ import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/draggable_letter_card.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/char_letter_card.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/draggable_letter_card.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/char_letter_card.dart';
 
 class CardDragDropWord extends StatelessWidget {
   const CardDragDropWord({super.key, required this.remainingLetters});

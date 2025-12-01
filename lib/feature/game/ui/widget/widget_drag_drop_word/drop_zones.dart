@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/target_box.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
 
 class DropZones extends StatelessWidget {
   const DropZones({super.key});
