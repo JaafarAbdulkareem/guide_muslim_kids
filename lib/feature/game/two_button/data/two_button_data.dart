@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/feature/game/two_button/logic/entities/question_two_button_entity.dart';
 import 'dart:math';
 
-List<QuestionTwoButtonEntity> getDataTwoButtonsDAata(BuildContext context) {
+List<QuestionTwoButtonEntity> getDataTwoButtons(BuildContext context) {
   final random = Random();
-
+//final String instruction = S.of(context).instructionTWoOption;
   List<QuestionTwoButtonEntity> data = [
     // Question 1 (updated letters: ح - ف - ر)
     () {
