@@ -3,16 +3,16 @@ import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/drag_drop_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 
-part 'drap_drop_word_state.dart';
+part 'drag_drop_word_state.dart';
 
-class DrapDropWordCubit extends Cubit<DrapDropWordState> {
+class DragDropWordCubit extends Cubit<DragDropWordState> {
   final DragDropEntity levelData;
 
   // Public list to access from UI directly.
   // Last item in this list is the "Top" card in the UI Stack.
   List<LetterItemEntity> remainingLetters = [];
 
-  DrapDropWordCubit({required this.levelData}) : super(GamePlaying()) {
+  DragDropWordCubit({required this.levelData}) : super(GamePlaying()) {
     _initGame();
   }
 

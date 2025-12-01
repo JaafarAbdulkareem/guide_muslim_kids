@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/drag_drop_entity.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/manage/cubit/drap_drop_word_cubit.dart';
+import 'package:guide_muslim_kids/feature/game/logic/manage/drag_drop_word_cubit/drag_drop_word_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/card_drag_drop_word.dart';
 import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/drop_zones.dart';
 import 'package:guide_muslim_kids/feature/game/drap_drop_word/widget/title_word_drag_drop.dart';
@@ -20,10 +20,10 @@ class SortingGamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => DrapDropWordCubit(levelData: levelData),
+      create: (_) => DragDropWordCubit(levelData: levelData),
       child: LayoutBuilder(
         builder: (context, constraints) {
-          return BlocConsumer<DrapDropWordCubit, DrapDropWordState>(
+          return BlocConsumer<DragDropWordCubit, DragDropWordState>(
             listener: (context, state) {
               if (state is GameCompleted) {
                 ShowNotification.showAnswerDialog(
@@ -36,7 +36,7 @@ class SortingGamePage extends StatelessWidget {
             },
             builder: (context, state) {
               final remainingLetters = context
-                  .watch<DrapDropWordCubit>()
+                  .watch<DragDropWordCubit>()
                   .remainingLetters;
 
               return Column(

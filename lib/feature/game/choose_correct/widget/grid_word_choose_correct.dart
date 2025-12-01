@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
-import 'package:guide_muslim_kids/feature/game/choose_correct/logic/manage/cubit/choose_correct_cubit.dart';
+import 'package:guide_muslim_kids/feature/game/logic/manage/choose_correct_cubit/choose_correct_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/choose_correct/widget/card_word_choose_correct.dart';
 
 class GridWordChooseCorrect extends StatelessWidget {
