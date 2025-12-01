@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
-import 'package:guide_muslim_kids/feature/game/data/data_game_first_level.dart';
+import 'package:guide_muslim_kids/feature/game/data/data_first_level/data_game_first_level.dart';
 
 class StageHeader extends StatelessWidget {
   final String title;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guide_muslim_kids/feature/game/data/data_game_first_level.dart';
+import 'package:guide_muslim_kids/feature/game/data/data_first_level/data_game_first_level.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/item_game_level.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/stage_header.dart';
