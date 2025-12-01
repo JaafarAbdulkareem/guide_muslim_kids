@@ -71,6 +71,20 @@ class AppTextStyle {
         );
   }
 
+  //titleStage
+  static TextStyle fontBold28(BuildContext context) {
+    return Theme.of(context).textTheme.titleLarge?.copyWith(
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        ) ??
+        TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,
+        );
+  }
+
   /// TitleAthkar
   static TextStyle fontBold24(BuildContext context) {
     return Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -89,7 +103,7 @@ class AppTextStyle {
         const TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   }
 
-  //instracture
+  //instracture, studentLevel
   static TextStyle fontSemiBold16(BuildContext context) {
     return Theme.of(context).textTheme.bodyLarge?.copyWith(
           fontWeight: FontWeight.w600,

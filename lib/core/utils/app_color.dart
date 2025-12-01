@@ -19,4 +19,7 @@ class AppColor {
   static const dropZoneBGSakin = Color(0xFFFFF3E0);
   static const dropZoneBorderMutaharrik = Color(0xFF2196F3);
   static const dropZoneBGMutaharrik = Color(0xFFE3F2FD);
+  static const shadowLevelItem = Color(0xFFD32F2F);
+    static const bgLevelItem = Color(0xFFFF9800);
+
 }
