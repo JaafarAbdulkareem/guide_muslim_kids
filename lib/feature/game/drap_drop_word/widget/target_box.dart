@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
-import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/entities/letter_item_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/drap_drop_word/logic/manage/cubit/drap_drop_word_cubit.dart';
 
 class TargetBox extends StatelessWidget {

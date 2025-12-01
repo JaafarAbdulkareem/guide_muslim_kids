@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
-import 'package:guide_muslim_kids/feature/game/choose_correct/logic/entities/choose_correct_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 
 class CardWordChooseCorrect extends StatelessWidget {
   final ChooseCorrectEntity word;

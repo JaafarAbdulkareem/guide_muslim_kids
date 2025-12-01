@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guide_muslim_kids/feature/game/choose_correct/logic/entities/choose_correct_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 
 part 'choose_correct_state.dart';
 

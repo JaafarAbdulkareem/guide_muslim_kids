@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/feature/game/two_button/logic/entities/question_two_button_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
 import 'dart:math';
 
 List<QuestionTwoButtonEntity> getDataTwoButtons(BuildContext context) {
