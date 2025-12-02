@@ -4,8 +4,10 @@ import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_ent
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 
 List<DragDropEntity> getDataDragDropWord(BuildContext context) {
+  final ZonesType type = ZonesType.sakin;
   // ---- Group 1 ----
   final DragDropEntity group1 = DragDropEntity(
+    zoneType: type,
     word: 'نَسْتَمِعْ',
     letters: const [
       LetterItemEntity(id: '1', char: 'نَ', type: LetterType.mutaharrik),
@@ -18,6 +20,7 @@ List<DragDropEntity> getDataDragDropWord(BuildContext context) {
 
   // ---- Group 2 ----
   final DragDropEntity group2 = DragDropEntity(
+    zoneType: type,
     word: 'يَكْسِبُ',
     letters: const [
       LetterItemEntity(id: '1', char: 'يَ', type: LetterType.mutaharrik),
@@ -29,6 +32,7 @@ List<DragDropEntity> getDataDragDropWord(BuildContext context) {
 
   // ---- Group 3 ----
   final DragDropEntity group3 = DragDropEntity(
+    zoneType: type,
     word: 'فَسَوْفَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'فَ', type: LetterType.mutaharrik),
@@ -40,6 +44,7 @@ List<DragDropEntity> getDataDragDropWord(BuildContext context) {
 
   // ---- Group 4 ----
   final DragDropEntity group4 = DragDropEntity(
+    zoneType: type,
     word: 'نَسْتَحْوِذْ',
     letters: const [
       LetterItemEntity(id: '1', char: 'نَ', type: LetterType.mutaharrik),
@@ -53,6 +58,7 @@ List<DragDropEntity> getDataDragDropWord(BuildContext context) {
 
   // ---- Group 5 ----
   final DragDropEntity group5 = DragDropEntity(
+    zoneType: type,
     word: 'يُدْعَوْنَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'يُ', type: LetterType.mutaharrik),
@@ -65,6 +71,7 @@ List<DragDropEntity> getDataDragDropWord(BuildContext context) {
 
   // ---- Group 6 ----
   final DragDropEntity group6 = DragDropEntity(
+    zoneType: type,
     word: 'أَسْلَمْتُمْ',
     letters: const [
       LetterItemEntity(id: '1', char: 'أَ', type: LetterType.mutaharrik),
