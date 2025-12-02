@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
+import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
 
-class DropZones extends StatelessWidget {
-  const DropZones({super.key});
+class SecondLevelDropZones extends StatelessWidget {
+  const SecondLevelDropZones({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final TextStyle textStyle = AppTextStyle.fontSemiBold16(context);
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
       child: Row(
@@ -19,7 +22,10 @@ class DropZones extends StatelessWidget {
             color: AppColor.dropZoneBGSakin,
             borderColor: AppColor.dropZoneBorderSakin,
             type: LetterType.madd,
-            icon: Icons.pause_circle_outline,
+            symbol: Text(
+              "ا - و - ي",
+              style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
+            ),
           ),
           const SizedBox(width: 16),
           _buildDropZone(
@@ -28,7 +34,12 @@ class DropZones extends StatelessWidget {
             color: AppColor.dropZoneBGMutaharrik,
             borderColor: AppColor.dropZoneBorderMutaharrik,
             type: LetterType.noMadd,
-            icon: Icons.play_circle_outline,
+            symbol: Text(
+              "أ، ب، ت، ث، ج، ح، خ، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ك، ل، م، ن، هـ، ء",
+              style: textStyle.copyWith(
+                color: AppColor.dropZoneBorderMutaharrik,
+              ),
+            ),
           ),
         ],
       ),
@@ -41,7 +52,7 @@ class DropZones extends StatelessWidget {
     required Color color,
     required Color borderColor,
     required LetterType type,
-    required IconData icon,
+    required Widget symbol,
   }) {
     return Expanded(
       child: TargetBox(
@@ -49,7 +60,7 @@ class DropZones extends StatelessWidget {
         color: color,
         borderColor: borderColor,
         targetType: type,
-        icon: icon,
+        symbol: symbol,
       ),
     );
   }
