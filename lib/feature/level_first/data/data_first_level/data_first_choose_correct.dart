@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
 
-List<ChooseCorrectGroupEntity> getDataChooseWords(BuildContext context) {
+List<ChooseCorrectGroupEntity> getDataFirstChooseWords(BuildContext context) {
   final List<ChooseCorrectEntity> group1 = [
     const ChooseCorrectEntity(text: "اُتْقِنُ", isCorrect: true),
     const ChooseCorrectEntity(text: "أُكِلَ", isCorrect: false),

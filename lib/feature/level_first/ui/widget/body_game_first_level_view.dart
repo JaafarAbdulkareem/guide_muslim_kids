@@ -11,7 +11,7 @@ class BodyGameFirstLevelView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final levels = getDataFirstLevel(context);
+    final levels = getDataGameFirstLevel(context);
     final Color colorLetter = AppColor.lettersText;
     final Color colorBGItem = AppColor.bgLevelItem;
     final Color colorShadowItem = AppColor.shadowLevelItem;

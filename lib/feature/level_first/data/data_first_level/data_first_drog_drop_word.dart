@@ -3,7 +3,7 @@ import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/drag_drop_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 
-List<DragDropEntity> getDataDragDropWord(BuildContext context) {
+List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
   final ZonesType type = ZonesType.sakin;
   // ---- Group 1 ----
   final DragDropEntity group1 = DragDropEntity(
