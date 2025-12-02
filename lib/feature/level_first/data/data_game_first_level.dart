@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/feature/level_first/data/data_first_level/data_first_choose_correct.dart';
-import 'package:guide_muslim_kids/feature/level_first/data/data_first_level/data_first_drog_drop_word.dart';
+import 'package:guide_muslim_kids/feature/level_first/data/data_first_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/level_first/data/data_first_drog_drop_word.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
-import 'package:guide_muslim_kids/feature/level_first/data/data_first_level/data_first_two_option.dart';
+import 'package:guide_muslim_kids/feature/level_first/data/data_first_two_option.dart';
 
 List<GameLevelEntity> getDataGameFirstLevel(BuildContext context) {
   List<GameLevelEntity> levels = [];
