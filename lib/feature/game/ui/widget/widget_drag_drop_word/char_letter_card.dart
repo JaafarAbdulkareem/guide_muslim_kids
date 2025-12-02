@@ -43,9 +43,11 @@ class CharLetterCard extends StatelessWidget {
           ],
         ),
         child: Center(
-          child: Text(
-            char,
-            style: AppTextStyle.fontBold65(context).copyWith(color: textColor),
+          child: FittedBox(
+            child: Text(
+              char,
+              style: AppTextStyle.fontBold65(context).copyWith(color: textColor),
+            ),
           ),
         ),
       ),
