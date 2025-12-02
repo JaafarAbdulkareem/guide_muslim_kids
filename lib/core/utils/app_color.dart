@@ -20,6 +20,9 @@ class AppColor {
   static const dropZoneBorderMutaharrik = Color(0xFF2196F3);
   static const dropZoneBGMutaharrik = Color(0xFFE3F2FD);
   static const shadowLevelItem = Color(0xFFD32F2F);
-    static const bgLevelItem = Color(0xFFFF9800);
-
+  static const bgLevelItem = Color(0xFFFF9800);
+  static const lettersText3 = Color(0xFF6A1B9A);
+  static const lettersBackground3 = Color(0xFFF3E5F5);
+  static const bgLevelItem3 = Color(0xFFFF5722);
+  static const shadowLevelItem3 = Color(0xFFE64A19);
 }
