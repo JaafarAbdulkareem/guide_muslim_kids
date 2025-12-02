@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/feature/game/data/data_second_level/data_second_choose_correct.dart';
-import 'package:guide_muslim_kids/feature/game/data/data_second_level/data_second_drag_drop_word.dart';
-import 'package:guide_muslim_kids/feature/game/data/data_second_level/data_second_two_option.dart';
+import 'package:guide_muslim_kids/feature/level_second/data/data_second_choose_correct.dart';
+import 'package:guide_muslim_kids/feature/level_second/data/data_second_drag_drop_word.dart';
+import 'package:guide_muslim_kids/feature/level_second/data/data_second_two_option.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 
