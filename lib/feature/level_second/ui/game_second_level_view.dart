@@ -8,7 +8,7 @@ class GameSecondLevelView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.lettersBackground,
+      backgroundColor: AppColor.lettersBackground2,
       body: SafeArea(child: BodyGameSecondLevelView()),
     );
   }
