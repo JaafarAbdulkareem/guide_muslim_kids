@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
-import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/drag_drop_word_cubit/drag_drop_word_cubit.dart';
@@ -11,15 +10,14 @@ class TargetBox extends StatelessWidget {
   final Color color;
   final Color borderColor;
   final LetterType targetType;
-  final IconData icon;
-
+  final Widget symbol;
   const TargetBox({
     super.key,
     required this.label,
     required this.color,
     required this.borderColor,
     required this.targetType,
-    required this.icon,
+    required this.symbol,
   });
 
   @override
@@ -55,14 +53,7 @@ class TargetBox extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                targetType == LetterType.mutaharrik
-                    ? ConstantText.mutaharrik
-                    : ConstantText.sakin,
-                style: AppTextStyle.fontSemiBold48(
-                  context,
-                ).copyWith(color: borderColor),
-              ),
+              symbol,
               const SizedBox(height: 10),
               Text(
                 label,

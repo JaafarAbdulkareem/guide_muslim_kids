@@ -7,15 +7,6 @@ import 'package:guide_muslim_kids/feature/game/logic/manage/choose_correct_cubit
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_choose_correct/grid_word_choose_correct.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_choose_correct/question_choose_correct.dart';
 
-// class ItemChooseCorrect extends StatelessWidget {
-//   final String question;
-//   final List<ChooseCorrectEntity> words;
-
-//   const ItemChooseCorrect({
-//     super.key,
-//     required this.question,
-//     required this.words,
-//   });
 class ItemChooseCorrect extends StatelessWidget {
   final ChooseCorrectGroupEntity data;
   final VoidCallback onGameCompleted;
@@ -62,7 +53,9 @@ class ItemChooseCorrect extends StatelessWidget {
                   const SizedBox(height: 20),
 
                   // Question Card
-                  QuestionChooseCorrect(question: "اختر الكلمة الصحيحة"),//S.of(context).instructionChooseCorrect,
+                  QuestionChooseCorrect(
+                    question: "اختر الكلمة الصحيحة",
+                  ), //S.of(context).instructionChooseCorrect,
 
                   const SizedBox(height: 20),
 
