@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/game_level_runner.dart';
@@ -10,10 +9,16 @@ class ItemGameLevel extends StatelessWidget {
     required this.level,
     required this.isLocked,
     required this.isLeft,
+    required this.colorBGItem,
+    required this.colorShadowItem,
+    required this.colorLetter,
   });
   final GameLevelEntity level;
   final bool isLocked;
   final bool isLeft;
+  final Color colorBGItem;
+  final Color colorShadowItem;
+  final Color colorLetter;
   @override
   Widget build(BuildContext context) {
     var children = <Widget>[
@@ -21,12 +26,12 @@ class ItemGameLevel extends StatelessWidget {
         width: 100,
         height: 100,
         decoration: BoxDecoration(
-          color: isLocked ? Colors.grey.shade400 : AppColor.bgLevelItem,
+          color: isLocked ? Colors.grey.shade400 : colorBGItem,
           shape: BoxShape.circle,
           boxShadow: [
             if (!isLocked)
               BoxShadow(
-                color: AppColor.shadowLevelItem,
+                color: colorShadowItem,
                 offset: const Offset(0, 6),
                 blurRadius: 0,
               ),
@@ -58,7 +63,7 @@ class ItemGameLevel extends StatelessWidget {
             textAlign: isLeft ? TextAlign.start : TextAlign.end,
             style: AppTextStyle.fontBold24(
               context,
-            ).copyWith(color: AppColor.lettersText),
+            ).copyWith(color: colorLetter),
           ),
         ),
     ];

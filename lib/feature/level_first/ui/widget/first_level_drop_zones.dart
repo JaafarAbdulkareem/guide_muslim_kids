@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+
+import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
 
-class ThirdLevel2DropZones extends StatelessWidget {
-  const ThirdLevel2DropZones({super.key});
+class FirstLevelDropZones extends StatelessWidget {
+  const FirstLevelDropZones({super.key});
+
   @override
   Widget build(BuildContext context) {
     final TextStyle textStyle = AppTextStyle.fontSemiBold48(context);
@@ -20,10 +23,10 @@ class ThirdLevel2DropZones extends StatelessWidget {
             label: "اللام الشمسية", //S.of(context).shamsiya
             color: AppColor.dropZoneBGSakin,
             borderColor: AppColor.dropZoneBorderSakin,
-            type: LetterType.shamsiya,
-            symbol: Text(
-              "ال☀️", //ConstantText.shamsiya,
 
+            type: LetterType.sakin,
+            symbol: Text(
+              ConstantText.sakin,
               style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
             ),
           ),
@@ -33,10 +36,10 @@ class ThirdLevel2DropZones extends StatelessWidget {
             label: " اللام القمرية", //S.of(context).qamariya
             color: AppColor.dropZoneBGMutaharrik,
             borderColor: AppColor.dropZoneBorderMutaharrik,
-            type: LetterType.qamariya,
-            symbol: Text(
-              "ال🌙", //ConstantText.qamariya,
 
+            type: LetterType.mutaharrik,
+            symbol: Text(
+              ConstantText.mutaharrik,
               style: textStyle.copyWith(
                 color: AppColor.dropZoneBorderMutaharrik,
               ),

@@ -4,11 +4,12 @@ import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
 
-class ThirdLevel2DropZones extends StatelessWidget {
-  const ThirdLevel2DropZones({super.key});
+class SecondLevelDropZones extends StatelessWidget {
+  const SecondLevelDropZones({super.key});
+
   @override
   Widget build(BuildContext context) {
-    final TextStyle textStyle = AppTextStyle.fontSemiBold48(context);
+    final TextStyle textStyle = AppTextStyle.fontSemiBold16(context);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
@@ -17,26 +18,25 @@ class ThirdLevel2DropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "اللام الشمسية", //S.of(context).shamsiya
+            label: "حرف المد", //S.of(context).letterMadd
             color: AppColor.dropZoneBGSakin,
             borderColor: AppColor.dropZoneBorderSakin,
-            type: LetterType.shamsiya,
+            type: LetterType.madd,
             symbol: Text(
-              "ال☀️", //ConstantText.shamsiya,
-
+              "ا - و - ي",
               style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
             ),
           ),
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: " اللام القمرية", //S.of(context).qamariya
+            label: "ليس حرف مد", //S.of(context).letterNoMadd
             color: AppColor.dropZoneBGMutaharrik,
             borderColor: AppColor.dropZoneBorderMutaharrik,
-            type: LetterType.qamariya,
-            symbol: Text(
-              "ال🌙", //ConstantText.qamariya,
 
+            type: LetterType.noMadd,
+            symbol: Text(
+              "أ، ب، ت، ث، ج، ح، خ، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ك، ل، م، ن، هـ، ء",
               style: textStyle.copyWith(
                 color: AppColor.dropZoneBorderMutaharrik,
               ),

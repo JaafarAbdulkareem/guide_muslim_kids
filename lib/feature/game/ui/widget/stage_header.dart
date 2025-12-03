@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
-import 'package:guide_muslim_kids/feature/game/data/data_first_level/data_game_first_level.dart';
 
 class StageHeader extends StatelessWidget {
   final String title;
   final int unlockedLevel;
-
+  final Color colorBG;
+  final int lengthData;
   const StageHeader({
     super.key,
     required this.title,
     required this.unlockedLevel,
+    required this.colorBG,
+    required this.lengthData,
   });
 
   @override
   Widget build(BuildContext context) {
     int stars = 0;
-    final int displayStar = (getDataFirstLevel(context).length / 3)
+    final int displayStar = (lengthData / 3)
         .toInt(); //ConstantScale.divideData;
     if (unlockedLevel > displayStar - 1) stars = 1;
     if (unlockedLevel > displayStar * 2) stars = 2;
@@ -25,8 +27,8 @@ class StageHeader extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 30),
-      decoration: const BoxDecoration(
-        color: AppColor.lettersText,
+      decoration: BoxDecoration(
+        color: colorBG,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(30),
           bottomRight: Radius.circular(30),
