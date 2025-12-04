@@ -31,6 +31,7 @@ List<GameLevelEntity> getDataGameFirstLevel(BuildContext context) {
     levels.add(
       GameLevelEntity(
         levelId: i + 1,
+        levelNumber: i + 1,
         title: "المستوى ${i + 1}", //S.of(context).stage
         gameItems: [allItems[i]],
       ),

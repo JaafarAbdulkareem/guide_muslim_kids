@@ -5,7 +5,10 @@ import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.d
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/level_third/data/data_third_two_option.dart';
 
-List<GameLevelEntity> getDataGameThirdLevel(BuildContext context) {
+List<GameLevelEntity> getDataGameThirdLevel(
+  BuildContext context, {
+  required int firstSecondLength,
+}) {
   List<GameLevelEntity> levels = [];
 
   // 1. Get all raw data
@@ -30,7 +33,8 @@ List<GameLevelEntity> getDataGameThirdLevel(BuildContext context) {
   for (int i = 0; i < allItems.length; i++) {
     levels.add(
       GameLevelEntity(
-        levelId: i + 1,
+        levelId: firstSecondLength + i + 1,
+        levelNumber: i + 1,
         title: "المستوى ${i + 1}", //S.of(context).stage
         gameItems: [allItems[i]],
       ),
