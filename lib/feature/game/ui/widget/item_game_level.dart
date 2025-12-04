@@ -48,7 +48,7 @@ class ItemGameLevel extends StatelessWidget {
           child: isLocked
               ? const Icon(Icons.lock, color: Colors.white54, size: 40)
               : Text(
-                  "${level.levelId}",
+                  "${level.levelNumber}",
                   style: AppTextStyle.fontSemiBold48(
                     context,
                   ).copyWith(color: Colors.white),

@@ -7,29 +7,38 @@ class StageHeader extends StatelessWidget {
   final int unlockedLevel;
   final Color colorBG;
   final int lengthData;
+  final int previousLevelsLength;
+
   const StageHeader({
     super.key,
     required this.title,
     required this.unlockedLevel,
     required this.colorBG,
     required this.lengthData,
+    required this.previousLevelsLength,
   });
 
   @override
   Widget build(BuildContext context) {
+    // 1. Calculate progress within this specific stage
+    final int currentStageProgress = unlockedLevel - previousLevelsLength;
+
+    // 2. Safer Star Logic (Using percentages handles small 'lengthData' better)
+    // If lengthData is 0, avoid division by zero error by defaulting to 0 stars.
     int stars = 0;
-    final int displayStar = (lengthData / 3)
-        .toInt(); //ConstantScale.divideData;
-    if (unlockedLevel > displayStar - 1) stars = 1;
-    if (unlockedLevel > displayStar * 2) stars = 2;
-    if (unlockedLevel > displayStar * 3) stars = 3;
+    if (lengthData > 0) {
+      double progressRatio = currentStageProgress / lengthData;
+      if (progressRatio >= 0.33) stars = 1; // 33% done
+      if (progressRatio >= 0.66) stars = 2; // 66% done
+      if (progressRatio >= 1.0) stars = 3; // 100% done
+    }
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(vertical: 30),
       decoration: BoxDecoration(
         color: colorBG,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(30),
           bottomRight: Radius.circular(30),
         ),
@@ -44,14 +53,25 @@ class StageHeader extends StatelessWidget {
                 child: Icon(
                   Icons.star,
                   size: index == 1 ? 50 : 40,
-                  color: index < stars ? AppColor.dragging : Colors.black26,
+                  color: (index < stars) ? AppColor.dragging : Colors.black26,
                 ),
               );
             }),
           ),
           const SizedBox(height: 15),
-          Text(title, style: AppTextStyle.fontBold28(context)),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Text(
+              title,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTextStyle.fontBold28(context),
+            ),
+          ),
           const SizedBox(height: 5),
+
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             decoration: BoxDecoration(

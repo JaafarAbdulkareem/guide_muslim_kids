@@ -20,10 +20,9 @@ class FirstLevelDropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "اللام الشمسية", //S.of(context).shamsiya
+            label: "الحرف الساكن", //S.of(context).sakin
             color: AppColor.dropZoneBGSakin,
             borderColor: AppColor.dropZoneBorderSakin,
-
             type: LetterType.sakin,
             symbol: Text(
               ConstantText.sakin,
@@ -33,7 +32,7 @@ class FirstLevelDropZones extends StatelessWidget {
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: " اللام القمرية", //S.of(context).qamariya
+            label: "الحرف المتحرك", //S.of(context).mutaharrik
             color: AppColor.dropZoneBGMutaharrik,
             borderColor: AppColor.dropZoneBorderMutaharrik,
 
