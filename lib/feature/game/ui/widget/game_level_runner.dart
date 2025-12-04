@@ -26,7 +26,7 @@ class _GameLevelRunnerState extends State<GameLevelRunner> {
   void _finishLevel() {
     final currentUnlocked = context.read<GameLevelCubit>().state;
     if (widget.level.levelId == currentUnlocked) {
-      context.read<GameLevelCubit>().unlockNextLevel();
+      context.read<GameLevelCubit>().completeLevel(widget.level.levelId);
     }
 
     Navigator.pop(context);
