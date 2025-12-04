@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
-import 'package:guide_muslim_kids/feature/level_first/data/data_game_first_level.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/item_game_level.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/stage_header.dart';
 
 class BodyGameFirstLevelView extends StatelessWidget {
-  const BodyGameFirstLevelView({super.key});
-
+  const BodyGameFirstLevelView({super.key, required this.levels});
+  final List<GameLevelEntity> levels;
   @override
   Widget build(BuildContext context) {
-    final levels = getDataGameFirstLevel(context);
     final Color colorLetter = AppColor.lettersText;
     final Color colorBGItem = AppColor.bgLevelItem;
     final Color colorShadowItem = AppColor.shadowLevelItem;
@@ -25,6 +24,7 @@ class BodyGameFirstLevelView extends StatelessWidget {
               unlockedLevel: unlockedLevel,
               colorBG: colorLetter,
               lengthData: levels.length,
+              previousLevelsLength: 0,
             );
           },
         ),
