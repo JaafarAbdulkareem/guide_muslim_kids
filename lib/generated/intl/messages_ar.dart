@@ -69,12 +69,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "hearingThunder": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
     ),
-    "instructionChooseCorrect": MessageLookupByLibrary.simpleMessage(
-      "اختر الكلمة الصحيحة",
-    ),
-    "instructionTWoOption": MessageLookupByLibrary.simpleMessage(
-      "صل بين الحروف",
-    ),
     "instructionsDragWord": MessageLookupByLibrary.simpleMessage(
       "اسحب البطاقة العلوية إلى الصندوق الصحيح",
     ),

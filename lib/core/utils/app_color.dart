@@ -29,4 +29,6 @@ class AppColor {
   static const lettersBackground3 = Color(0xFFF3E5F5);
   static const bgLevelItem3 = Color(0xFFFF5722);
   static const shadowLevelItem3 = Color(0xFFE64A19);
+   static const Color lockedColor = Color(0xFFBDBDBD);
+  static const Color activeColor = Color(0xFF2196F3);
 }
