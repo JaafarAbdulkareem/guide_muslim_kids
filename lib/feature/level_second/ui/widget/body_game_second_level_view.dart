@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/ui/widget/item_game_level.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/item_level_stages.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/stage_header.dart';
 
 class BodyGameSecondLevelView extends StatelessWidget {
@@ -39,7 +39,7 @@ class BodyGameSecondLevelView extends StatelessWidget {
                   final level = levels[index];
                   final isLocked = level.levelId > unlockedLevel;
 
-                  return ItemGameLevel(
+                  return ItemLevelStages(
                     level: level,
                     isLocked: isLocked,
                     isLeft: index % 2 == 0,
