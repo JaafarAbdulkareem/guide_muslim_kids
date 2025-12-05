@@ -34,6 +34,8 @@ class AppImage {
 
   static const String imagesFastingArgumentResponse = "assets/images/fastingArgumentResponse.webp";
 
+  static const String imagesGame = "assets/images/game.png";
+
   static const String imagesGrideBackgroundNames = "assets/images/grideBackgroundNames.webp";
 
   static const String imagesHearingThunder = "assets/images/hearingThunder.webp";

@@ -65,28 +65,43 @@ class S {
   }
 
   /// ``
-  String get homeAzkar {
-    return Intl.message('', name: 'homeAzkar', desc: '', args: []);
+  String get homeGame {
+    return Intl.message('', name: 'homeGame', desc: '', args: []);
   }
 
   /// ``
-  String get homeSalah {
-    return Intl.message('', name: 'homeSalah', desc: '', args: []);
+  String get homeAldeen {
+    return Intl.message('', name: 'homeAldeen', desc: '', args: []);
   }
 
   /// ``
-  String get homeSawm {
-    return Intl.message('', name: 'homeSawm', desc: '', args: []);
-  }
-
-  /// ``
-  String get homeNames {
-    return Intl.message('', name: 'homeNames', desc: '', args: []);
+  String get homeAthkar {
+    return Intl.message('', name: 'homeAthkar', desc: '', args: []);
   }
 
   /// ``
   String get homeAboutUs {
     return Intl.message('', name: 'homeAboutUs', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeNames {
+    return Intl.message('', name: 'subHomeNames', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeAthkar {
+    return Intl.message('', name: 'subHomeAthkar', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeSalah {
+    return Intl.message('', name: 'subHomeSalah', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeSawm {
+    return Intl.message('', name: 'subHomeSawm', desc: '', args: []);
   }
 
   /// ``
