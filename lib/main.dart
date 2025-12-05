@@ -9,6 +9,8 @@ import 'package:guide_muslim_kids/feature/splash/logic/bloc/splash_bloc.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
 }
 
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => SplashBloc()),
         BlocProvider(create: (context) => AudioCubit()),
+        BlocProvider(
+      create: (context) => GameLevelCubit(),),
       ],
 
       child: MaterialApp(

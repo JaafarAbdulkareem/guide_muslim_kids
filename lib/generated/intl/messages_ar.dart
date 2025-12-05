@@ -104,6 +104,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "betweenTwoSujoods": MessageLookupByLibrary.simpleMessage(
       "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَاجْبُرْنِي، وَعَافِنِي، وَارْزُقْنِي، وَارْفَعْنِي",
     ),
+    "buttonClose": MessageLookupByLibrary.simpleMessage("إغلاق"),
+    "buttonFinish": MessageLookupByLibrary.simpleMessage("إنهاء"),
+    "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
     "descAdDayyan": MessageLookupByLibrary.simpleMessage(
       "الديان الذي يجازي الناس بأعمالهم",
     ),
@@ -383,9 +386,20 @@ class MessageLookup extends MessageLookupByLibrary {
     "descMalikAlMulk": MessageLookupByLibrary.simpleMessage(
       "مالك الملك المتصرف في ملكه بلا شريك",
     ),
+    "dialogMessageCorrect": MessageLookupByLibrary.simpleMessage(
+      "أنت بطل! إجابة صحيحة.",
+    ),
+    "dialogMessageIncorrect": MessageLookupByLibrary.simpleMessage(
+      "لا بأس! حاول مرة أخرى.",
+    ),
+    "dialogTitleCorrect": MessageLookupByLibrary.simpleMessage("مـمـتـاز! 🎉"),
+    "dialogTitleIncorrect": MessageLookupByLibrary.simpleMessage(
+      "حاول مجدداً 🧐",
+    ),
     "dogsBarking": MessageLookupByLibrary.simpleMessage(
       "أَعُوذُ بِاللَّهِ الْعَظِيمِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "doneDragging": MessageLookupByLibrary.simpleMessage("ممتاز!"),
     "enteringBathroom": MessageLookupByLibrary.simpleMessage(
       "[بِسْمِ اللَّهِ] اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبائِث",
     ),
@@ -404,6 +418,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "finalTashahhud": MessageLookupByLibrary.simpleMessage(
       "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَواتُ، وَالطَّيِّباتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ. اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
     ),
+    "firstLevel": MessageLookupByLibrary.simpleMessage("المستوى الاول"),
     "firstTashahhud": MessageLookupByLibrary.simpleMessage(
       "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَواتُ، وَالطَّيِّباتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسولُهُ",
     ),
@@ -421,6 +436,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "iftarSupplication": MessageLookupByLibrary.simpleMessage(
       "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ العُرُوقُ، وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
     ),
+    "instructionsDragWord": MessageLookupByLibrary.simpleMessage(
+      "اسحب البطاقة العلوية إلى الصندوق الصحيح",
+    ),
     "kafaratAlMajlis": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
     ),
@@ -431,6 +449,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "letterMutaharrik": MessageLookupByLibrary.simpleMessage("الحرف المتحرك"),
+    "letterSakin": MessageLookupByLibrary.simpleMessage("الحرف ساكن"),
     "loadingAudio": MessageLookupByLibrary.simpleMessage(
       "الصوت سيجهز بعد قليل… 🐰",
     ),
@@ -455,6 +475,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "ruku": MessageLookupByLibrary.simpleMessage(
       "سُبْحانَ رَبِّيَ الْعَظِيمِ (ثلاث مرَّاتٍ)",
     ),
+    "secondLevel": MessageLookupByLibrary.simpleMessage("المستوى الثاني"),
     "seeingCrescent": MessageLookupByLibrary.simpleMessage(
       "اللَّهُ أَكْبَرُ، اللَّهُمَّ أَهِلَّهُ عَلَيْنَا بِالْأَمْنِ وَالْإِيمَانِ، وَالسَّلاَمَةِ وَالْإِسْلاَمِ، وَالتَّوْفِيقِ لِمَا تُحِبُّ رَبَّنَا وَتَرْضَى، رَبُّنَا وَرَبُّكَ اللَّهُ",
     ),
@@ -464,9 +485,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "sneezing": MessageLookupByLibrary.simpleMessage(
       "إِذَا عَطَسَ أَحَدُكُم فَلْيَقُلِ الْحَمْدُ لِلَّهِ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ: يَرْحَمُكَ اللَّهُ، فَإِذَا قَالَ لَهُ: يَرحَمُكَ اللَّهُ، فَلْيَقُلْ: يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
     ),
+    "stage": MessageLookupByLibrary.simpleMessage("المرحلة"),
+    "studentStage": MessageLookupByLibrary.simpleMessage("الطالب في المرحلة: "),
     "sujood": MessageLookupByLibrary.simpleMessage(
       "سُبْحَانَ رَبِّيَ الأَعْلَى (ثلاث مرَّاتٍ)",
     ),
+    "thirdLevel": MessageLookupByLibrary.simpleMessage("المستوى الثالث"),
     "titleAdDayyan": MessageLookupByLibrary.simpleMessage("الدَّيَّانُ"),
     "titleAdhan": MessageLookupByLibrary.simpleMessage("دعاء الأذان"),
     "titleAfterEating": MessageLookupByLibrary.simpleMessage("دعاء بعد الطعام"),

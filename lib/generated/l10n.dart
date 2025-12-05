@@ -1603,6 +1603,101 @@ class S {
   String get loadingAudio {
     return Intl.message('', name: 'loadingAudio', desc: '', args: []);
   }
+
+  /// ``
+  String get dialogTitleCorrect {
+    return Intl.message('', name: 'dialogTitleCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogTitleIncorrect {
+    return Intl.message('', name: 'dialogTitleIncorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogMessageCorrect {
+    return Intl.message('', name: 'dialogMessageCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogMessageIncorrect {
+    return Intl.message('', name: 'dialogMessageIncorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get doneDragging {
+    return Intl.message('', name: 'doneDragging', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionTWoOption {
+    return Intl.message('', name: 'instructionTWoOption', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionsDragWord {
+    return Intl.message('', name: 'instructionsDragWord', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get letterSakin {
+    return Intl.message('', name: 'letterSakin', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterMutaharrik {
+    return Intl.message('', name: 'letterMutaharrik', desc: '', args: []);
+  }
+
+  /// ``
+  String get firstLevel {
+    return Intl.message('', name: 'firstLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get secondLevel {
+    return Intl.message('', name: 'secondLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get thirdLevel {
+    return Intl.message('', name: 'thirdLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get stage {
+    return Intl.message('', name: 'stage', desc: '', args: []);
+  }
+
+  /// ``
+  String get studentStage {
+    return Intl.message('', name: 'studentStage', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonFinish {
+    return Intl.message('', name: 'buttonFinish', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonNext {
+    return Intl.message('', name: 'buttonNext', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonClose {
+    return Intl.message('', name: 'buttonClose', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
