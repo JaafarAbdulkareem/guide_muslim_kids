@@ -8,6 +8,9 @@ import 'package:guide_muslim_kids/feature/Aldeen/ui/aldeen_view.dart';
 import 'package:guide_muslim_kids/feature/daily/ui/daily_view.dart';
 import 'package:guide_muslim_kids/feature/fast/ui/fast_view.dart';
 import 'package:guide_muslim_kids/feature/about_us/ui/about_us_view.dart';
+import 'package:guide_muslim_kids/feature/game/ui/game_view.dart';
+import 'package:guide_muslim_kids/feature/home/logic/home_entity.dart';
+import 'package:guide_muslim_kids/feature/home/ui/home_sub_view.dart';
 import 'package:guide_muslim_kids/feature/home/ui/home_view.dart';
 import 'package:guide_muslim_kids/feature/names/logic/entities/names_entity.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_detail_view.dart';
@@ -30,6 +33,12 @@ class AppRoute {
         );
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
+      case RouteName.subHome:
+        final args = settings.arguments;
+        return MaterialPageRoute(
+          builder: (_) =>
+              HomeSubView(data: args is SubHomeEntity ? args : null),
+        );
       case RouteName.daily:
         return MaterialPageRoute(builder: (_) => const DailyView());
       case RouteName.prayer:
@@ -51,6 +60,8 @@ class AppRoute {
           builder: (_) =>
               NamesDetailView(data: args is NamesEntity ? args : null),
         );
+      case RouteName.game:
+        return MaterialPageRoute(builder: (_) => const GameView());
       case RouteName.aboutUs:
         return MaterialPageRoute(builder: (_) => const AboutUsView());
       default:

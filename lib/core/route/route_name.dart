@@ -4,11 +4,13 @@ class RouteName {
   static const String aldeen = '/aldeen';
   static const String aldeenDetails = '/aldeenDetails';
   static const String home = '/home';
+  static const String subHome = '/subHome';
   static const String daily = '/daily';
   static const String prayer = '/prayer';
   static const String fast = '/fast';
   static const String dailyDetails = '/dailyDetails';
   static const String names = '/names';
   static const String namesDetails = '/namesDetails';
+  static const String game = '/game';
   static const String aboutUs = '/aboutUs';
 }
