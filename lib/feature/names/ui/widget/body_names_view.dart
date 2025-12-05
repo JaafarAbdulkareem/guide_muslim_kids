@@ -15,7 +15,7 @@ class BodyNamesView extends StatelessWidget {
         const SizedBox(height: 8),
         AspectRatio(
           aspectRatio: 6,
-          child: CustomAppBar(title: S.of(context).homeNames),
+          child: CustomAppBar(title: S.of(context).subHomeNames),
         ),
         Expanded(
           child: GridView.builder(
