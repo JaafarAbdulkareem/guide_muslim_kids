@@ -5,6 +5,7 @@ import 'package:guide_muslim_kids/core/manage/cubit/audio_cubit.dart';
 import 'package:guide_muslim_kids/core/route/app_route.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
+import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
 import 'package:guide_muslim_kids/feature/splash/logic/bloc/splash_bloc.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
 
@@ -23,8 +24,7 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(create: (context) => SplashBloc()),
         BlocProvider(create: (context) => AudioCubit()),
-        BlocProvider(
-      create: (context) => GameLevelCubit(),),
+        BlocProvider(create: (context) => GameLevelCubit()),
       ],
 
       child: MaterialApp(
