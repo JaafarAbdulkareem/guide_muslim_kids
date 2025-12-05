@@ -8,7 +8,7 @@ class AppTextStyle {
           fontSize: 65,
           fontWeight: FontWeight.bold,
         ) ??
-        TextStyle(fontSize: 65, fontWeight: FontWeight.bold);
+        const TextStyle(fontSize: 65, fontWeight: FontWeight.bold);
   }
 
   //wordDrop
@@ -16,13 +16,13 @@ class AppTextStyle {
     return Theme.of(context).textTheme.headlineMedium?.copyWith(
           fontSize: 48,
           fontWeight: FontWeight.w900,
-          color: AppColor.lettersText,
+          color: AppColor.lettersText1,
           letterSpacing: 2.0,
         ) ??
         const TextStyle(
           fontSize: 48,
           fontWeight: FontWeight.w900,
-          color: AppColor.lettersText,
+          color: AppColor.lettersText1,
           letterSpacing: 2.0,
         );
   }
@@ -47,13 +47,13 @@ class AppTextStyle {
           fontSize: 32,
           fontWeight: FontWeight.w900,
           letterSpacing: 2.0,
-          color: AppColor.lettersText,
+          color: AppColor.lettersText1,
         ) ??
         const TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.w900,
           letterSpacing: 2.0,
-          color: AppColor.lettersText,
+          color: AppColor.lettersText1,
         );
   }
 
@@ -62,12 +62,12 @@ class AppTextStyle {
     return Theme.of(context).textTheme.titleLarge?.copyWith(
           fontSize: 32,
           fontWeight: FontWeight.w600,
-          color: AppColor.lettersText,
+          color: AppColor.lettersText1,
         ) ??
         const TextStyle(
           fontSize: 32,
           fontWeight: FontWeight.w600,
-          color: AppColor.lettersText,
+          color: AppColor.lettersText1,
         );
   }
 
@@ -123,6 +123,19 @@ class AppTextStyle {
           fontWeight: FontWeight.w600,
           fontSize: 16,
           color: AppColor.lettersBorder,
+        );
+  }
+
+  static TextStyle fontMedium11(BuildContext context) {
+    return Theme.of(context).textTheme.bodyLarge?.copyWith(
+          color: AppColor.secondaryText,
+          fontWeight: FontWeight.w500,
+          fontSize: 11,
+        ) ??
+        const TextStyle(
+          color: AppColor.secondaryText,
+          fontWeight: FontWeight.w500,
+          fontSize: 11,
         );
   }
 }

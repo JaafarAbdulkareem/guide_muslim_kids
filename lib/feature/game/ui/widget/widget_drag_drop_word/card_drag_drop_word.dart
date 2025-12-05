@@ -5,6 +5,7 @@ import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/draggable_letter_card.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/char_letter_card.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class CardDragDropWord extends StatelessWidget {
   const CardDragDropWord({super.key, required this.remainingLetters});
@@ -54,14 +55,14 @@ class CardDragDropWord extends StatelessWidget {
           Icon(
             AppIcon.check,
             size: 80,
-            color: AppColor.lettersText.withValues(alpha: 0.5),
+            color: AppColor.lettersText1.withValues(alpha: 0.5),
           ),
           const SizedBox(height: 10),
           Text(
-            "ممتاز!",
+            S.of(context).dialogTitleCorrect,
             style: AppTextStyle.fontBold24(
               context,
-            ).copyWith(color: AppColor.lettersText.withValues(alpha: 0.8)),
+            ).copyWith(color: AppColor.lettersText1.withValues(alpha: 0.8)),
           ),
         ],
       ),

@@ -4,12 +4,12 @@ import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/question_two_button_cubit/question_two_button_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/letter_container.dart';
-import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/question_title.dart';
-import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_button/two_answer_button.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/letter_container.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/question_title.dart';
+import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/two_answer_option.dart';
 
-class ItemTwoButtons extends StatelessWidget {
-  const ItemTwoButtons({
+class ItemTwoOption extends StatelessWidget {
+  const ItemTwoOption({
     super.key,
     required this.data,
     required this.onGameCompleted,
@@ -66,7 +66,7 @@ class ItemTwoButtons extends StatelessWidget {
                     const SizedBox(height: 40),
 
                     // Buttons Row
-                    TwoAnswerButton(question: data),
+                    TwoAnswerOption(question: data),
                   ],
                 ),
               ),

@@ -107,6 +107,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "buttonClose": MessageLookupByLibrary.simpleMessage("إغلاق"),
     "buttonFinish": MessageLookupByLibrary.simpleMessage("إنهاء"),
     "buttonNext": MessageLookupByLibrary.simpleMessage("التالي"),
+    "contentFirstLevel": MessageLookupByLibrary.simpleMessage(
+      "هيا نتعلم أي حرف يجري ويلعب، وأي حرف ينام بهدوء",
+    ),
+    "contentSecondLevel": MessageLookupByLibrary.simpleMessage(
+      "غَنِّ مع المد الطويل، ورِنَّ جرس التنوين الموسيقي",
+    ),
+    "contentThirdLevel": MessageLookupByLibrary.simpleMessage(
+      "كن قوياً مثل الشدة، وحلِّق في الفضاء بين الشمس والقمر",
+    ),
     "descAdDayyan": MessageLookupByLibrary.simpleMessage(
       "الديان الذي يجازي الناس بأعمالهم",
     ),
@@ -418,7 +427,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "finalTashahhud": MessageLookupByLibrary.simpleMessage(
       "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَواتُ، وَالطَّيِّباتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ. اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ، وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيتَ عَلَى إِبْرَاهِيمَ، وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
     ),
-    "firstLevel": MessageLookupByLibrary.simpleMessage("المستوى الاول"),
+    "firstLevel": MessageLookupByLibrary.simpleMessage("المستوى الأول"),
     "firstTashahhud": MessageLookupByLibrary.simpleMessage(
       "التَّحِيَّاتُ لِلَّهِ، وَالصَّلَواتُ، وَالطَّيِّباتُ، السَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلاَمُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ. أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسولُهُ",
     ),
@@ -435,6 +444,31 @@ class MessageLookup extends MessageLookupByLibrary {
     "iftarSupplication": MessageLookupByLibrary.simpleMessage(
       "ذَهَبَ الظَّمَأُ وَابْتَلَّتِ العُرُوقُ، وَثَبَتَ الْأَجْرُ إِنْ شَاءَ اللَّهُ",
     ),
+    "instructionFirstChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمات التي تحتوي على السكون",
+    ),
+    "instructionFirstTWoOption": MessageLookupByLibrary.simpleMessage(
+      "صل بين الحروف",
+    ),
+    "instructionSecondOneChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمات التي تحتوي على حرف المد",
+    ),
+    "instructionSecondTWoOption": MessageLookupByLibrary.simpleMessage(
+      "اختر الحركة المناسبة قبل حرف المد",
+    ),
+    "instructionSecondTwoChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمات التي تحتوي على المنون المضموم أو المكسور أو المفتوح  ",
+    ),
+    "instructionThirdChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمات التي تحتوي على الشدة",
+    ),
+    "instructionThirdTWoOption": MessageLookupByLibrary.simpleMessage(""),
+    "instructionThirdTwo1ChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمات التي تحتوي على اللام الشمسية",
+    ),
+    "instructionThirdTwo2ChooseCorrect": MessageLookupByLibrary.simpleMessage(
+      "اختر الكلمات التي تحتوي على اللام القمرية",
+    ),
     "instructionsDragWord": MessageLookupByLibrary.simpleMessage(
       "اسحب البطاقة العلوية إلى الصندوق الصحيح",
     ),
@@ -448,8 +482,14 @@ class MessageLookup extends MessageLookupByLibrary {
     "leavingMosque": MessageLookupByLibrary.simpleMessage(
       "بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ",
     ),
+    "letterLamQamar": MessageLookupByLibrary.simpleMessage("اللام القمرية"),
+    "letterLamShams": MessageLookupByLibrary.simpleMessage("اللام الشمسية"),
+    "letterMadd": MessageLookupByLibrary.simpleMessage("حرف المد"),
     "letterMutaharrik": MessageLookupByLibrary.simpleMessage("الحرف المتحرك"),
+    "letterNoMadd": MessageLookupByLibrary.simpleMessage("ليس حرف مد"),
+    "letterNoShaddah": MessageLookupByLibrary.simpleMessage("ليس حرف شدة"),
     "letterSakin": MessageLookupByLibrary.simpleMessage("الحرف ساكن"),
+    "letterShaddah": MessageLookupByLibrary.simpleMessage("حرف الشدة"),
     "loadingAudio": MessageLookupByLibrary.simpleMessage(
       "الصوت سيجهز بعد قليل… 🐰",
     ),
@@ -480,6 +520,22 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "sleeping": MessageLookupByLibrary.simpleMessage(
       "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِن أَمْسَكْتَ نَفْسِي فارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
+    ),
+    "snackBarLevelCompleted": MessageLookupByLibrary.simpleMessage(
+      "مبروك! تم فتح المستوى التالي 🎉",
+    ),
+    "snackBarMessageCorrect": MessageLookupByLibrary.simpleMessage(
+      "أحسنت! إجابة صحيحة",
+    ),
+    "snackBarMessageIncorrect": MessageLookupByLibrary.simpleMessage(
+      "انتبه! هذه الكلمة غير صحيحة",
+    ),
+    "snackBarMessageLockedStage": MessageLookupByLibrary.simpleMessage(
+      "أولاً أكمل مرحلة ",
+    ),
+    "snackBarPrevious": MessageLookupByLibrary.simpleMessage("السابقة"),
+    "snackBarTitleLockedStage": MessageLookupByLibrary.simpleMessage(
+      "المرحلة مغلقة!",
     ),
     "sneezing": MessageLookupByLibrary.simpleMessage(
       "إِذَا عَطَسَ أَحَدُكُم فَلْيَقُلِ الْحَمْدُ لِلَّهِ، وَلْيَقُلْ لَهُ أَخُوهُ أَوْ صَاحِبُهُ: يَرْحَمُكَ اللَّهُ، فَإِذَا قَالَ لَهُ: يَرحَمُكَ اللَّهُ، فَلْيَقُلْ: يَهْدِيكُمُ اللَّهُ وَيُصْلِحُ بَالَكُمْ",
@@ -632,7 +688,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "titleFinalTashahhud": MessageLookupByLibrary.simpleMessage(
       "التشهد الأخير",
     ),
+    "titleFirstLevel": MessageLookupByLibrary.simpleMessage(
+      "الحرف الساكن والمتحرك",
+    ),
     "titleFirstTashahhud": MessageLookupByLibrary.simpleMessage("التشهد الأول"),
+    "titleGame": MessageLookupByLibrary.simpleMessage("خريطة التعلم"),
     "titleHearingThunder": MessageLookupByLibrary.simpleMessage(
       "دعاء عند سماع الرعد",
     ),
@@ -673,12 +733,16 @@ class MessageLookup extends MessageLookupByLibrary {
       "دعاء الرفع من الركوع",
     ),
     "titleRuku": MessageLookupByLibrary.simpleMessage("دعاء الركوع"),
+    "titleSecondLevel": MessageLookupByLibrary.simpleMessage("المد والتنوين"),
     "titleSeeingCrescent": MessageLookupByLibrary.simpleMessage(
       "دعاء رؤية الهلال",
     ),
     "titleSleeping": MessageLookupByLibrary.simpleMessage("دعاء النوم"),
     "titleSneezing": MessageLookupByLibrary.simpleMessage("دعاء عند العطس"),
     "titleSujood": MessageLookupByLibrary.simpleMessage("دعاء السجود"),
+    "titleThirdLevel": MessageLookupByLibrary.simpleMessage(
+      "الشدة واللام الشمسية والقمرية",
+    ),
     "titleVisitingGraves": MessageLookupByLibrary.simpleMessage(
       "دعاء زيارة القبور",
     ),

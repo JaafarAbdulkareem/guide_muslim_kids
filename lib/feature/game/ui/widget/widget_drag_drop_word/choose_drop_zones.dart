@@ -16,13 +16,13 @@ class ChooseDropZones extends StatelessWidget {
   Widget _zoneDragDrop() {
     switch (zoneType) {
       case ZonesType.sakin:
-        return FirstLevelDropZones();
+        return const FirstLevelDropZones();
       case ZonesType.madd:
-        return SecondLevelDropZones();
+        return const SecondLevelDropZones();
       case ZonesType.shaddah:
-        return ThirdLevel1DropZones();
+        return const ThirdLevel1DropZones();
       case ZonesType.shamsiya:
-        return ThirdLevel2DropZones();
+        return const ThirdLevel2DropZones();
     }
   }
 }

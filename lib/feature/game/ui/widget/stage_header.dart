@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class StageHeader extends StatelessWidget {
   final String title;
@@ -65,8 +66,6 @@ class StageHeader extends StatelessWidget {
             child: Text(
               title,
               textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
               style: AppTextStyle.fontBold28(context),
             ),
           ),
@@ -79,7 +78,7 @@ class StageHeader extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
             ),
             child: Text(
-              "مستوى الطالب: $unlockedLevel", //S.of(context).studentLevel
+              "${S.of(context).studentStage} $unlockedLevel",
               style: AppTextStyle.fontSemiBold16(
                 context,
               ).copyWith(color: Colors.white),

@@ -76,7 +76,7 @@ List<DragDropEntity> getDataSecondDragDropWord(BuildContext context) {
     letters: const [
       LetterItemEntity(id: '1', char: 'سِ', type: LetterType.noMadd),
       LetterItemEntity(id: '2', char: 'نِ', type: LetterType.noMadd),
-      LetterItemEntity(id: '3', char: 'ي', type: LetterType.noMadd),
+      LetterItemEntity(id: '3', char: 'ي', type: LetterType.madd),
       LetterItemEntity(id: '4', char: 'نَ', type: LetterType.noMadd),
     ],
   );

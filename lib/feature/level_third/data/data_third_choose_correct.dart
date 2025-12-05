@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 List<ChooseCorrectGroupEntity> getDataThirdChooseWords(BuildContext context) {
+  final s = S.of(context);
+  final String instructionShadda = s.instructionThirdChooseCorrect;
+  final String instructionShamsiya = s.instructionThirdTwo1ChooseCorrect;
+  final String instructionQamariya = s.instructionThirdTwo2ChooseCorrect;
+
   final List<ChooseCorrectEntity> group1 = [
     const ChooseCorrectEntity(text: "رَبُّكُم", isCorrect: true),
     const ChooseCorrectEntity(text: "يَكْتُبُونَ", isCorrect: false),
@@ -68,12 +74,12 @@ List<ChooseCorrectGroupEntity> getDataThirdChooseWords(BuildContext context) {
   ];
 
   return [
-    ChooseCorrectGroupEntity(words: group1),
-    ChooseCorrectGroupEntity(words: group2),
-    ChooseCorrectGroupEntity(words: group3),
-    ChooseCorrectGroupEntity(words: group4),
-    ChooseCorrectGroupEntity(words: group5),
-    ChooseCorrectGroupEntity(words: group6),
-    ChooseCorrectGroupEntity(words: group7),
+    ChooseCorrectGroupEntity(instruction: instructionShadda, words: group1),
+    ChooseCorrectGroupEntity(instruction: instructionShadda, words: group2),
+    ChooseCorrectGroupEntity(instruction: instructionShadda, words: group3),
+    ChooseCorrectGroupEntity(instruction: instructionShamsiya, words: group4),
+    ChooseCorrectGroupEntity(instruction: instructionShamsiya, words: group5),
+    ChooseCorrectGroupEntity(instruction: instructionQamariya, words: group6),
+    ChooseCorrectGroupEntity(instruction: instructionQamariya, words: group7),
   ];
 }

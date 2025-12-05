@@ -2,6 +2,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
+import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class ItemGameLevel extends StatefulWidget {
   final String levelTitle;
@@ -105,10 +107,11 @@ class ItemGameLevelState extends State<ItemGameLevel>
 
   // --- SEPARATE SNACKBAR FUNCTION ---
   void _showLockedSnackBar() {
+    final s = S.of(context);
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        backgroundColor: AppColor.incorrectBorder,
+        backgroundColor: AppColor.error,
         behavior:
             SnackBarBehavior.floating, // Floating looks better/more animated
         margin: const EdgeInsets.all(16),
@@ -116,38 +119,27 @@ class ItemGameLevelState extends State<ItemGameLevel>
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         duration: const Duration(seconds: 2),
         content: Row(
-          textDirection: TextDirection.rtl, // Ensure Arabic direction
           children: [
             // Animated shaking lock icon inside the SnackBar
-            const Icon(
-              Icons.lock_outline_rounded,
-              color: Colors.white,
-              size: 28,
-            ),
+            const Icon(AppIcon.lock, color: Colors.white, size: 28),
             const SizedBox(width: 12),
             Expanded(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    "المرحلة مغلقة!", // "Level Locked!"
-                    textDirection: TextDirection.rtl,
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14,
-                      fontFamily: 'Cairo',
-                      color: Colors.white,
-                    ),
+                  Text(
+                    s.snackBarTitleLockedStage,
+                    style: AppTextStyle.fontBold16(
+                      context,
+                    ).copyWith(color: AppColor.secondaryText),
                   ),
                   Text(
-                    "أكمل مرحلة ${widget.previousLevelName ?? 'السابقة'} أولاً",
-                    textDirection: TextDirection.rtl,
-                    style: const TextStyle(
-                      fontSize: 12,
-                      fontFamily: 'Cairo',
-                      color: Colors.white70,
-                    ),
+                    "${s.snackBarMessageLockedStage} ${widget.previousLevelName ?? s.snackBarPrevious}",
+
+                    style: AppTextStyle.fontSemiBold16(
+                      context,
+                    ).copyWith(color: AppColor.secondaryText, fontSize: 14),
                   ),
                 ],
               ),
@@ -230,34 +222,30 @@ class ItemGameLevelState extends State<ItemGameLevel>
                   ),
                 ),
                 const SizedBox(height: 12),
-                Text(
-                  widget.levelTitle,
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                    fontSize: 20, // Adjusted slightly for safety
-                    height: 1.1,
-                    shadows: [
-                      Shadow(
-                        offset: Offset(1, 1),
-                        color: Colors.black26,
-                        blurRadius: 2,
-                      ),
-                    ],
+                FittedBox(
+                  child: Text(
+                    widget.levelTitle,
+                    textAlign: TextAlign.center,
+                    style: AppTextStyle.fontBold20(context).copyWith(
+                      fontWeight: FontWeight.w900,
+                      color: AppColor.secondaryText,
+                      shadows: const [
+                        Shadow(
+                          offset: Offset(1, 1),
+                          color: Colors.black26,
+                          blurRadius: 2,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(height: 6),
                 if (widget.isUnlocked)
-                  Text(
-                    widget.levelSubtitle,
-                    textAlign: TextAlign.center,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      color: Colors.white.withValues(alpha: 0.9),
-                      fontWeight: FontWeight.w500,
-                      fontSize: 11,
+                  Expanded(
+                    child: Text(
+                      widget.levelSubtitle,
+                      textAlign: TextAlign.center,
+                      style: AppTextStyle.fontMedium11(context),
                     ),
                   ),
               ],

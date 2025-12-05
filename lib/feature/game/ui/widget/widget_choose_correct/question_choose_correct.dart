@@ -24,11 +24,11 @@ class QuestionChooseCorrect extends StatelessWidget {
               question,
               style: AppTextStyle.fontBold24(
                 context,
-              ).copyWith(color: AppColor.lettersText),
+              ).copyWith(color: AppColor.lettersText1),
             ),
           ),
           const SizedBox(width: 15),
-          const Icon(Icons.help_outline, color: AppColor.lettersText, size: 30),
+          const Icon(Icons.help_outline, color: AppColor.lettersText1, size: 30),
         ],
       ),
     );

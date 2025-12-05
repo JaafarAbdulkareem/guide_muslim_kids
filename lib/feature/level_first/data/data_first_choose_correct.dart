@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 List<ChooseCorrectGroupEntity> getDataFirstChooseWords(BuildContext context) {
+  final String instructionSakin = S.of(context).instructionFirstChooseCorrect;
   final List<ChooseCorrectEntity> group1 = [
     const ChooseCorrectEntity(text: "اُتْقِنُ", isCorrect: true),
     const ChooseCorrectEntity(text: "أُكِلَ", isCorrect: false),
@@ -30,9 +32,9 @@ List<ChooseCorrectGroupEntity> getDataFirstChooseWords(BuildContext context) {
     const ChooseCorrectEntity(text: "يَدُكَ", isCorrect: false),
   ];
   final List<ChooseCorrectGroupEntity> data = [
-    ChooseCorrectGroupEntity(words: group1),
-    ChooseCorrectGroupEntity(words: group2),
-    ChooseCorrectGroupEntity(words: group3),
+    ChooseCorrectGroupEntity(instruction: instructionSakin, words: group1),
+    ChooseCorrectGroupEntity(instruction: instructionSakin, words: group2),
+    ChooseCorrectGroupEntity(instruction: instructionSakin, words: group3),
   ];
 
   return data;

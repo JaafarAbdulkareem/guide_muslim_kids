@@ -16,10 +16,10 @@ class AboutUsCardContain extends StatelessWidget {
         color: AppColor.cardColor.withValues(alpha: 0.83),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
-          BoxShadow(
+          const BoxShadow(
             color: Colors.black12,
             blurRadius: 8,
-            offset: const Offset(0, 4),
+            offset: Offset(0, 4),
           ),
         ],
       ),

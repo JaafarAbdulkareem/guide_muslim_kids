@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/route/extension.dart';
+import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/feature/home/logic/home_entity.dart';
 
 class HomeItem extends StatelessWidget {
@@ -36,7 +37,7 @@ class HomeItem extends StatelessWidget {
                     data.title,
                     textAlign: TextAlign.center,
                     style: const TextStyle(
-                      color: Colors.white,
+                      color: AppColor.secondaryText,
                       fontWeight: FontWeight.bold,
                       fontSize: 22,
                       shadows: [

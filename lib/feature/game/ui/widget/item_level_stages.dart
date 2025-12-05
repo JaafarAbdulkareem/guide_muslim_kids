@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:guide_muslim_kids/core/utils/app_color.dart';
+import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/game_level_runner.dart';
@@ -46,12 +48,12 @@ class ItemLevelStages extends StatelessWidget {
         ),
         child: Center(
           child: isLocked
-              ? const Icon(Icons.lock, color: Colors.white54, size: 40)
+              ? const Icon(AppIcon.lock, color: Colors.white54, size: 40)
               : Text(
                   "${level.levelNumber}",
                   style: AppTextStyle.fontSemiBold48(
                     context,
-                  ).copyWith(color: Colors.white),
+                  ).copyWith(color: AppColor.secondaryText),
                 ),
         ),
       ),

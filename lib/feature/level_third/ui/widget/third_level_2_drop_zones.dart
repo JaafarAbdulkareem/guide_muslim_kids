@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class ThirdLevel2DropZones extends StatelessWidget {
   const ThirdLevel2DropZones({super.key});
   @override
   Widget build(BuildContext context) {
     final TextStyle textStyle = AppTextStyle.fontSemiBold48(context);
+    final s = S.of(context);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
@@ -17,29 +20,27 @@ class ThirdLevel2DropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "اللام الشمسية", //S.of(context).shamsiya
+            label: s.letterLamShams,
             color: AppColor.dropZoneBGSakin,
-            borderColor: AppColor.dropZoneBorderSakin,
+            borderColor: AppColor.dropZoneFirst,
             type: LetterType.shamsiya,
             symbol: Text(
-              "ال☀️", //ConstantText.shamsiya,
-
-              style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
+              ConstantText.shamsiya,
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneFirst),
             ),
           ),
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: " اللام القمرية", //S.of(context).qamariya
+            label: s.letterLamQamar,
             color: AppColor.dropZoneBGMutaharrik,
-            borderColor: AppColor.dropZoneBorderMutaharrik,
+            borderColor: AppColor.dropZoneSecond,
             type: LetterType.qamariya,
             symbol: Text(
-              "ال🌙", //ConstantText.qamariya,
-
-              style: textStyle.copyWith(
-                color: AppColor.dropZoneBorderMutaharrik,
-              ),
+              ConstantText.qamariya,
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneSecond),
             ),
           ),
         ],

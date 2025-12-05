@@ -41,8 +41,8 @@ List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
     zoneType: type,
     word: 'عَرَبِيٌّ',
     letters: const [
-      LetterItemEntity(id: '1', char: 'عَ', type: LetterType.shamsiya),
-      LetterItemEntity(id: '2', char: 'رَ', type: LetterType.qamariya),
+      LetterItemEntity(id: '1', char: 'عَ', type: LetterType.noShaddah),
+      LetterItemEntity(id: '2', char: 'رَ', type: LetterType.noShaddah),
       LetterItemEntity(id: '3', char: 'بِ', type: LetterType.noShaddah),
       LetterItemEntity(id: '4', char: 'يٌّ', type: LetterType.shaddah),
     ],

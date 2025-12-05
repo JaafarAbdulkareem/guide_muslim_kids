@@ -4,6 +4,7 @@ import 'package:guide_muslim_kids/feature/level_first/data/data_first_drog_drop_
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/level_first/data/data_first_two_option.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 List<GameLevelEntity> getDataGameFirstLevel(BuildContext context) {
   List<GameLevelEntity> levels = [];
@@ -32,7 +33,7 @@ List<GameLevelEntity> getDataGameFirstLevel(BuildContext context) {
       GameLevelEntity(
         levelId: i + 1,
         levelNumber: i + 1,
-        title: "المستوى ${i + 1}", //S.of(context).stage
+        title: "${S.of(context).stage} ${i + 1}", //
         gameItems: [allItems[i]],
       ),
     );

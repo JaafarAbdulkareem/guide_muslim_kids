@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class ShowNotification {
+  static final _s = S.current;
   static void showAnswerDialog({
     required BuildContext context,
     required bool isCorrect,
@@ -27,7 +29,7 @@ class ShowNotification {
               ? AppColor.correctBackground
               : AppColor.incorrectBackground,
           title: Text(
-            isCorrect ? "مـمـتـاز! 🎉" : "حاول مجدداً 🧐",
+            isCorrect ? _s.dialogTitleCorrect : _s.dialogTitleIncorrect,
             textAlign: TextAlign.center,
             style: AppTextStyle.fontBold24(context).copyWith(
               color: isCorrect
@@ -36,7 +38,7 @@ class ShowNotification {
             ),
           ),
           content: Text(
-            isCorrect ? "أنت بطل! إجابة صحيحة." : "لا بأس! حاول مرة أخرى.",
+            isCorrect ? _s.dialogMessageCorrect : _s.dialogMessageIncorrect,
             textAlign: TextAlign.center,
             style: AppTextStyle.fontBold20(context).copyWith(
               color: isCorrect
@@ -67,7 +69,9 @@ class ShowNotification {
                 }
               },
               child: Text(
-                isCorrect ? (isLastItem ? 'إنهاء' : 'التالي') : 'إغلاق',
+                isCorrect
+                    ? (isLastItem ? _s.buttonFinish : _s.buttonNext)
+                    : _s.buttonClose,
                 style: AppTextStyle.fontBold20(context).copyWith(
                   color: isCorrect
                       ? AppColor.correctBackground
@@ -81,13 +85,20 @@ class ShowNotification {
     );
   }
 
-  static void showFeedbackSnackBar(BuildContext context, bool isCorrect) {
+  static void showAnswerSnackBar(
+    BuildContext context,
+    bool isCorrect, {
+    String? message,
+  }) {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         content: Text(
-          isCorrect ? "أحسنت! إجابة صحيحة" : "انتبه! هذه الكلمة غير صحيحة",
+          message ??
+              (isCorrect
+                  ? _s.snackBarMessageCorrect
+                  : _s.snackBarMessageIncorrect),
           style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
         ),
         backgroundColor: isCorrect ? Colors.green : Colors.redAccent,

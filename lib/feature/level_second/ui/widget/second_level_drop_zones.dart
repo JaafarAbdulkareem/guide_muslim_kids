@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class SecondLevelDropZones extends StatelessWidget {
   const SecondLevelDropZones({super.key});
@@ -10,7 +12,7 @@ class SecondLevelDropZones extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextStyle textStyle = AppTextStyle.fontSemiBold16(context);
-
+    final s = S.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
       child: Row(
@@ -18,28 +20,28 @@ class SecondLevelDropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "حرف المد", //S.of(context).letterMadd
+            label: s.letterMadd,
             color: AppColor.dropZoneBGSakin,
-            borderColor: AppColor.dropZoneBorderSakin,
+            borderColor: AppColor.dropZoneFirst,
             type: LetterType.madd,
             symbol: Text(
-              "ا - و - ي",
-              style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
+              ConstantText.madd,
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneFirst),
             ),
           ),
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: "ليس حرف مد", //S.of(context).letterNoMadd
+            label: s.letterNoMadd,
             color: AppColor.dropZoneBGMutaharrik,
-            borderColor: AppColor.dropZoneBorderMutaharrik,
+            borderColor: AppColor.dropZoneSecond,
 
             type: LetterType.noMadd,
             symbol: Text(
-              "أ، ب، ت، ث، ج، ح، خ، د، ذ، ر، ز، س، ش، ص، ض، ط، ظ، ع، غ، ف، ق، ك، ل، م، ن، هـ، ء",
-              style: textStyle.copyWith(
-                color: AppColor.dropZoneBorderMutaharrik,
-              ),
+              ConstantText.noMadd,
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneSecond),
             ),
           ),
         ],

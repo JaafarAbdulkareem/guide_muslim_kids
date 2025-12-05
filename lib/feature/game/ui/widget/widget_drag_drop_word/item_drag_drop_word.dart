@@ -7,8 +7,8 @@ import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/c
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/choose_drop_zones.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/title_word_drag_drop.dart';
 
-class SortingGamePage extends StatelessWidget {
-  const SortingGamePage({
+class ItemDragDropWord extends StatelessWidget {
+  const ItemDragDropWord({
     super.key,
     required this.levelData,
     required this.onGameCompleted,

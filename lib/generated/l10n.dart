@@ -1620,6 +1620,51 @@ class S {
   }
 
   /// ``
+  String get snackBarLevelCompleted {
+    return Intl.message('', name: 'snackBarLevelCompleted', desc: '', args: []);
+  }
+
+  /// ``
+  String get snackBarMessageCorrect {
+    return Intl.message('', name: 'snackBarMessageCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get snackBarMessageIncorrect {
+    return Intl.message(
+      '',
+      name: 'snackBarMessageIncorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get snackBarTitleLockedStage {
+    return Intl.message(
+      '',
+      name: 'snackBarTitleLockedStage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get snackBarMessageLockedStage {
+    return Intl.message(
+      '',
+      name: 'snackBarMessageLockedStage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get snackBarPrevious {
+    return Intl.message('', name: 'snackBarPrevious', desc: '', args: []);
+  }
+
+  /// ``
   String get dialogTitleCorrect {
     return Intl.message('', name: 'dialogTitleCorrect', desc: '', args: []);
   }
@@ -1645,33 +1690,38 @@ class S {
   }
 
   /// ``
-  String get instructionTWoOption {
-    return Intl.message('', name: 'instructionTWoOption', desc: '', args: []);
+  String get titleGame {
+    return Intl.message('', name: 'titleGame', desc: '', args: []);
   }
 
   /// ``
-  String get instructionsDragWord {
-    return Intl.message('', name: 'instructionsDragWord', desc: '', args: []);
+  String get titleFirstLevel {
+    return Intl.message('', name: 'titleFirstLevel', desc: '', args: []);
   }
 
   /// ``
-  String get instructionChooseCorrect {
-    return Intl.message(
-      '',
-      name: 'instructionChooseCorrect',
-      desc: '',
-      args: [],
-    );
+  String get titleSecondLevel {
+    return Intl.message('', name: 'titleSecondLevel', desc: '', args: []);
   }
 
   /// ``
-  String get letterSakin {
-    return Intl.message('', name: 'letterSakin', desc: '', args: []);
+  String get titleThirdLevel {
+    return Intl.message('', name: 'titleThirdLevel', desc: '', args: []);
   }
 
   /// ``
-  String get letterMutaharrik {
-    return Intl.message('', name: 'letterMutaharrik', desc: '', args: []);
+  String get contentFirstLevel {
+    return Intl.message('', name: 'contentFirstLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get contentSecondLevel {
+    return Intl.message('', name: 'contentSecondLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get contentThirdLevel {
+    return Intl.message('', name: 'contentThirdLevel', desc: '', args: []);
   }
 
   /// ``
@@ -1697,6 +1747,141 @@ class S {
   /// ``
   String get studentStage {
     return Intl.message('', name: 'studentStage', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionFirstTWoOption {
+    return Intl.message(
+      '',
+      name: 'instructionFirstTWoOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionSecondTWoOption {
+    return Intl.message(
+      '',
+      name: 'instructionSecondTWoOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdTWoOption {
+    return Intl.message(
+      '',
+      name: 'instructionThirdTWoOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionsDragWord {
+    return Intl.message('', name: 'instructionsDragWord', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionFirstChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionFirstChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionSecondOneChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionSecondOneChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionSecondTwoChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionSecondTwoChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionThirdChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdTwo1ChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionThirdTwo1ChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdTwo2ChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionThirdTwo2ChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get letterSakin {
+    return Intl.message('', name: 'letterSakin', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterMutaharrik {
+    return Intl.message('', name: 'letterMutaharrik', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterMadd {
+    return Intl.message('', name: 'letterMadd', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterNoMadd {
+    return Intl.message('', name: 'letterNoMadd', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterShaddah {
+    return Intl.message('', name: 'letterShaddah', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterNoShaddah {
+    return Intl.message('', name: 'letterNoShaddah', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterLamShams {
+    return Intl.message('', name: 'letterLamShams', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterLamQamar {
+    return Intl.message('', name: 'letterLamQamar', desc: '', args: []);
   }
 
   /// ``

@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 List<ChooseCorrectGroupEntity> getDataSecondChooseWords(BuildContext context) {
+  final s = S.of(context);
+  final String instructionMadd = s.instructionSecondOneChooseCorrect;
+  final String instructionTanween = s.instructionSecondTwoChooseCorrect;
+
+  //madd
   // ---- Group 1 ----
   final List<ChooseCorrectEntity> group1 = [
     const ChooseCorrectEntity(text: "نَأْكُلُ", isCorrect: false),
@@ -33,6 +39,7 @@ List<ChooseCorrectGroupEntity> getDataSecondChooseWords(BuildContext context) {
     const ChooseCorrectEntity(text: "تُخْفِي", isCorrect: true),
   ];
 
+  // التنوين
   // ---- Group 4 ----
   final List<ChooseCorrectEntity> group4 = [
     const ChooseCorrectEntity(text: "أَزْهَارٌ", isCorrect: true),
@@ -64,12 +71,12 @@ List<ChooseCorrectGroupEntity> getDataSecondChooseWords(BuildContext context) {
   ];
 
   final List<ChooseCorrectGroupEntity> data = [
-    ChooseCorrectGroupEntity(words: group1),
-    ChooseCorrectGroupEntity(words: group2),
-    ChooseCorrectGroupEntity(words: group3),
-    ChooseCorrectGroupEntity(words: group4),
-    ChooseCorrectGroupEntity(words: group5),
-    ChooseCorrectGroupEntity(words: group6),
+    ChooseCorrectGroupEntity(instruction: instructionMadd, words: group1),
+    ChooseCorrectGroupEntity(instruction: instructionMadd, words: group2),
+    ChooseCorrectGroupEntity(instruction: instructionMadd, words: group3),
+    ChooseCorrectGroupEntity(instruction: instructionTanween, words: group4),
+    ChooseCorrectGroupEntity(instruction: instructionTanween, words: group5),
+    ChooseCorrectGroupEntity(instruction: instructionTanween, words: group6),
   ];
 
   return data;

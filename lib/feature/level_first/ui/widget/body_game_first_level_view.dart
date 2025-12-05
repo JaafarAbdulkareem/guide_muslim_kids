@@ -5,20 +5,21 @@ import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.
 import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/item_level_stages.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/stage_header.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class BodyGameFirstLevelView extends StatelessWidget {
   const BodyGameFirstLevelView({super.key, required this.levels});
   final List<GameLevelEntity> levels;
   @override
   Widget build(BuildContext context) {
-    final Color colorLetter = AppColor.lettersText;
-    final Color colorBGItem = AppColor.bgLevelItem;
-    final Color colorShadowItem = AppColor.shadowLevelItem;
+    final Color colorLetter = AppColor.lettersText1;
+    final Color colorBGItem = AppColor.bgLevelItem1;
+    final Color colorShadowItem = AppColor.shadowLevelItem1;
     return Column(
       children: [
         BlocBuilder<GameLevelCubit, int>(
           builder: (context, unlockedLevel) {
-            String stageName = "المستوى الأول"; //S.of(context).firstLevel;
+            String stageName = S.of(context).firstLevel;
             return StageHeader(
               title: stageName,
               unlockedLevel: unlockedLevel,

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class ThirdLevel1DropZones extends StatelessWidget {
   const ThirdLevel1DropZones({super.key});
@@ -10,6 +12,7 @@ class ThirdLevel1DropZones extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextStyle textStyle = AppTextStyle.fontSemiBold48(context);
+    final s = S.of(context);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
@@ -18,27 +21,27 @@ class ThirdLevel1DropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "حرف مشدد", //S.of(context).shaddah
+            label: s.letterShaddah,
             color: AppColor.dropZoneBGSakin,
-            borderColor: AppColor.dropZoneBorderSakin,
+            borderColor: AppColor.dropZoneFirst,
             type: LetterType.shaddah,
             symbol: Text(
-              "ـَّ ـُّ ـِّ", //ConstantText.shaddah,
-              style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
+              ConstantText.shaddah,
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneFirst),
             ),
           ),
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: "ليس حرفاً مشدداً", //S.of(context).noShaddah
+            label: s.letterNoShaddah,
             color: AppColor.dropZoneBGMutaharrik,
-            borderColor: AppColor.dropZoneBorderMutaharrik,
+            borderColor: AppColor.dropZoneSecond,
             type: LetterType.noShaddah,
             symbol: Text(
-              "ـَ ـُ ـِ ـْ", //ConstantText.noShaddah,
-              style: textStyle.copyWith(
-                color: AppColor.dropZoneBorderMutaharrik,
-              ),
+              ConstantText.noShaddah,
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneSecond),
             ),
           ),
         ],

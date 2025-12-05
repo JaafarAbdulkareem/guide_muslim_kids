@@ -17,7 +17,7 @@ class CharLetterCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bgColor = isBack ? Colors.grey.shade100 : Colors.white;
-    final textColor = isBack ? Colors.grey.shade400 : AppColor.lettersText;
+    final textColor = isBack ? Colors.grey.shade400 : AppColor.lettersText1;
     final double elevation = isDragging ? 12 : (isBack ? 0 : 5);
     final scale = isDragging ? 1.1 : 1.0;
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/body_game_view.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class GameView extends StatelessWidget {
   const GameView({super.key});
@@ -13,12 +14,13 @@ class GameView extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        automaticallyImplyLeading: false,
         centerTitle: true,
         title: Text(
-          "خريطة التعلم",
+          S.of(context).titleGame,
           style: AppTextStyle.fontBold28(
             context,
-          ).copyWith(color: AppColor.lettersText),
+          ).copyWith(color: AppColor.lettersText1),
         ),
 
         // actions: [
@@ -40,7 +42,7 @@ class GameView extends StatelessWidget {
         //   ),
         // ],
       ),
-      body: const BodyGameView(),
+      body: const SafeArea(child: BodyGameView()),
     );
   }
 }

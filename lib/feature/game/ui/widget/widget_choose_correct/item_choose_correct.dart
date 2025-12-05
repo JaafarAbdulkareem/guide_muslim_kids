@@ -28,9 +28,9 @@ class ItemChooseCorrect extends StatelessWidget {
           return BlocConsumer<ChooseCorrectCubit, ChooseCorrectState>(
             listener: (context, state) {
               if (state is AnswerCorrect) {
-                ShowNotification.showFeedbackSnackBar(context, true);
+                ShowNotification.showAnswerSnackBar(context, true);
               } else if (state is AnswerWrong) {
-                ShowNotification.showFeedbackSnackBar(context, false);
+                ShowNotification.showAnswerSnackBar(context, false);
               } else if (state is GameFinished) {
                 ShowNotification.showAnswerDialog(
                   context: context,
@@ -53,9 +53,7 @@ class ItemChooseCorrect extends StatelessWidget {
                   const SizedBox(height: 20),
 
                   // Question Card
-                  QuestionChooseCorrect(
-                    question: "اختر الكلمة الصحيحة",
-                  ), //S.of(context).instructionChooseCorrect,
+                  QuestionChooseCorrect(question: data.instruction),
 
                   const SizedBox(height: 20),
 

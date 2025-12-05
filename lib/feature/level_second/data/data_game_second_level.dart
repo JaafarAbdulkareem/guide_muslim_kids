@@ -4,6 +4,7 @@ import 'package:guide_muslim_kids/feature/level_second/data/data_second_drag_dro
 import 'package:guide_muslim_kids/feature/level_second/data/data_second_two_option.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 List<GameLevelEntity> getDataGameSecondLevel(
   BuildContext context, {
@@ -35,7 +36,7 @@ List<GameLevelEntity> getDataGameSecondLevel(
       GameLevelEntity(
         levelId: firstLength + i + 1,
         levelNumber: i + 1,
-        title: "المستوى ${i + 1}", //S.of(context).stage
+        title: "${S.of(context).stage} ${i + 1}",
         gameItems: [allItems[i]],
       ),
     );

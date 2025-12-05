@@ -5,6 +5,7 @@ import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/constant_text.dart';
 import 'package:guide_muslim_kids/core/utils/enum_letter_type.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/target_box.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class FirstLevelDropZones extends StatelessWidget {
   const FirstLevelDropZones({super.key});
@@ -12,7 +13,7 @@ class FirstLevelDropZones extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final TextStyle textStyle = AppTextStyle.fontSemiBold48(context);
-
+    final s = S.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
       child: Row(
@@ -20,28 +21,28 @@ class FirstLevelDropZones extends StatelessWidget {
         children: [
           _buildDropZone(
             context,
-            label: "الحرف الساكن", //S.of(context).sakin
+            label: s.letterSakin,
             color: AppColor.dropZoneBGSakin,
-            borderColor: AppColor.dropZoneBorderSakin,
+            borderColor: AppColor.dropZoneFirst,
             type: LetterType.sakin,
             symbol: Text(
               ConstantText.sakin,
-              style: textStyle.copyWith(color: AppColor.dropZoneBorderSakin),
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneFirst),
             ),
           ),
           const SizedBox(width: 16),
           _buildDropZone(
             context,
-            label: "الحرف المتحرك", //S.of(context).mutaharrik
+            label: s.letterMutaharrik,
             color: AppColor.dropZoneBGMutaharrik,
-            borderColor: AppColor.dropZoneBorderMutaharrik,
+            borderColor: AppColor.dropZoneSecond,
 
             type: LetterType.mutaharrik,
             symbol: Text(
               ConstantText.mutaharrik,
-              style: textStyle.copyWith(
-                color: AppColor.dropZoneBorderMutaharrik,
-              ),
+              textAlign: TextAlign.center,
+              style: textStyle.copyWith(color: AppColor.dropZoneSecond),
             ),
           ),
         ],

@@ -15,7 +15,7 @@ class AnswerButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
         backgroundColor: AppColor.letterButtonBackground,
-        foregroundColor: AppColor.lettersText,
+        foregroundColor: AppColor.lettersText1,
         elevation: 4,
         side: const BorderSide(color: Colors.teal, width: 2),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
@@ -24,7 +24,7 @@ class AnswerButton extends StatelessWidget {
         text,
         style: AppTextStyle.fontBold24(
           context,
-        ).copyWith(color: AppColor.lettersText),
+        ).copyWith(color: AppColor.lettersText1),
       ),
     );
   }
