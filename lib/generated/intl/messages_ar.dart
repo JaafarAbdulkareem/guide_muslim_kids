@@ -95,7 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "alertTryAgain": MessageLookupByLibrary.simpleMessage(
       "أوه لا! 🐥 دعنا نعيد المحاولة!",
     ),
-    "appName": MessageLookupByLibrary.simpleMessage("نور الجيل"),
+    "appName": MessageLookupByLibrary.simpleMessage("مركز المعرفة"),
     "beforeEating": MessageLookupByLibrary.simpleMessage("بِسْمِ اللَّهِ"),
     "beforeSalam": MessageLookupByLibrary.simpleMessage(
       "اللَّهُــمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَمِنْ عَذَابِ جَهَنَّمَ، وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، وَمِنْ شَرِّ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
