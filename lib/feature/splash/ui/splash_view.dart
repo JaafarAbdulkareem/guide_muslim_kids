@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:guide_muslim_kids/core/route/extension.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/utils/app_images.dart';
@@ -62,9 +63,12 @@ class SplashViewState extends State<SplashView>
             children: [
               ScaleTransition(
                 scale: _scaleAnimation,
-                child: Image.asset(AppImage.imagesSplash),
+                child: Image.asset(
+                  AppImage.imagesSplash,
+                  width: MediaQuery.of(context).size.width * 0.6,
+                ),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.03),
               Text(
                 S.of(context).appName,
                 style: AppTextStyle.fontBold24(context),

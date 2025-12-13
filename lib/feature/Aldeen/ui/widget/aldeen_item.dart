@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/route/extension.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
@@ -41,7 +42,7 @@ class AldeenItem extends StatelessWidget {
                   style: AppTextStyle.fontBold24(context),
                 ),
               ),
-              const SizedBox(width: 10),
+              SizedBox(width: 10.w),
               Expanded(
                 flex: 1,
                 child: ClipRRect(

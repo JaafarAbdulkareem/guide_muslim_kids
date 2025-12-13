@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/feature/about_us/ui/widget/about_us_contain.dart';
 import 'package:guide_muslim_kids/feature/about_us/ui/widget/about_us_point_text.dart';
@@ -29,11 +30,11 @@ class AboutUsCardContain extends StatelessWidget {
         children: [
           AboutUsTitle(text: s.aboutEducationLevelsTitle),
           AboutUsContain(text: s.aboutEducationLevelsDescription),
-          const SizedBox(height: 8),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.01),
           AboutUsPointText(text: s.aboutEducationLevel1),
           AboutUsPointText(text: s.aboutEducationLevel2),
           AboutUsPointText(text: s.aboutEducationLevel3),
-          const SizedBox(height: 20),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.03),
 
           AboutUsTitle(text: s.aboutGoalsTitle),
           AboutUsPointText(text: s.aboutGoalsPoint1),
@@ -42,11 +43,11 @@ class AboutUsCardContain extends StatelessWidget {
           AboutUsPointText(text: s.aboutGoalsPoint4),
           AboutUsPointText(text: s.aboutGoalsPoint5),
           AboutUsPointText(text: s.aboutGoalsPoint6),
-          const SizedBox(height: 20),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.03),
 
           AboutUsTitle(text: s.aboutVisionTitle),
           AboutUsContain(text: s.aboutVisionText),
-          const SizedBox(height: 20),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.03),
 
           AboutUsTitle(text: s.aboutMessageTitle),
           AboutUsContain(text: s.aboutMessage),

@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
@@ -108,21 +109,24 @@ class ItemGameLevelState extends State<ItemGameLevel>
   // --- SEPARATE SNACKBAR FUNCTION ---
   void _showLockedSnackBar() {
     final s = S.of(context);
+    final size = MediaQuery.of(context).size;
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         backgroundColor: AppColor.error,
         behavior:
             SnackBarBehavior.floating, // Floating looks better/more animated
-        margin: const EdgeInsets.all(16),
+        margin: EdgeInsets.all(size.width * 0.04),
         elevation: 6,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
         duration: const Duration(seconds: 2),
         content: Row(
           children: [
             // Animated shaking lock icon inside the SnackBar
-            const Icon(AppIcon.lock, color: Colors.white, size: 28),
-            const SizedBox(width: 12),
+            Icon(AppIcon.lock, color: Colors.white, size: size.width * 0.07),
+            SizedBox(width: size.width * 0.03),
             Expanded(
               child: Column(
                 mainAxisSize: MainAxisSize.min,
@@ -139,7 +143,9 @@ class ItemGameLevelState extends State<ItemGameLevel>
 
                     style: AppTextStyle.fontSemiBold16(
                       context,
-                    ).copyWith(color: AppColor.secondaryText, fontSize: 14),
+                    ).copyWith(
+                        color: AppColor.secondaryText,
+                        fontSize: size.width * 0.035),
                   ),
                 ],
               ),
@@ -153,6 +159,7 @@ class ItemGameLevelState extends State<ItemGameLevel>
   @override
   Widget build(BuildContext context) {
     double scale = 1 - _pressController.value;
+    final size = MediaQuery.of(context).size;
 
     final displayShadowColor = widget.isUnlocked
         ? (widget.shadowColor ?? widget.color.withValues(alpha: 0.4))
@@ -184,9 +191,9 @@ class ItemGameLevelState extends State<ItemGameLevel>
         child: Transform.scale(
           scale: scale,
           child: Container(
-            width: 160,
-            height: 180,
-            padding: const EdgeInsets.all(12),
+            width: size.width * 0.4, // Approx 160/360
+            constraints: BoxConstraints(minHeight: size.height * 0.25),
+            padding: EdgeInsets.all(size.width * 0.03),
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: gradientColors,
@@ -198,7 +205,7 @@ class ItemGameLevelState extends State<ItemGameLevel>
                 BoxShadow(
                   color: displayShadowColor,
                   blurRadius: 12,
-                  offset: const Offset(0, 8),
+                  offset: Offset(0, size.height * 0.01),
                 ),
               ],
               border: Border.all(
@@ -206,11 +213,12 @@ class ItemGameLevelState extends State<ItemGameLevel>
                 width: 3,
               ),
             ),
+            alignment: Alignment.center,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(12),
+                  padding: EdgeInsets.all(size.width * 0.03),
                   decoration: BoxDecoration(
                     color: Colors.white.withValues(alpha: 0.25),
                     shape: BoxShape.circle,
@@ -218,19 +226,19 @@ class ItemGameLevelState extends State<ItemGameLevel>
                   child: Icon(
                     widget.isUnlocked ? widget.icon : AppIcon.lock,
                     color: Colors.white,
-                    size: 36,
+                    size: size.width * 0.09, // Approx 36/360
                   ),
                 ),
-                const SizedBox(height: 12),
+                SizedBox(height: size.height * 0.01),
                 FittedBox(
                   child: Text(
                     widget.levelTitle,
                     textAlign: TextAlign.center,
                     style: AppTextStyle.fontBold20(context).copyWith(
                       fontWeight: FontWeight.w900,
-                      color: AppColor.secondaryText,
-                      shadows: const [
-                        Shadow(
+                      color: const Color(0xFFFFFFFF),
+                      shadows: [
+                        const Shadow(
                           offset: Offset(1, 1),
                           color: Colors.black26,
                           blurRadius: 2,
@@ -239,14 +247,12 @@ class ItemGameLevelState extends State<ItemGameLevel>
                     ),
                   ),
                 ),
-                const SizedBox(height: 6),
+                SizedBox(height: size.height * 0.005),
                 if (widget.isUnlocked)
-                  Expanded(
-                    child: Text(
-                      widget.levelSubtitle,
-                      textAlign: TextAlign.center,
-                      style: AppTextStyle.fontMedium11(context),
-                    ),
+                  Text(
+                    widget.levelSubtitle,
+                    textAlign: TextAlign.center,
+                    style: AppTextStyle.fontMedium11(context),
                   ),
               ],
             ),

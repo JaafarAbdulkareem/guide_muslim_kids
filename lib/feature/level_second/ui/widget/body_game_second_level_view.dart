@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
@@ -33,7 +34,7 @@ class BodyGameSecondLevelView extends StatelessWidget {
           child: BlocBuilder<GameLevelCubit, int>(
             builder: (context, unlockedLevel) {
               return ListView.builder(
-                padding: const EdgeInsets.all(20),
+                padding: EdgeInsets.all(20.r),
                 itemCount: levels.length,
                 itemBuilder: (context, index) {
                   final level = levels[index];

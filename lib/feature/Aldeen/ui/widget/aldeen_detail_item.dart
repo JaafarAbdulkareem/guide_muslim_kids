@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/feature/Aldeen/logic/aldeen_entity.dart';
 import 'package:guide_muslim_kids/feature/Aldeen/ui/widget/aldeen_audio_button.dart';
 
@@ -15,7 +16,7 @@ class AldeenDetailItem extends StatelessWidget {
         data.image != null
             ? Image.asset(data.image!, fit: BoxFit.fill)
             : Container(),
-        const SizedBox(height: 25),
+        SizedBox(height: 25.h),
         AldeenAudioButton(audioKey: data.audioKey),
       ],
     );

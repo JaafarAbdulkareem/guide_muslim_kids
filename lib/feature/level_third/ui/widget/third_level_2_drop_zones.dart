@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/core/utils/constant_text.dart';
@@ -14,7 +15,7 @@ class ThirdLevel2DropZones extends StatelessWidget {
     final s = S.of(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
+      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 20.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -30,7 +31,7 @@ class ThirdLevel2DropZones extends StatelessWidget {
               style: textStyle.copyWith(color: AppColor.dropZoneFirst),
             ),
           ),
-          const SizedBox(width: 16),
+          SizedBox(width: 16.w),
           _buildDropZone(
             context,
             label: s.letterLamQamar,

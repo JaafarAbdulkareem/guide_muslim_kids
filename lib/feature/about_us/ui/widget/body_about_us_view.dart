@@ -29,10 +29,10 @@ class BodyAboutUsView extends StatelessWidget {
                 Center(
                   child: Image.asset(
                     AppImage.imagesEducationLogo,
-                    height: 120,
+                    height: MediaQuery.of(context).size.height * 0.15,
                   ),
                 ),
-                const SizedBox(height: 20),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.03),
                 Text(
                   s.aboutCenterName,
                   style: AppTextStyle.fontBold24(
@@ -40,7 +40,7 @@ class BodyAboutUsView extends StatelessWidget {
                   ).copyWith(color: AppColor.secondaryText),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.015),
                 Text(
                   s.aboutCenterAddress,
                   style: AppTextStyle.fontBold20(
@@ -48,10 +48,13 @@ class BodyAboutUsView extends StatelessWidget {
                   ).copyWith(color: AppColor.secondaryText),
                   textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 30),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.04),
                 const AboutUsCardContain(),
-                const SizedBox(height: 40),
-                Image.asset(AppImage.imagesEducationLogo, height: 80),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+                Image.asset(
+                  AppImage.imagesEducationLogo,
+                  height: MediaQuery.of(context).size.height * 0.1,
+                ),
               ],
             ),
           ),

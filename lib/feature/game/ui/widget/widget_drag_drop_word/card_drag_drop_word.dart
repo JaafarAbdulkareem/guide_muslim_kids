@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
@@ -12,16 +14,17 @@ class CardDragDropWord extends StatelessWidget {
   final List<LetterItemEntity> remainingLetters;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 240,
-      width: 200,
+    return Container(
+      // width: 0.4.sw,
+      // width: 0.7.sw,
+      // color: Colors.redAccent,
       child: remainingLetters.isEmpty
           ? _buildEmptyState(context)
-          : _buildCardStack(remainingLetters),
+          : _buildCardStack(context, remainingLetters),
     );
   }
 
-  Widget _buildCardStack(List<LetterItemEntity> letters) {
+  Widget _buildCardStack(BuildContext context, List<LetterItemEntity> letters) {
     return Stack(
       alignment: Alignment.center,
       children: letters.asMap().entries.map((entry) {
@@ -31,11 +34,11 @@ class CardDragDropWord extends StatelessWidget {
 
         // Visual Stacking Math
         final reverseIndex = letters.length - 1 - index;
-        final offsetValue = reverseIndex * 8.0;
+        final offsetValue = reverseIndex * 8.h;
         final scaleValue = 1.0 - (reverseIndex * 0.05);
 
         return Positioned(
-          top: offsetValue + 20,
+          top: offsetValue + 0.02.sh,
           child: Transform.scale(
             scale: scaleValue,
             child: isTop
@@ -54,10 +57,10 @@ class CardDragDropWord extends StatelessWidget {
         children: [
           Icon(
             AppIcon.check,
-            size: 80,
+            size: 0.2.sw,
             color: AppColor.lettersText1.withValues(alpha: 0.5),
           ),
-          const SizedBox(height: 10),
+          SizedBox(height: 0.015.sh),
           Text(
             S.of(context).dialogTitleCorrect,
             style: AppTextStyle.fontBold24(

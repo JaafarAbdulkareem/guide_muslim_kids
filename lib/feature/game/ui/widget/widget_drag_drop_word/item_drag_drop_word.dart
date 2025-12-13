@@ -48,7 +48,10 @@ class ItemDragDropWord extends StatelessWidget {
                   const Spacer(),
 
                   // 2. Card Stack
-                  CardDragDropWord(remainingLetters: remainingLetters),
+                  Expanded(
+                    flex: 6,
+                    child: CardDragDropWord(remainingLetters: remainingLetters),
+                  ),
 
                   const Spacer(),
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 
@@ -17,7 +18,7 @@ class AnswerButton extends StatelessWidget {
         backgroundColor: AppColor.letterButtonBackground,
         foregroundColor: AppColor.lettersText1,
         elevation: 4,
-        side: const BorderSide(color: Colors.teal, width: 2),
+        side: BorderSide(color: Colors.teal, width: 2.w),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
       ),
       child: Text(

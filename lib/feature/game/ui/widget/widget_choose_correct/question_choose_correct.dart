@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 
@@ -10,8 +11,9 @@ class QuestionChooseCorrect extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16),
-      padding: const EdgeInsets.all(20),
+      margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * 0.04),
+      padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.05),
       decoration: BoxDecoration(
         color: AppColor.lettersBackground,
         borderRadius: BorderRadius.circular(20),
@@ -27,8 +29,10 @@ class QuestionChooseCorrect extends StatelessWidget {
               ).copyWith(color: AppColor.lettersText1),
             ),
           ),
-          const SizedBox(width: 15),
-          const Icon(Icons.help_outline, color: AppColor.lettersText1, size: 30),
+          SizedBox(width: MediaQuery.of(context).size.width * 0.04),
+          Icon(AppIcon.question,
+              color: AppColor.lettersText1,
+              size: MediaQuery.of(context).size.width * 0.08),
         ],
       ),
     );

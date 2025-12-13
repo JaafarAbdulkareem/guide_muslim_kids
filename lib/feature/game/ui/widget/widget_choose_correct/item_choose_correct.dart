@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
@@ -50,12 +51,12 @@ class ItemChooseCorrect extends StatelessWidget {
 
               return Column(
                 children: [
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20.h),
 
                   // Question Card
                   QuestionChooseCorrect(question: data.instruction),
 
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20.h),
 
                   // Grid of Words
                   Expanded(

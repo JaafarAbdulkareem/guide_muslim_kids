@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 
@@ -17,7 +18,7 @@ class AboutUsPointText extends StatelessWidget {
             "• ",
             style: AppTextStyle.fontBold16(
               context,
-            ).copyWith(fontSize: 18, color: AppColor.titleAboutUs),
+            ).copyWith(fontSize: 18.sp, color: AppColor.titleAboutUs),
           ),
           Expanded(
             child: Text(

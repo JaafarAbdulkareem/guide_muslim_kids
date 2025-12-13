@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
@@ -25,8 +26,8 @@ class ItemLevelStages extends StatelessWidget {
   Widget build(BuildContext context) {
     var children = <Widget>[
       Container(
-        width: 100,
-        height: 100,
+        width: MediaQuery.of(context).size.width * 0.25,
+        height: MediaQuery.of(context).size.width * 0.25,
         decoration: BoxDecoration(
           color: isLocked ? Colors.grey.shade400 : colorBGItem,
           shape: BoxShape.circle,
@@ -34,21 +35,23 @@ class ItemLevelStages extends StatelessWidget {
             if (!isLocked)
               BoxShadow(
                 color: colorShadowItem,
-                offset: const Offset(0, 6),
+                offset: Offset(0, MediaQuery.of(context).size.height * 0.008),
                 blurRadius: 0,
               ),
             if (isLocked)
-              const BoxShadow(
+              BoxShadow(
                 color: Colors.black12,
                 blurRadius: 4,
-                offset: Offset(0, 4),
+                offset: Offset(0, MediaQuery.of(context).size.height * 0.006),
               ),
           ],
           border: Border.all(color: Colors.white, width: 4),
         ),
         child: Center(
           child: isLocked
-              ? const Icon(AppIcon.lock, color: Colors.white54, size: 40)
+              ? Icon(AppIcon.lock,
+                  color: Colors.white54,
+                  size: MediaQuery.of(context).size.width * 0.1)
               : Text(
                   "${level.levelNumber}",
                   style: AppTextStyle.fontSemiBold48(
@@ -57,7 +60,7 @@ class ItemLevelStages extends StatelessWidget {
                 ),
         ),
       ),
-      const SizedBox(width: 20),
+      SizedBox(width: MediaQuery.of(context).size.width * 0.05),
       if (!isLocked)
         Expanded(
           child: Text(
@@ -86,7 +89,8 @@ class ItemLevelStages extends StatelessWidget {
               );
             },
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 15),
+        margin: EdgeInsets.symmetric(
+            vertical: MediaQuery.of(context).size.height * 0.02),
         child: Row(
           mainAxisAlignment: isLeft
               ? MainAxisAlignment.start

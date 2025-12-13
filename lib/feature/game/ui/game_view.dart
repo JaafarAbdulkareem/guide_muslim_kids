@@ -12,6 +12,7 @@ class GameView extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.gameBackground,
       appBar: AppBar(
+        toolbarHeight: MediaQuery.of(context).size.height * 0.1,
         backgroundColor: Colors.transparent,
         elevation: 0,
         automaticallyImplyLeading: false,

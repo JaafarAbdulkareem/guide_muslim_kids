@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
@@ -34,16 +35,16 @@ class CardWordChooseCorrect extends StatelessWidget {
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.05),
               blurRadius: 10,
-              offset: const Offset(0, 4),
+              offset: Offset(0, MediaQuery.of(context).size.height * 0.006),
             ),
           ],
         ),
         child: Center(
           child: isDone
-              ? const Icon(
+              ? Icon(
                   AppIcon.check,
                   color: AppColor.correctBorder,
-                  size: 40,
+                  size: MediaQuery.of(context).size.width * 0.08,
                 )
               : Text(
                   word.text,

@@ -93,17 +93,30 @@ class ShowNotification {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-        content: Text(
-          message ??
-              (isCorrect
-                  ? _s.snackBarMessageCorrect
-                  : _s.snackBarMessageIncorrect),
-          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        content: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: 8.0,
+          ), // Add some vertical padding
+          child: Text(
+            message ??
+                (isCorrect
+                    ? _s.snackBarMessageCorrect
+                    : _s.snackBarMessageIncorrect),
+            style: AppTextStyle.fontBold18(context).copyWith(
+              color: Colors.white, // Ensure text is readable
+            ),
+            textAlign: TextAlign.center, // Center text
+          ),
         ),
-        backgroundColor: isCorrect ? Colors.green : Colors.redAccent,
-        duration: Duration(milliseconds: isCorrect ? 1000 : 1500),
+        backgroundColor: isCorrect ? Colors.green.shade600 : Colors.redAccent,
+        duration: Duration(milliseconds: isCorrect ? 1500 : 2000),
         behavior: SnackBarBehavior.floating,
+        margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * 0.05,
+          vertical: MediaQuery.of(context).size.height * 0.02,
+        ),
+        elevation: 6,
       ),
     );
   }

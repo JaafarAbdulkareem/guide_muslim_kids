@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
+import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/utils/constant_scale.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_group_entity.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_choose_correct/item_choose_correct.dart';
@@ -23,7 +25,6 @@ class GameLevelRunner extends StatefulWidget {
 }
 
 class _GameLevelRunnerState extends State<GameLevelRunner> {
-
   void _finishLevel() {
     context.read<GameLevelCubit>().completeLevel(widget.level.levelId);
 
@@ -43,6 +44,7 @@ class _GameLevelRunnerState extends State<GameLevelRunner> {
     return Scaffold(
       backgroundColor: AppColor.scaffoldBackgroundColor,
       appBar: AppBar(
+        toolbarHeight: MediaQuery.of(context).size.height * 0.1,
         centerTitle: true,
         title: Text(
           widget.level.title,
@@ -51,8 +53,16 @@ class _GameLevelRunnerState extends State<GameLevelRunner> {
           ).copyWith(color: AppColor.secondaryText),
         ),
         backgroundColor: AppColor.lettersText1,
+        leadingWidth:
+            MediaQuery.of(context).size.width < ConstantScale.tabletPoint
+            ? null
+            : 100,
         leading: IconButton(
-          icon: const Icon(Icons.close, color: Colors.white),
+          icon: Icon(
+            AppIcon.back,
+            color: Colors.white,
+            size: MediaQuery.of(context).size.width * 0.1,
+          ),
           onPressed: () => Navigator.pop(context),
         ),
       ),

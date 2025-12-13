@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_images.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
@@ -37,7 +38,7 @@ class NamesItemDetail extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8.h),
               Flexible(
                 child: Text(
                   data.desc,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:guide_muslim_kids/core/utils/responsive_layout.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
@@ -59,53 +60,82 @@ class _BodyGameViewState extends State<BodyGameView> {
     final s = S.of(context);
     return Center(
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+        padding: EdgeInsets.symmetric(
+          vertical: MediaQuery.of(context).size.height * 0.03,
+          horizontal: MediaQuery.of(context).size.width * 0.04,
+        ),
         child: BlocBuilder<GameLevelCubit, int>(
           builder: (context, highestUnlockedId) {
-            return Wrap(
-              spacing: 20,
-              runSpacing: 25,
-              alignment: WrapAlignment.center,
-              children: [
-                // --- LEVEL 1: SUKOON ---
-                ItemGameLevel(
-                  levelTitle: s.titleFirstLevel,
-                  levelSubtitle: s.contentFirstLevel,
-                  isUnlocked: true,
-                  color: AppColor.bgLevelItem1,
-                  shadowColor: AppColor.shadowLevelItem1,
-                  icon: AppIcon.firstLevel,
-                  targetScreen: GameFirstLevelView(levels: firstLevels),
-                ),
-
-                // --- LEVEL 2: MADD & TANWEEN ---
-                ItemGameLevel(
-                  levelTitle: s.titleSecondLevel,
-                  levelSubtitle: s.contentSecondLevel,
-                  isUnlocked: highestUnlockedId > firstLevels.length,
-                  color: AppColor.bgLevelItem2,
-                  shadowColor: AppColor.shadowLevelItem2,
-                  icon: AppIcon.secondLevel,
-                  targetScreen: GameSecondLevelView(levels: secondLevels),
-                  previousLevelName: s.titleFirstLevel,
-                ),
-
-                // --- LEVEL 3: SHADDA ---
-                ItemGameLevel(
-                  levelTitle: s.titleThirdLevel,
-                  levelSubtitle: s.contentThirdLevel,
-                  isUnlocked: highestUnlockedId > firstSecondLength,
-                  color: AppColor.bgLevelItem3,
-                  shadowColor: AppColor.shadowLevelItem3,
-                  icon: AppIcon.thirdLevel,
-                  targetScreen: GameThirdLevelView(levels: thirdLevels),
-                  previousLevelName: s.titleSecondLevel,
-                ),
-              ],
+            return ResponsiveLayout(
+              mobileBody: _buildMobileLayout(s, highestUnlockedId),
+              tabletBody: _buildTabletLayout(s, highestUnlockedId),
             );
           },
         ),
       ),
     );
+  }
+
+  Widget _buildMobileLayout(S s, int highestUnlockedId) {
+    return Column(
+      children: _buildLevelItems(s, highestUnlockedId)
+          .map((e) => Padding(
+                padding: EdgeInsets.only(
+                    bottom: MediaQuery.of(context).size.height * 0.02),
+                child: e,
+              ))
+          .toList(),
+    );
+  }
+
+  Widget _buildTabletLayout(S s, int highestUnlockedId) {
+    return Column(
+      children: _buildLevelItems(s, highestUnlockedId)
+          .map((e) => Padding(
+                padding: EdgeInsets.only(
+                    bottom: MediaQuery.of(context).size.height * 0.02),
+                child: e,
+              ))
+          .toList(),
+    );
+  }
+
+  List<Widget> _buildLevelItems(S s, int highestUnlockedId) {
+    return [
+      // --- LEVEL 1: SUKOON ---
+      ItemGameLevel(
+        levelTitle: s.titleFirstLevel,
+        levelSubtitle: s.contentFirstLevel,
+        isUnlocked: true,
+        color: AppColor.bgLevelItem1,
+        shadowColor: AppColor.shadowLevelItem1,
+        icon: AppIcon.firstLevel,
+        targetScreen: GameFirstLevelView(levels: firstLevels),
+      ),
+
+      // --- LEVEL 2: MADD & TANWEEN ---
+      ItemGameLevel(
+        levelTitle: s.titleSecondLevel,
+        levelSubtitle: s.contentSecondLevel,
+        isUnlocked: highestUnlockedId > firstLevels.length,
+        color: AppColor.bgLevelItem2,
+        shadowColor: AppColor.shadowLevelItem2,
+        icon: AppIcon.secondLevel,
+        targetScreen: GameSecondLevelView(levels: secondLevels),
+        previousLevelName: s.titleFirstLevel,
+      ),
+
+      // --- LEVEL 3: SHADDA ---
+      ItemGameLevel(
+        levelTitle: s.titleThirdLevel,
+        levelSubtitle: s.contentThirdLevel,
+        isUnlocked: highestUnlockedId > firstSecondLength,
+        color: AppColor.bgLevelItem3,
+        shadowColor: AppColor.shadowLevelItem3,
+        icon: AppIcon.thirdLevel,
+        targetScreen: GameThirdLevelView(levels: thirdLevels),
+        previousLevelName: s.titleSecondLevel,
+      ),
+    ];
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
@@ -44,14 +45,14 @@ class ItemTwoOption extends StatelessWidget {
             child: Card(
               color: AppColor.questionCard,
               elevation: 8,
-              margin: const EdgeInsets.all(16),
+              margin: EdgeInsets.all(16.r),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(20.r),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 40,
-                  horizontal: 20,
+                padding: EdgeInsets.symmetric(
+                  vertical: 40.h,
+                  horizontal: 20.w,
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -59,11 +60,11 @@ class ItemTwoOption extends StatelessWidget {
                   children: [
                     // Instruction Text
                     QuestionTitle(question: data.instruction),
-                    const SizedBox(height: 20),
+                    SizedBox(height: 20.h),
 
                     // The Letters Container
                     LetterContainer(letters: data.letters),
-                    const SizedBox(height: 40),
+                    SizedBox(height: 40.h),
 
                     // Buttons Row
                     TwoAnswerOption(question: data),

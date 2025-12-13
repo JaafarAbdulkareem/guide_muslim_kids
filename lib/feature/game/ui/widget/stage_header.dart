@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
@@ -36,7 +37,9 @@ class StageHeader extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 30),
+      padding: EdgeInsets.symmetric(
+        vertical: MediaQuery.of(context).size.height * 0.04,
+      ),
       decoration: BoxDecoration(
         color: colorBG,
         borderRadius: const BorderRadius.only(
@@ -50,29 +53,38 @@ class StageHeader extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: List.generate(3, (index) {
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 4.0),
+                padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * 0.01,
+                ),
                 child: Icon(
                   Icons.star,
-                  size: index == 1 ? 50 : 40,
+                  size: index == 1
+                      ? MediaQuery.of(context).size.width * 0.12
+                      : MediaQuery.of(context).size.width * 0.1,
                   color: (index < stars) ? AppColor.dragging : Colors.black26,
                 ),
               );
             }),
           ),
-          const SizedBox(height: 15),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.02),
 
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width * 0.05,
+            ),
             child: Text(
               title,
               textAlign: TextAlign.center,
               style: AppTextStyle.fontBold28(context),
             ),
           ),
-          const SizedBox(height: 5),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.007),
 
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            padding: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width * 0.03,
+              vertical: MediaQuery.of(context).size.height * 0.007,
+            ),
             decoration: BoxDecoration(
               color: Colors.white24,
               borderRadius: BorderRadius.circular(20),
