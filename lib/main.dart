@@ -1,4 +1,4 @@
-import 'package:device_preview/device_preview.dart';
+// import 'package:device_preview/device_preview.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,21 +11,21 @@ import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dar
 import 'package:guide_muslim_kids/feature/splash/logic/bloc/splash_bloc.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
 
-// void main() {
-//   WidgetsFlutterBinding.ensureInitialized();
-
-//   runApp(const MyApp());
-// }
-
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-    DevicePreview(
-      enabled: true,
-      builder: (context) => const MyApp(), // Wrap your app
-    ),
-  );
+
+  runApp(const MyApp());
 }
+
+// void main() {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   runApp(
+//     DevicePreview(
+//       enabled: true,
+//       builder: (context) => const MyApp(), // Wrap your app
+//     ),
+//   );
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
           child: MaterialApp(
             // useInheritedMediaQuery: true,
             // locale: DevicePreview.locale(context),
-            builder: DevicePreview.appBuilder,
+            // builder: DevicePreview.appBuilder,
             debugShowCheckedModeBanner: false,
             title: 'Guide Muslim Kids',
             locale: const Locale('ar'),

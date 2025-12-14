@@ -435,8 +435,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "سُبْحَانَ الَّذِي يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ وَالْمَلاَئِكةُ مِنْ خِيفَتِهِ",
     ),
     "homeAboutUs": MessageLookupByLibrary.simpleMessage("عنا"),
-    "homeAldeen": MessageLookupByLibrary.simpleMessage("الدين"),
-    "homeAthkar": MessageLookupByLibrary.simpleMessage("الأذكار"),
+    "homeAldeen": MessageLookupByLibrary.simpleMessage("دينننا"),
+    "homeAthkar": MessageLookupByLibrary.simpleMessage("أذكارنا"),
     "homeGame": MessageLookupByLibrary.simpleMessage("الإسئلة"),
     "iftarAtHome": MessageLookupByLibrary.simpleMessage(
       "أَفْطَرَ عِنْدَكُمُ الصَّائِمُونَ، وَأَكَلَ طَعَامَكُمُ الْأَبْرَارُ، وَصَلَّتْ عَلَيْكُمُ الْمَلاَئِكَةُ",
