@@ -1,16 +1,16 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_option_entity.dart';
 
-List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
+List<QuestionTwoOptionEntity> getDataSecondTwoOption(BuildContext context) {
   final random = Random();
 
-  List<QuestionTwoButtonEntity> data = [
+  List<QuestionTwoOptionEntity> data = [
     // جالس (جـُ - جـ)
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "أختر الحركة المناسبة قبل حرف المد",
         letters: "جالس",
         optionA: isAcorrect ? "جـُ" : "جـَ",
@@ -23,7 +23,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
     // ثيابهم (ــيــَ - ــيــ)
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "أختر الحركة المناسبة قبل حرف المد",
         letters: "ثيابهم",
         optionA: isAcorrect ? "ــيــَ" : "ــيــِ",
@@ -36,7 +36,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
     // يوح (يـُ ، يـَ)
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "أختر الحركة المناسبة قبل حرف المد",
         letters: "يوح",
         optionA: isAcorrect ? "يـُ" : "يـَ",
@@ -49,7 +49,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
     // يسخرون (ـرُ , ـرْ)
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "أختر الحركة المناسبة قبل حرف المد",
         letters: "يسخرون",
         optionA: isAcorrect ? "ـرُ" : "ـرْ",
@@ -62,7 +62,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
     // يسيغه (ـسَـ , ـسِـ)
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "أختر الحركة المناسبة قبل حرف المد",
         letters: "يسيغه",
         optionA: isAcorrect ? "ـسَـ" : "ـسِـ",
@@ -75,7 +75,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
     // يفتدي (ـدَ , ـدِ)
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "أختر الحركة المناسبة قبل حرف المد",
         letters: "يفتدي",
         optionA: isAcorrect ? "ـدَ" : "ـدِ",

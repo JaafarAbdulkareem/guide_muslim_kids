@@ -1,4 +1,4 @@
-class QuestionTwoButtonEntity {
+class QuestionTwoOptionEntity {
   final String instruction; // e.g., "صل بين الحروف"
   final String letters; // e.g., "غ س ل"
   final String optionA; // e.g., "غسل"
@@ -6,7 +6,7 @@ class QuestionTwoButtonEntity {
   final String correctOption; // The actual correct string
   final String textToSpeech ;
 
-  const QuestionTwoButtonEntity({
+  const QuestionTwoOptionEntity({
     required this.instruction,
     required this.letters,
     required this.optionA,

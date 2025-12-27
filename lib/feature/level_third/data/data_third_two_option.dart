@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_option_entity.dart';
 import 'dart:math';
 
-List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
+List<QuestionTwoOptionEntity> getDataThirdTwoOption(BuildContext context) {
   final random = Random();
 
-  List<QuestionTwoButtonEntity> data = [
+  List<QuestionTwoOptionEntity> data = [
     // يتشهد
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
         letters: "يَتَشَهَّدَ",
         optionA: isAcorrect ? "ـهـْهـَـ" : "ـهـَهـْـ",
@@ -22,7 +22,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
     // يوفق
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
         letters: "يُوَفِّقُ",
         optionA: isAcorrect ? "ـفْفِـ" : "ـفِفْـ",
@@ -35,7 +35,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
     // تعجل
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
         letters: "تَعَجَّلَ",
         optionA: isAcorrect ? "ـجْجَـ" : "ـجَجْـ",
@@ -48,7 +48,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
     // تنشق
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
         letters: "تَنْشَقُّ",
         optionA: isAcorrect ? "ـقْقُـ" : "ـقْقِـ",
@@ -61,7 +61,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
     // تأخر
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
         letters: "تَأَخَّرَ",
         optionA: isAcorrect ? "ـخْخَـ" : "ـخْخُـ",
@@ -74,7 +74,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
     // جيدة
     () {
       bool isAcorrect = random.nextBool();
-      return QuestionTwoButtonEntity(
+      return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
         letters: "جَيِّدَة",
         optionA: isAcorrect ? "ـيْيِـ" : "ـيْيَـ",

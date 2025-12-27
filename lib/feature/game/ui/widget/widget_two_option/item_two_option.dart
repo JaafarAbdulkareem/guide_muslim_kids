@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/show_notification.dart';
-import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
-import 'package:guide_muslim_kids/feature/game/logic/manage/question_two_button_cubit/question_two_button_cubit.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_option_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/manage/question_two_option_cubit/question_two_option_cubit.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/letter_container.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/question_title.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/two_answer_option.dart';
@@ -16,17 +16,17 @@ class ItemTwoOption extends StatelessWidget {
     required this.onGameCompleted,
     required this.isLastItem,
   });
-  final QuestionTwoButtonEntity data;
+  final QuestionTwoOptionEntity data;
   final VoidCallback onGameCompleted;
   final bool isLastItem;
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => QuestionTwoButtonCubit(),
+      create: (_) => QuestionTwoOptionCubit(),
       child: Builder(
         builder: (context) {
-          return BlocListener<QuestionTwoButtonCubit, QuestionTwoButtonState>(
+          return BlocListener<QuestionTwoOptionCubit, QuestionTwoOptionState>(
             listener: (context, state) {
               if (state is QuizCorrect) {
                 ShowNotification.showAnswerDialog(
@@ -63,7 +63,7 @@ class ItemTwoOption extends StatelessWidget {
                     SizedBox(height: 20.h),
 
                     // The Letters Container
-                    LetterContainer(letters: data.letters),
+                    LetterContainer(letters: data.letters,textToSpeech: data.textToSpeech,),
                     SizedBox(height: 40.h),
 
                     // Buttons Row
