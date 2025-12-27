@@ -16,6 +16,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "جـُ" : "جـَ",
         optionB: isAcorrect ? "جـَ" : "جـُ",
         correctOption: "جـَ",
+        textToSpeech: "جَالَسَ",
       );
     }(),
 
@@ -28,6 +29,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ــيــَ" : "ــيــِ",
         optionB: isAcorrect ? "ــيــِ" : "ــيــَ",
         correctOption: "ــيــَ",
+        textToSpeech: "ثِيَابَهُمْ",
       );
     }(),
 
@@ -40,6 +42,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "يـُ" : "يـَ",
         optionB: isAcorrect ? "يـَ" : "يـُ",
         correctOption: "يـُ",
+        textToSpeech: "يُوحُ",
       );
     }(),
 
@@ -52,6 +55,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـرُ" : "ـرْ",
         optionB: isAcorrect ? "ـرْ" : "ـرُ",
         correctOption: "ـرُ",
+        textToSpeech: "يَسْخُرُونْ",
       );
     }(),
 
@@ -64,6 +68,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـسَـ" : "ـسِـ",
         optionB: isAcorrect ? "ـسِـ" : "ـسَـ",
         correctOption: "ـسِـ",
+        textToSpeech: "يُسِيقُه",
       );
     }(),
 
@@ -76,6 +81,7 @@ List<QuestionTwoButtonEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـدَ" : "ـدِ",
         optionB: isAcorrect ? "ـدِ" : "ـدَ",
         correctOption: "ـدِ",
+        textToSpeech: "يَفْتَدِي",
       );
     }(),
   ];

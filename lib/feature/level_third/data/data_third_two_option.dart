@@ -15,6 +15,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـهـْهـَـ" : "ـهـَهـْـ",
         optionB: isAcorrect ? "ـهـَهـْـ" : "ـهـْهـَـ",
         correctOption: "ـهـْهـَـ",
+        textToSpeech: "يَتَشَهَّدَ",
       );
     }(),
 
@@ -27,6 +28,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـفْفِـ" : "ـفِفْـ",
         optionB: isAcorrect ? "ـفِفْـ" : "ـفْفِـ",
         correctOption: "ـفْفِـ",
+        textToSpeech: "يُوَفِّقُ",
       );
     }(),
 
@@ -39,6 +41,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـجْجَـ" : "ـجَجْـ",
         optionB: isAcorrect ? "ـجَجْـ" : "ـجْجَـ",
         correctOption: "ـجْجَـ",
+        textToSpeech: "تَعَجَّلَ",
       );
     }(),
 
@@ -51,6 +54,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـقْقُـ" : "ـقْقِـ",
         optionB: isAcorrect ? "ـقْقِـ" : "ـقْقُـ",
         correctOption: "ـقْقُـ",
+        textToSpeech: "تَنْشَقُّ",
       );
     }(),
 
@@ -63,6 +67,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـخْخَـ" : "ـخْخُـ",
         optionB: isAcorrect ? "ـخْخُـ" : "ـخْخَـ",
         correctOption: "ـخْخَـ",
+        textToSpeech: "تَأَخَّرَ",
       );
     }(),
 
@@ -75,6 +80,7 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـيْيِـ" : "ـيْيَـ",
         optionB: isAcorrect ? "ـيْيَـ" : "ـيْيِـ",
         correctOption: "ـيْيِـ",
+        textToSpeech: "جَيِّدَة",
       );
     }(),
   ];

@@ -15,6 +15,7 @@ List<QuestionTwoButtonEntity> getDataFirstTwoOption(BuildContext context) {
         optionA: isAcorrect ? "حفر" : "ح فر",
         optionB: isAcorrect ? "ح فر" : "حفر",
         correctOption: "حفر",
+        textToSpeech: "حَفَرَ",
       );
     }(),
 
@@ -27,6 +28,7 @@ List<QuestionTwoButtonEntity> getDataFirstTwoOption(BuildContext context) {
         optionA: isAcorrect ? "بذر" : "ب ذ ر",
         optionB: isAcorrect ? "ب ذ ر" : "بذر",
         correctOption: "بذر",
+        textToSpeech: "بَذَرَ",
       );
     }(),
 
@@ -39,6 +41,7 @@ List<QuestionTwoButtonEntity> getDataFirstTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ذكر" : "ذ ك ر",
         optionB: isAcorrect ? "ذ ك ر" : "ذكر",
         correctOption: "ذكر",
+        textToSpeech: "ذَكَرَ",
       );
     }(),
 
@@ -51,6 +54,7 @@ List<QuestionTwoButtonEntity> getDataFirstTwoOption(BuildContext context) {
         optionA: isAcorrect ? "لبنك" : "لب نك",
         optionB: isAcorrect ? "لب نك" : "لبنك",
         correctOption: "لبنك",
+        textToSpeech: "لَبَنُكَ",
       );
     }(),
 
@@ -63,6 +67,7 @@ List<QuestionTwoButtonEntity> getDataFirstTwoOption(BuildContext context) {
         optionA: isAcorrect ? "حملك" : "حم ل ك",
         optionB: isAcorrect ? "حم ل ك" : "حملك",
         correctOption: "حملك",
+        textToSpeech: "حَمْلُكَ",
       );
     }(),
 
@@ -75,6 +80,7 @@ List<QuestionTwoButtonEntity> getDataFirstTwoOption(BuildContext context) {
         optionA: isAcorrect ? "وطنك" : "و طن ك",
         optionB: isAcorrect ? "و طن ك" : "وطنك",
         correctOption: "وطنك",
+        textToSpeech: "وَطَنُكَ",
       );
     }(),
   ];

@@ -4,6 +4,7 @@ class QuestionTwoButtonEntity {
   final String optionA; // e.g., "غسل"
   final String optionB; // e.g., "غس ل"
   final String correctOption; // The actual correct string
+  final String textToSpeech ;
 
   const QuestionTwoButtonEntity({
     required this.instruction,
@@ -11,6 +12,7 @@ class QuestionTwoButtonEntity {
     required this.optionA,
     required this.optionB,
     required this.correctOption,
+    required this.textToSpeech,
   });
 
   bool isCorrect(String selected) => selected == correctOption;
