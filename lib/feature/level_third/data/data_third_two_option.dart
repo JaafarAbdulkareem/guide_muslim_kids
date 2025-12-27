@@ -80,4 +80,12 @@ List<QuestionTwoButtonEntity> getDataThirdTwoOption(BuildContext context) {
   ];
 
   return data;
+
+  // يَتَشَهَّدَ
+// يُوَفِّقُ
+// تَعَجَّلَ
+// تَنْشَقُّ
+// تَأَخَّرَ
+// جَيِّدَة
+
 }
