@@ -50,10 +50,7 @@ class ItemTwoOption extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20.r),
               ),
               child: Padding(
-                padding: EdgeInsets.symmetric(
-                  vertical: 40.h,
-                  horizontal: 20.w,
-                ),
+                padding: EdgeInsets.symmetric(vertical: 40.h, horizontal: 20.w),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -63,7 +60,10 @@ class ItemTwoOption extends StatelessWidget {
                     SizedBox(height: 20.h),
 
                     // The Letters Container
-                    LetterContainer(letters: data.letters,textToSpeech: data.textToSpeech,),
+                    LetterContainer(
+                      letters: data.letters,
+                      textToSpeech: data.textToSpeech,
+                    ),
                     SizedBox(height: 40.h),
 
                     // Buttons Row
