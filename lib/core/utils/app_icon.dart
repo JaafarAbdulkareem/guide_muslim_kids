@@ -11,4 +11,5 @@ class AppIcon {
   static const IconData thirdLevel = Icons.looks_3_rounded;
   static const IconData lock = Icons.lock;
   static const IconData question = Icons.help_outline;
+  static const IconData speaker = Icons.volume_up;
 }
