@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:guide_muslim_kids/core/manage/audio_cubit/audio_cubit.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/utils/audio_keys.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
 
 class ShowNotification {
@@ -10,8 +13,11 @@ class ShowNotification {
     required bool isCorrect,
     VoidCallback? onContinue,
     bool isLastItem = false,
-  }) {
-    showDialog(
+  }) async{
+   await context.read<AudioCubit>().play(
+      isCorrect ? AudioKeys.correct : AudioKeys.incorrect,
+    );
+     showDialog(
       context: context,
       barrierDismissible: false,
       builder: (BuildContext context) {
