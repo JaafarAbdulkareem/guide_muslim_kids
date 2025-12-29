@@ -44,4 +44,7 @@ class AudioKeys {
   static const islam = '$_path/islam.mp3';
   static const iman = '$_path/iman.mp3';
   static const ihsan = '$_path/ihsan.mp3';
+
+  static const correct = '$_path/correct.mp3';
+  static const incorrect = '$_path/wrong.mp3';
 }
