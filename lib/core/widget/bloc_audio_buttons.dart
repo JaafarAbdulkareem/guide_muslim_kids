@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:guide_muslim_kids/core/manage/cubit/audio_cubit.dart';
+import 'package:guide_muslim_kids/core/manage/audio_cubit/audio_cubit.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/show_error_snackbar.dart';
 import 'package:guide_muslim_kids/core/widget/loading_audio_widget.dart';

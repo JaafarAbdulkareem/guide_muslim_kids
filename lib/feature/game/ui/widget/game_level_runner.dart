@@ -12,7 +12,7 @@ import 'package:guide_muslim_kids/feature/game/ui/widget/widget_drag_drop_word/i
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_item_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/game_level_entity.dart';
 import 'package:guide_muslim_kids/feature/game/logic/manage/game_level_cubit.dart';
-import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_button_entity.dart';
+import 'package:guide_muslim_kids/feature/game/logic/entities/two_button_entity/question_two_option_entity.dart';
 import 'package:guide_muslim_kids/feature/game/ui/widget/widget_two_option/item_two_option.dart';
 import 'package:guide_muslim_kids/generated/l10n.dart';
 
@@ -75,7 +75,7 @@ class _GameLevelRunnerState extends State<GameLevelRunner> {
       case GameType.twoButtons:
         return Center(
           child: ItemTwoOption(
-            data: item.data as QuestionTwoButtonEntity,
+            data: item.data as QuestionTwoOptionEntity,
             onGameCompleted: _finishLevel,
             isLastItem: isLast,
           ),
