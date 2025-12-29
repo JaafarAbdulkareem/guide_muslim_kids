@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
-import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/game/logic/entities/choose_correct_entity/choose_correct_entity.dart';
 
@@ -41,11 +40,19 @@ class CardWordChooseCorrect extends StatelessWidget {
         ),
         child: Center(
           child: isDone
-              ? Icon(
-                  AppIcon.check,
-                  color: AppColor.correctBorder,
-                  size: MediaQuery.of(context).size.width * 0.08,
+              ? Text(
+                  word.text,
+                  textAlign: TextAlign.center,
+                  style: AppTextStyle.fontSemiBold32(context).copyWith(
+                    color: AppColor.correctBorder,
+                  ),
+                  
                 )
+                // Icon(
+                //   AppIcon.check,
+                //   color: AppColor.correctBorder,
+                //   size: MediaQuery.of(context).size.width * 0.08,
+                // )
               : Text(
                   word.text,
                   textAlign: TextAlign.center,

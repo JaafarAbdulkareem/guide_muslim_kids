@@ -3,7 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:guide_muslim_kids/core/manage/cubit/audio_cubit.dart';
+import 'package:guide_muslim_kids/core/manage/audio_cubit/audio_cubit.dart';
+import 'package:guide_muslim_kids/core/manage/text_to_speech_cubit/text_to_speech_cubit.dart';
 import 'package:guide_muslim_kids/core/route/app_route.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
             BlocProvider(create: (context) => SplashBloc()),
             BlocProvider(create: (context) => AudioCubit()),
             BlocProvider(create: (context) => GameLevelCubit()),
+            BlocProvider(create: (context) => TextToSpeechCubit()),
           ],
           child: MaterialApp(
             // useInheritedMediaQuery: true,

@@ -11,11 +11,12 @@ List<QuestionTwoOptionEntity> getDataThirdTwoOption(BuildContext context) {
       bool isAcorrect = random.nextBool();
       return QuestionTwoOptionEntity(
         instruction: "اختار الاجابة الصحيحة",
-        letters: "يَتَشَهَّدَ",
+        letters: "يَتَشَهَّدُ",
+        // letters: "يَتَشَهَّدَ",
         optionA: isAcorrect ? "ـهـْهـَـ" : "ـهـَهـْـ",
         optionB: isAcorrect ? "ـهـَهـْـ" : "ـهـْهـَـ",
         correctOption: "ـهـْهـَـ",
-        textToSpeech: "يَتَشَهَّدَ",
+        textToSpeech: "يَتَشَهَّدُ",
       );
     }(),
 
