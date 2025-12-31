@@ -4,11 +4,11 @@ import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_ent
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 
 List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
-  ZonesType type = ZonesType.shaddah;
-  ZonesType type2 = ZonesType.shamsiya;
+  ZonesType typeShaddah = ZonesType.shaddah;
+  ZonesType typeLam = ZonesType.shamsiya;
   // ---- Group 1 ---- جَدٌّ
   final DragDropEntity group1 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeShaddah,
     word: 'جَدٌّ',
     letters: const [
       LetterItemEntity(id: '1', char: 'جَ', type: LetterType.noShaddah),
@@ -18,7 +18,7 @@ List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
 
   // ---- Group 2 ---- أُمٌّ
   final DragDropEntity group2 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeShaddah,
     word: 'أُمٌّ',
     letters: const [
       LetterItemEntity(id: '1', char: 'أُ', type: LetterType.noShaddah),
@@ -28,7 +28,7 @@ List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
 
   // ---- Group 3 ---- قِطٌّ
   final DragDropEntity group3 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeShaddah,
     word: 'قِطٌّ',
     letters: const [
       LetterItemEntity(id: '1', char: 'قِ', type: LetterType.noShaddah),
@@ -38,7 +38,7 @@ List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
 
   // ---- Group 4 ---- عَرَبِيٌّ
   final DragDropEntity group4 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeShaddah,
     word: 'عَرَبِيٌّ',
     letters: const [
       LetterItemEntity(id: '1', char: 'عَ', type: LetterType.noShaddah),
@@ -49,7 +49,7 @@ List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
   );
   // -------- Group 5 --------
   final DragDropEntity group5 = DragDropEntity(
-    zoneType: type2,
+    zoneType: typeLam,
     word: '',
     letters: const [
       LetterItemEntity(id: '1', char: 'الغراب', type: LetterType.qamariya),
@@ -63,7 +63,7 @@ List<DragDropEntity> getDataThirdDragDropWord(BuildContext context) {
 
   // -------- Group 6 --------
   final DragDropEntity group6 = DragDropEntity(
-    zoneType: type2,
+    zoneType: typeLam,
     word: '',
     letters: const [
       LetterItemEntity(id: '1', char: 'الصافي', type: LetterType.shamsiya),

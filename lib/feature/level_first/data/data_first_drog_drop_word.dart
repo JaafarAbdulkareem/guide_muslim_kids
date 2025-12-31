@@ -4,10 +4,10 @@ import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_ent
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 
 List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
-  final ZonesType type = ZonesType.sakin;
+  final ZonesType typeSakin = ZonesType.sakin;
   // ---- Group 1 ----
   final DragDropEntity group1 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeSakin,
     word: 'نَسْتَمِعْ',
     letters: const [
       LetterItemEntity(id: '1', char: 'نَ', type: LetterType.mutaharrik),
@@ -20,7 +20,7 @@ List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
 
   // ---- Group 2 ----
   final DragDropEntity group2 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeSakin,
     word: 'يَكْسِبُ',
     letters: const [
       LetterItemEntity(id: '1', char: 'يَ', type: LetterType.mutaharrik),
@@ -32,7 +32,7 @@ List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
 
   // ---- Group 3 ----
   final DragDropEntity group3 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeSakin,
     word: 'فَسَوْفَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'فَ', type: LetterType.mutaharrik),
@@ -44,7 +44,7 @@ List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
 
   // ---- Group 4 ----
   final DragDropEntity group4 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeSakin,
     word: 'نَسْتَحْوِذْ',
     letters: const [
       LetterItemEntity(id: '1', char: 'نَ', type: LetterType.mutaharrik),
@@ -58,7 +58,7 @@ List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
 
   // ---- Group 5 ----
   final DragDropEntity group5 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeSakin,
     word: 'يُدْعَوْنَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'يُ', type: LetterType.mutaharrik),
@@ -71,7 +71,7 @@ List<DragDropEntity> getDataFirstDragDropWord(BuildContext context) {
 
   // ---- Group 6 ----
   final DragDropEntity group6 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeSakin,
     word: 'أَسْلَمْتُمْ',
     letters: const [
       LetterItemEntity(id: '1', char: 'أَ', type: LetterType.mutaharrik),

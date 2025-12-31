@@ -4,10 +4,10 @@ import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_ent
 import 'package:guide_muslim_kids/feature/game/logic/entities/drag_drop_word_entity/letter_item_entity.dart';
 
 List<DragDropEntity> getDataSecondDragDropWord(BuildContext context) {
-  final ZonesType type = ZonesType.madd;
+  final ZonesType typeMadd = ZonesType.madd;
   // ---- Group 1: نَاقَةٌ ----
   final DragDropEntity group1 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeMadd,
     word: 'نَاقَةٌ',
     letters: const [
       LetterItemEntity(id: '1', char: 'نَ', type: LetterType.noMadd),
@@ -19,7 +19,7 @@ List<DragDropEntity> getDataSecondDragDropWord(BuildContext context) {
 
   // ---- Group 2: فَاكِهَةٌ ----
   final DragDropEntity group2 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeMadd,
     word: 'فَاكِهَةٌ',
     letters: const [
       LetterItemEntity(id: '1', char: 'فَ', type: LetterType.noMadd),
@@ -32,7 +32,7 @@ List<DragDropEntity> getDataSecondDragDropWord(BuildContext context) {
 
   // ---- Group 3: يَسْمَعُونَ ----
   final DragDropEntity group3 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeMadd,
     word: 'يَسْمَعُونَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'يَ', type: LetterType.noMadd),
@@ -44,22 +44,38 @@ List<DragDropEntity> getDataSecondDragDropWord(BuildContext context) {
     ],
   );
 
+  // ---- Group 4: يَحْفَظُونَهُ ----
   final DragDropEntity group4 = DragDropEntity(
-    zoneType: type,
-    word: 'يَتْلُونَهُ',
+    zoneType: typeMadd,
+    word: 'يَحْفَظُونَهُ',
     letters: const [
       LetterItemEntity(id: '1', char: 'يَ', type: LetterType.noMadd),
-      LetterItemEntity(id: '2', char: 'تْ', type: LetterType.noMadd),
-      LetterItemEntity(id: '3', char: 'لُ', type: LetterType.noMadd),
-      LetterItemEntity(id: '4', char: 'و', type: LetterType.madd),
-      LetterItemEntity(id: '5', char: 'نَ', type: LetterType.noMadd),
-      LetterItemEntity(id: '6', char: 'هُ', type: LetterType.noMadd),
+      LetterItemEntity(id: '2', char: 'حْ', type: LetterType.noMadd),
+      LetterItemEntity(id: '3', char: 'فَ', type: LetterType.noMadd),
+      LetterItemEntity(id: '4', char: 'ظُ', type: LetterType.noMadd),
+      LetterItemEntity(id: '5', char: 'و', type: LetterType.madd),
+      LetterItemEntity(id: '6', char: 'نَ', type: LetterType.noMadd),
+      LetterItemEntity(id: '7', char: 'هُ', type: LetterType.noMadd),
     ],
   );
 
+  // // ---- Group 4: يَتْلُونَهُ ----
+  // final DragDropEntity group4 = DragDropEntity(
+  //   zoneType: typeMadd,
+  //   word: 'يَتْلُونَهُ',
+  //   letters: const [
+  //     LetterItemEntity(id: '1', char: 'يَ', type: LetterType.noMadd),
+  //     LetterItemEntity(id: '2', char: 'تْ', type: LetterType.noMadd),
+  //     LetterItemEntity(id: '3', char: 'لُ', type: LetterType.noMadd),
+  //     LetterItemEntity(id: '4', char: 'و', type: LetterType.madd),
+  //     LetterItemEntity(id: '5', char: 'نَ', type: LetterType.noMadd),
+  //     LetterItemEntity(id: '6', char: 'هُ', type: LetterType.noMadd),
+  //   ],
+  // );
+
   // ---- Group 5: بَنِيّنَ ----
   final DragDropEntity group5 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeMadd,
     word: 'بَنِينَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'بَ', type: LetterType.noMadd),
@@ -71,7 +87,7 @@ List<DragDropEntity> getDataSecondDragDropWord(BuildContext context) {
 
   // ---- Group 6: سَنِيّنَ ----
   final DragDropEntity group6 = DragDropEntity(
-    zoneType: type,
+    zoneType: typeMadd,
     word: 'سِنِينَ',
     letters: const [
       LetterItemEntity(id: '1', char: 'سِ', type: LetterType.noMadd),
