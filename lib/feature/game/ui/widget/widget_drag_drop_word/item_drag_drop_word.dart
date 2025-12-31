@@ -44,7 +44,10 @@ class ItemDragDropWord extends StatelessWidget {
                   SizedBox(height: constraints.maxHeight * 0.05),
 
                   // 1. Target Word
-                  TitleWordDragDrop(word: levelData.word),
+                  TitleWordDragDrop(
+                    word: levelData.word,
+                    type: levelData.zoneType,
+                  ),
                   const Spacer(),
 
                   // 2. Card Stack
