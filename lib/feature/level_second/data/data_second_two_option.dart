@@ -55,7 +55,7 @@ List<QuestionTwoOptionEntity> getDataSecondTwoOption(BuildContext context) {
         optionA: isAcorrect ? "ـرُ" : "ـرْ",
         optionB: isAcorrect ? "ـرْ" : "ـرُ",
         correctOption: "ـرُ",
-        textToSpeech: "يَسْخُرُونْ",
+        textToSpeech: "يَسْخَرُونْ",
       );
     }(),
 

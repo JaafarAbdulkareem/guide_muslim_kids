@@ -42,7 +42,8 @@ List<ChooseCorrectGroupEntity> getDataSecondChooseWords(BuildContext context) {
   // التنوين
   // ---- Group 4 ----
   final List<ChooseCorrectEntity> group4 = [
-    const ChooseCorrectEntity(text: "أَزْهَارٌ", isCorrect: true),
+    const ChooseCorrectEntity(text: "أَشْجَارٌ", isCorrect: true),
+    // const ChooseCorrectEntity(text: "أَزْهَارٌ", isCorrect: true),
     const ChooseCorrectEntity(text: "يَكْتُبُ", isCorrect: false),
     const ChooseCorrectEntity(text: "شُجَاعٌ", isCorrect: true),
     const ChooseCorrectEntity(text: "يَعْمَلُونَ", isCorrect: false),

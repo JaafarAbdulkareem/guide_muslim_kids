@@ -29,10 +29,12 @@ List<ChooseCorrectGroupEntity> getDataThirdChooseWords(BuildContext context) {
 
   final List<ChooseCorrectEntity> group3 = [
     const ChooseCorrectEntity(text: "جَمَلٍ", isCorrect: false),
-    const ChooseCorrectEntity(text: "بَقِّيْتْ", isCorrect: true),
+    const ChooseCorrectEntity(text: "بَقِيَّتُ", isCorrect: true),
+    // const ChooseCorrectEntity(text: "بَقِّيْتْ", isCorrect: true),
     const ChooseCorrectEntity(text: "ظِلَّةً", isCorrect: true),
     const ChooseCorrectEntity(text: "رَحْمَةً", isCorrect: false),
-    const ChooseCorrectEntity(text: "فَتَهَجَّدْ", isCorrect: true),
+    const ChooseCorrectEntity(text: "فَتَهَجَّدَ", isCorrect: true),
+    // const ChooseCorrectEntity(text: "فَتَهَجَّدْ", isCorrect: true),
     const ChooseCorrectEntity(text: "أَشِدَّهُ", isCorrect: true),
   ];
   //اللام الشمسية
