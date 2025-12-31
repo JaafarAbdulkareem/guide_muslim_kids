@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:guide_muslim_kids/core/manage/text_to_speech_cubit/text_to_speech_cubit.dart';
 import 'package:guide_muslim_kids/core/utils/responsive_layout.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
@@ -32,6 +33,9 @@ class _BodyGameViewState extends State<BodyGameView> {
     secondLevels = [];
     thirdLevels = [];
     firstSecondLength = 0;
+
+    //initial text to speech
+    context.read<TextToSpeechCubit>().speakText('');
   }
 
   @override
@@ -79,11 +83,14 @@ class _BodyGameViewState extends State<BodyGameView> {
   Widget _buildMobileLayout(S s, int highestUnlockedId) {
     return Column(
       children: _buildLevelItems(s, highestUnlockedId)
-          .map((e) => Padding(
-                padding: EdgeInsets.only(
-                    bottom: MediaQuery.of(context).size.height * 0.02),
-                child: e,
-              ))
+          .map(
+            (e) => Padding(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).size.height * 0.02,
+              ),
+              child: e,
+            ),
+          )
           .toList(),
     );
   }
@@ -91,11 +98,14 @@ class _BodyGameViewState extends State<BodyGameView> {
   Widget _buildTabletLayout(S s, int highestUnlockedId) {
     return Column(
       children: _buildLevelItems(s, highestUnlockedId)
-          .map((e) => Padding(
-                padding: EdgeInsets.only(
-                    bottom: MediaQuery.of(context).size.height * 0.02),
-                child: e,
-              ))
+          .map(
+            (e) => Padding(
+              padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).size.height * 0.02,
+              ),
+              child: e,
+            ),
+          )
           .toList(),
     );
   }
