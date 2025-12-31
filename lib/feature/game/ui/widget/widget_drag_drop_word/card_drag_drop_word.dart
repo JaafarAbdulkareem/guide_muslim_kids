@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
+import 'package:guide_muslim_kids/core/manage/text_to_speech_cubit/text_to_speech_cubit.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_icon.dart';
 import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
@@ -42,7 +43,15 @@ class CardDragDropWord extends StatelessWidget {
           child: Transform.scale(
             scale: scaleValue,
             child: isTop
-                ? DraggableLetterCard(letter: letter)
+                ? BlocListener<TextToSpeechCubit, TextToSpeechState>(
+                    listenWhen: (previous, current) {
+                      return current is TextToSpeachLoadingAgrument;
+                    },
+                    listener: (context, state) {
+                      context.read<TextToSpeechCubit>().speakText(letter.char);
+                    },
+                    child: DraggableLetterCard(letter: letter),
+                  )
                 : CharLetterCard(char: letter.char, isBack: true),
           ),
         );

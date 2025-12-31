@@ -9,21 +9,27 @@ class TextToSpeechWidget extends StatelessWidget {
     super.key,
     required this.textToSpeech,
     required this.child,
+    this.isLamShamsiya = false,
   });
   final String textToSpeech;
   final Widget child;
+  final bool isLamShamsiya;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.read<TextToSpeechCubit>().speakText(textToSpeech);
+        if (!isLamShamsiya) {
+          context.read<TextToSpeechCubit>().speakText(textToSpeech);
+        } else {
+          context.read<TextToSpeechCubit>().speakTextLam();
+        }
       },
       child: FittedBox(
         fit: BoxFit.scaleDown,
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(AppIcon.speaker, size:30, color: AppColor.lettersText1),
+            const Icon(AppIcon.speaker, size: 30, color: AppColor.lettersText1),
             const SizedBox(width: 10),
             child,
           ],
