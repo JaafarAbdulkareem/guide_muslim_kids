@@ -2,21 +2,43 @@ import 'package:flutter/material.dart';
 import 'package:guide_muslim_kids/core/entities/athkar_entity.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/widget/athkar_detail_view.dart';
+import 'package:guide_muslim_kids/feature/Aldeen/logic/aldeen_entity.dart';
+import 'package:guide_muslim_kids/feature/Aldeen/ui/aldeen_detail_view.dart';
+import 'package:guide_muslim_kids/feature/Aldeen/ui/aldeen_view.dart';
 import 'package:guide_muslim_kids/feature/daily/ui/daily_view.dart';
 import 'package:guide_muslim_kids/feature/fast/ui/fast_view.dart';
+import 'package:guide_muslim_kids/feature/about_us/ui/about_us_view.dart';
+import 'package:guide_muslim_kids/feature/game/ui/game_view.dart';
+import 'package:guide_muslim_kids/feature/home/logic/home_entity.dart';
+import 'package:guide_muslim_kids/feature/home/ui/home_sub_view.dart';
 import 'package:guide_muslim_kids/feature/home/ui/home_view.dart';
 import 'package:guide_muslim_kids/feature/names/logic/entities/names_entity.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_detail_view.dart';
 import 'package:guide_muslim_kids/feature/names/ui/names_view.dart';
 import 'package:guide_muslim_kids/feature/prayer/ui/prayer_view.dart';
+import 'package:guide_muslim_kids/feature/splash/ui/splash_view.dart';
 
 class AppRoute {
   static Route<dynamic> generate(RouteSettings settings) {
     switch (settings.name) {
-      // case RouteName.splash:
-      // return MaterialPageRoute(builder: (_) => const SplashView());
+      case RouteName.splash:
+        return MaterialPageRoute(builder: (_) => const SplashView());
+      case RouteName.aldeen:
+        return MaterialPageRoute(builder: (_) => const AldeenView());
+      case RouteName.aldeenDetails:
+        final args = settings.arguments;
+        return MaterialPageRoute(
+          builder: (_) =>
+              AldeenDetailView(data: args is AldeenEntity ? args : null),
+        );
       case RouteName.home:
         return MaterialPageRoute(builder: (_) => const HomeView());
+      case RouteName.subHome:
+        final args = settings.arguments;
+        return MaterialPageRoute(
+          builder: (_) =>
+              HomeSubView(data: args is SubHomeEntity ? args : null),
+        );
       case RouteName.daily:
         return MaterialPageRoute(builder: (_) => const DailyView());
       case RouteName.prayer:
@@ -38,8 +60,12 @@ class AppRoute {
           builder: (_) =>
               NamesDetailView(data: args is NamesEntity ? args : null),
         );
+      case RouteName.game:
+        return MaterialPageRoute(builder: (_) => const GameView());
+      case RouteName.aboutUs:
+        return MaterialPageRoute(builder: (_) => const AboutUsView());
       default:
-        return MaterialPageRoute(builder: (_) => const Center());
+        return MaterialPageRoute(builder: (_) => const SplashView());
     }
   }
 }

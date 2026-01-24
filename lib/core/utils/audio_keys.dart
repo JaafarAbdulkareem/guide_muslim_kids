@@ -1,0 +1,50 @@
+class AudioKeys {
+  static const _path = "audio";
+
+  static const sleeping = '$_path/sleeping.mp3';
+  static const wakingUpFromSleep = '$_path/wakingUpFromSleep.mp3';
+  static const beforeWudu = '$_path/before.mp3';
+  static const afterWudu = '$_path/afterWudu.mp3';
+  static const adhan = '$_path/adhan.mp3';
+  static const enteringMarket = '$_path/enteringMarket.mp3';
+  static const wearingClothes = '$_path/wearingClothes.mp3';
+  static const wearingNewClothes = '$_path/wearingNewClothes.mp3';
+  static const beforeEating = '$_path/before.mp3';
+  static const afterEating = '$_path/afterEating.mp3';
+  static const enteringBathroom = '$_path/enteringBathroom.mp3';
+  static const leavingBathroom = '$_path/leavingBathroom.mp3';
+  static const leavingHome = '$_path/leavingHome.mp3';
+  static const enteringHome = '$_path/enteringHome.mp3';
+  static const enteringMosque = '$_path/enteringMosque.mp3';
+  static const leavingMosque = '$_path/leavingMosque.mp3';
+  static const ridingCar = '$_path/ridingCar.mp3';
+  static const hearingThunder = '$_path/hearingThunder.mp3';
+  static const rainfall = '$_path/rainfall.mp3';
+  static const afterRainfall = '$_path/afterRainfall.mp3';
+  static const sneezing = '$_path/sneezing.mp3';
+  static const visitingSick = '$_path/visitingSick.mp3';
+  static const kafaratAlMajlis = '$_path/kafaratAlMajlis.mp3';
+  static const dogsBarking = '$_path/dogsBarking.mp3';
+  static const visitingGraves = '$_path/visitingGraves.mp3';
+  static const openingSupplication = '$_path/openingSupplication.mp3';
+  static const ruku = '$_path/ruku.mp3';
+  static const risingFromRuku = '$_path/risingFromRuku.mp3';
+  static const sujood = '$_path/sujood.mp3';
+  static const betweenTwoSujoods = '$_path/betweenTwoSujoods.mp3';
+  static const firstTashahhud = '$_path/firstTashahhud.mp3';
+  static const finalTashahhud = '$_path/finalTashahhud.mp3';
+  static const beforeSalam = '$_path/beforeSalam.mp3';
+  static const prostrationOfRecitation = '$_path/prostrationOfRecitation.mp3';
+  static const afterPrayer = '$_path/afterPrayer.mp3';
+  static const qunootWitr = '$_path/qunootWitr.mp3';
+  static const iftarSupplication = '$_path/iftarSupplication.mp3';
+  static const fastingArgumentResponse = '$_path/fastingArgumentResponse.mp3';
+  static const iftarAtHome = '$_path/iftarAtHome.mp3';
+  static const seeingCrescent = '$_path/seeingCrescent.mp3';
+  static const islam = '$_path/islam.mp3';
+  static const iman = '$_path/iman.mp3';
+  static const ihsan = '$_path/ihsan.mp3';
+
+  static const correct = '$_path/correct.mp3';
+  static const incorrect = '$_path/wrong.mp3';
+}

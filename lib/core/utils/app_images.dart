@@ -12,6 +12,8 @@ class AppImage {
 
   static const String imagesAfterWudu = "assets/images/afterWudu.webp";
 
+  static const String imagesAldeen = "assets/images/aldeen.webp";
+
   static const String imagesAthkarDaily = "assets/images/athkarDaily.webp";
 
   static const String imagesBeforeEating = "assets/images/beforeEating.webp";
@@ -19,6 +21,8 @@ class AppImage {
   static const String imagesBeforeWudu = "assets/images/beforeWudu.webp";
 
   static const String imagesDogsBarking = "assets/images/dogsBarking.webp";
+
+  static const String imagesEducationLogo = "assets/images/educationLogo.png";
 
   static const String imagesEnteringBathroom = "assets/images/enteringBathroom.webp";
 
@@ -30,6 +34,8 @@ class AppImage {
 
   static const String imagesFastingArgumentResponse = "assets/images/fastingArgumentResponse.webp";
 
+  static const String imagesGame = "assets/images/game.png";
+
   static const String imagesGrideBackgroundNames = "assets/images/grideBackgroundNames.webp";
 
   static const String imagesHearingThunder = "assets/images/hearingThunder.webp";
@@ -38,6 +44,10 @@ class AppImage {
 
   static const String imagesIftarSupplication = "assets/images/iftarSupplication.webp";
 
+  static const String imagesIman = "assets/images/iman.jpg";
+
+  static const String imagesIslam = "assets/images/islam.png";
+
   static const String imagesKafaratAlMajlis = "assets/images/kafaratAlMajlis.webp";
 
   static const String imagesLeavingBathroom = "assets/images/leavingBathroom.webp";
@@ -45,6 +55,8 @@ class AppImage {
   static const String imagesLeavingHome = "assets/images/leavingHome.webp";
 
   static const String imagesLeavingMosque = "assets/images/leavingMosque.webp";
+
+  static const String imagesLogo = "assets/images/logo.png";
 
   static const String imagesNames = "assets/images/names.webp";
 
@@ -69,6 +81,8 @@ class AppImage {
   static const String imagesSleeping = "assets/images/sleeping.webp";
 
   static const String imagesSneezing = "assets/images/sneezing.webp";
+
+  static const String imagesSplash = "assets/images/splash.png";
 
   static const String imagesSujood = "assets/images/sujood.webp";
 

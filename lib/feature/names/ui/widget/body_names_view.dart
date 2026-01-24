@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:guide_muslim_kids/core/widget/custom_app_bar.dart';
 import 'package:guide_muslim_kids/feature/names/data/names.dart';
 import 'package:guide_muslim_kids/feature/names/ui/widget/names_item.dart';
@@ -12,10 +13,10 @@ class BodyNamesView extends StatelessWidget {
     final names = getDataNames(context);
     return Column(
       children: [
-        const SizedBox(height: 8),
+        SizedBox(height: 8.h),
         AspectRatio(
           aspectRatio: 6,
-          child: CustomAppBar(title: S.of(context).homeNames),
+          child: CustomAppBar(title: S.of(context).subHomeNames),
         ),
         Expanded(
           child: GridView.builder(

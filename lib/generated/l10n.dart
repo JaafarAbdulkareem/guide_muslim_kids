@@ -55,28 +55,73 @@ class S {
   }
 
   /// ``
+  String get appName {
+    return Intl.message('', name: 'appName', desc: '', args: []);
+  }
+
+  /// ``
   String get titleHome {
     return Intl.message('', name: 'titleHome', desc: '', args: []);
   }
 
   /// ``
-  String get homeAzkar {
-    return Intl.message('', name: 'homeAzkar', desc: '', args: []);
+  String get homeGame {
+    return Intl.message('', name: 'homeGame', desc: '', args: []);
   }
 
   /// ``
-  String get homeSalah {
-    return Intl.message('', name: 'homeSalah', desc: '', args: []);
+  String get homeAldeen {
+    return Intl.message('', name: 'homeAldeen', desc: '', args: []);
   }
 
   /// ``
-  String get homeSawm {
-    return Intl.message('', name: 'homeSawm', desc: '', args: []);
+  String get homeAthkar {
+    return Intl.message('', name: 'homeAthkar', desc: '', args: []);
   }
 
   /// ``
-  String get homeNames {
-    return Intl.message('', name: 'homeNames', desc: '', args: []);
+  String get homeAboutUs {
+    return Intl.message('', name: 'homeAboutUs', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeNames {
+    return Intl.message('', name: 'subHomeNames', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeAthkar {
+    return Intl.message('', name: 'subHomeAthkar', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeSalah {
+    return Intl.message('', name: 'subHomeSalah', desc: '', args: []);
+  }
+
+  /// ``
+  String get subHomeSawm {
+    return Intl.message('', name: 'subHomeSawm', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIslam {
+    return Intl.message('', name: 'aldeenIslam', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIman {
+    return Intl.message('', name: 'aldeenIman', desc: '', args: []);
+  }
+
+  /// ``
+  String get aldeenIhsan {
+    return Intl.message('', name: 'aldeenIhsan', desc: '', args: []);
+  }
+
+  /// ``
+  String get Ihsan {
+    return Intl.message('', name: 'Ihsan', desc: '', args: []);
   }
 
   /// ``
@@ -1460,8 +1505,398 @@ class S {
   }
 
   /// ``
-  String get AlertNoDataProvided {
-    return Intl.message('', name: 'AlertNoDataProvided', desc: '', args: []);
+  String get aboutCenterName {
+    return Intl.message('', name: 'aboutCenterName', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutCenterAddress {
+    return Intl.message('', name: 'aboutCenterAddress', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutEducationLevelsTitle {
+    return Intl.message(
+      '',
+      name: 'aboutEducationLevelsTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get aboutEducationLevelsDescription {
+    return Intl.message(
+      '',
+      name: 'aboutEducationLevelsDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get aboutEducationLevel1 {
+    return Intl.message('', name: 'aboutEducationLevel1', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutEducationLevel2 {
+    return Intl.message('', name: 'aboutEducationLevel2', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutEducationLevel3 {
+    return Intl.message('', name: 'aboutEducationLevel3', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsTitle {
+    return Intl.message('', name: 'aboutGoalsTitle', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint1 {
+    return Intl.message('', name: 'aboutGoalsPoint1', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint2 {
+    return Intl.message('', name: 'aboutGoalsPoint2', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint3 {
+    return Intl.message('', name: 'aboutGoalsPoint3', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint4 {
+    return Intl.message('', name: 'aboutGoalsPoint4', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint5 {
+    return Intl.message('', name: 'aboutGoalsPoint5', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutGoalsPoint6 {
+    return Intl.message('', name: 'aboutGoalsPoint6', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutVisionTitle {
+    return Intl.message('', name: 'aboutVisionTitle', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutVisionText {
+    return Intl.message('', name: 'aboutVisionText', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutMessageTitle {
+    return Intl.message('', name: 'aboutMessageTitle', desc: '', args: []);
+  }
+
+  /// ``
+  String get aboutMessage {
+    return Intl.message('', name: 'aboutMessage', desc: '', args: []);
+  }
+
+  /// ``
+  String get alertNoDataProvided {
+    return Intl.message('', name: 'alertNoDataProvided', desc: '', args: []);
+  }
+
+  /// ``
+  String get alertTryAgain {
+    return Intl.message('', name: 'alertTryAgain', desc: '', args: []);
+  }
+
+  /// ``
+  String get loadingAudio {
+    return Intl.message('', name: 'loadingAudio', desc: '', args: []);
+  }
+
+  /// ``
+  String get snackBarLevelCompleted {
+    return Intl.message('', name: 'snackBarLevelCompleted', desc: '', args: []);
+  }
+
+  /// ``
+  String get snackBarMessageCorrect {
+    return Intl.message('', name: 'snackBarMessageCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get snackBarMessageIncorrect {
+    return Intl.message(
+      '',
+      name: 'snackBarMessageIncorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get snackBarTitleLockedStage {
+    return Intl.message(
+      '',
+      name: 'snackBarTitleLockedStage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get snackBarMessageLockedStage {
+    return Intl.message(
+      '',
+      name: 'snackBarMessageLockedStage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get snackBarPrevious {
+    return Intl.message('', name: 'snackBarPrevious', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogTitleCorrect {
+    return Intl.message('', name: 'dialogTitleCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogTitleIncorrect {
+    return Intl.message('', name: 'dialogTitleIncorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogMessageCorrect {
+    return Intl.message('', name: 'dialogMessageCorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get dialogMessageIncorrect {
+    return Intl.message('', name: 'dialogMessageIncorrect', desc: '', args: []);
+  }
+
+  /// ``
+  String get doneDragging {
+    return Intl.message('', name: 'doneDragging', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleGame {
+    return Intl.message('', name: 'titleGame', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleFirstLevel {
+    return Intl.message('', name: 'titleFirstLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleSecondLevel {
+    return Intl.message('', name: 'titleSecondLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get titleThirdLevel {
+    return Intl.message('', name: 'titleThirdLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get contentFirstLevel {
+    return Intl.message('', name: 'contentFirstLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get contentSecondLevel {
+    return Intl.message('', name: 'contentSecondLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get contentThirdLevel {
+    return Intl.message('', name: 'contentThirdLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get firstLevel {
+    return Intl.message('', name: 'firstLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get secondLevel {
+    return Intl.message('', name: 'secondLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get thirdLevel {
+    return Intl.message('', name: 'thirdLevel', desc: '', args: []);
+  }
+
+  /// ``
+  String get stage {
+    return Intl.message('', name: 'stage', desc: '', args: []);
+  }
+
+  /// ``
+  String get studentStage {
+    return Intl.message('', name: 'studentStage', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionFirstTWoOption {
+    return Intl.message(
+      '',
+      name: 'instructionFirstTWoOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionSecondTWoOption {
+    return Intl.message(
+      '',
+      name: 'instructionSecondTWoOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdTWoOption {
+    return Intl.message(
+      '',
+      name: 'instructionThirdTWoOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionsDragWord {
+    return Intl.message('', name: 'instructionsDragWord', desc: '', args: []);
+  }
+
+  /// ``
+  String get instructionFirstChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionFirstChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionSecondOneChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionSecondOneChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionSecondTwoChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionSecondTwoChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionThirdChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdTwo1ChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionThirdTwo1ChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get instructionThirdTwo2ChooseCorrect {
+    return Intl.message(
+      '',
+      name: 'instructionThirdTwo2ChooseCorrect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ``
+  String get letterSakin {
+    return Intl.message('', name: 'letterSakin', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterMutaharrik {
+    return Intl.message('', name: 'letterMutaharrik', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterMadd {
+    return Intl.message('', name: 'letterMadd', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterNoMadd {
+    return Intl.message('', name: 'letterNoMadd', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterShaddah {
+    return Intl.message('', name: 'letterShaddah', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterNoShaddah {
+    return Intl.message('', name: 'letterNoShaddah', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterLamShams {
+    return Intl.message('', name: 'letterLamShams', desc: '', args: []);
+  }
+
+  /// ``
+  String get letterLamQamar {
+    return Intl.message('', name: 'letterLamQamar', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonFinish {
+    return Intl.message('', name: 'buttonFinish', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonNext {
+    return Intl.message('', name: 'buttonNext', desc: '', args: []);
+  }
+
+  /// ``
+  String get buttonClose {
+    return Intl.message('', name: 'buttonClose', desc: '', args: []);
   }
 }
 

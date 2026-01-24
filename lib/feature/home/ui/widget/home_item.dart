@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:guide_muslim_kids/core/route/extension.dart';
+import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
 import 'package:guide_muslim_kids/feature/home/logic/home_entity.dart';
 
 class HomeItem extends StatelessWidget {
@@ -11,9 +13,10 @@ class HomeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        data.pageName.pushNamed(context);
+        data.pageName.pushAnimatedNamed(context, arguments: data.subHome);
       },
       child: Card(
+        color: Theme.of(context).cardColor,
         clipBehavior: Clip.antiAlias,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         child: Stack(
@@ -27,25 +30,14 @@ class HomeItem extends StatelessWidget {
 
             // Centered title text
             Padding(
-              padding: const EdgeInsets.all(12.0),
+              padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.03),
               child: Center(
                 child: FittedBox(
                   fit: BoxFit.scaleDown,
                   child: Text(
                     data.title,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 22,
-                      shadows: [
-                        Shadow(
-                          blurRadius: 3,
-                          color: Colors.black54,
-                          offset: Offset(1, 1),
-                        ),
-                      ],
-                    ),
+                    style: AppTextStyle.fontBold22(context),
                   ),
                 ),
               ),

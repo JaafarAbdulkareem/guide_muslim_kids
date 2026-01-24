@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guide_muslim_kids/core/route/extension.dart';
 import 'package:guide_muslim_kids/core/route/route_name.dart';
 import 'package:guide_muslim_kids/core/utils/app_color.dart';
 import 'package:guide_muslim_kids/core/utils/app_images.dart';
@@ -14,7 +15,7 @@ class NamesItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, RouteName.namesDetails, arguments: data);
+        RouteName.namesDetails.pushAnimatedNamed(context, arguments: data);
       },
       child: DecoratedBox(
         decoration: BoxDecoration(

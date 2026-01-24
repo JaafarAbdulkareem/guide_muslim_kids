@@ -1,0 +1,129 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:guide_muslim_kids/core/manage/audio_cubit/audio_cubit.dart';
+import 'package:guide_muslim_kids/core/utils/app_color.dart';
+import 'package:guide_muslim_kids/core/utils/app_text_style.dart';
+import 'package:guide_muslim_kids/core/utils/audio_keys.dart';
+import 'package:guide_muslim_kids/generated/l10n.dart';
+
+class ShowNotification {
+  static final _s = S.current;
+  static void showAnswerDialog({
+    required BuildContext context,
+    required bool isCorrect,
+    VoidCallback? onContinue,
+    bool isLastItem = false,
+  }) async{
+   await context.read<AudioCubit>().play(
+      isCorrect ? AudioKeys.correct : AudioKeys.incorrect,
+    );
+     showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+            side: BorderSide(
+              color: isCorrect
+                  ? AppColor.correctBorder
+                  : AppColor.incorrectBorder,
+              width: 5,
+            ),
+          ),
+          backgroundColor: isCorrect
+              ? AppColor.correctBackground
+              : AppColor.incorrectBackground,
+          title: Text(
+            isCorrect ? _s.dialogTitleCorrect : _s.dialogTitleIncorrect,
+            textAlign: TextAlign.center,
+            style: AppTextStyle.fontBold24(context).copyWith(
+              color: isCorrect
+                  ? AppColor.correctBorder
+                  : AppColor.incorrectBorder,
+            ),
+          ),
+          content: Text(
+            isCorrect ? _s.dialogMessageCorrect : _s.dialogMessageIncorrect,
+            textAlign: TextAlign.center,
+            style: AppTextStyle.fontBold20(context).copyWith(
+              color: isCorrect
+                  ? AppColor.correctBorder
+                  : AppColor.incorrectBorder,
+            ),
+          ),
+          actionsAlignment: MainAxisAlignment.center,
+          actions: <Widget>[
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: isCorrect
+                    ? AppColor.correctBorder
+                    : AppColor.incorrectBorder,
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 10,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              onPressed: () {
+                Navigator.of(context).pop();
+                if (isCorrect && onContinue != null) {
+                  onContinue();
+                }
+              },
+              child: Text(
+                isCorrect
+                    ? (isLastItem ? _s.buttonFinish : _s.buttonNext)
+                    : _s.buttonClose,
+                style: AppTextStyle.fontBold20(context).copyWith(
+                  color: isCorrect
+                      ? AppColor.correctBackground
+                      : AppColor.incorrectBackground,
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  static void showAnswerSnackBar(
+    BuildContext context,
+    bool isCorrect, {
+    String? message,
+  }) {
+    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        content: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: 8.0,
+          ), // Add some vertical padding
+          child: Text(
+            message ??
+                (isCorrect
+                    ? _s.snackBarMessageCorrect
+                    : _s.snackBarMessageIncorrect),
+            style: AppTextStyle.fontBold18(context).copyWith(
+              color: Colors.white, // Ensure text is readable
+            ),
+            textAlign: TextAlign.center, // Center text
+          ),
+        ),
+        backgroundColor: isCorrect ? Colors.green.shade600 : Colors.redAccent,
+        duration: Duration(milliseconds: isCorrect ? 1500 : 2000),
+        behavior: SnackBarBehavior.floating,
+        margin: EdgeInsets.symmetric(
+          horizontal: MediaQuery.of(context).size.width * 0.05,
+          vertical: MediaQuery.of(context).size.height * 0.02,
+        ),
+        elevation: 6,
+      ),
+    );
+  }
+}
