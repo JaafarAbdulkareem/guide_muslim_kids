@@ -22,10 +22,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Install Flutter Version 3.24.5
+      - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.5'
+          flutter-version: '3.26.3'
 
       - name: Cache Pub Dependencies
         uses: actions/cache@v3
