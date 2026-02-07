@@ -11,12 +11,14 @@ class AldeenDetailItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         data.image != null
-            ? Image.asset(data.image!, fit: BoxFit.fill)
+            ? AspectRatio(
+                aspectRatio: 1.2,
+                child: Image.asset(data.image!, fit: BoxFit.contain),
+              )
             : Container(),
-        SizedBox(height: 25.h),
+        SizedBox(height: 5.h),
         AldeenAudioButton(audioKey: data.audioKey),
       ],
     );
