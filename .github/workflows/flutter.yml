@@ -73,3 +73,40 @@ jobs:
         with:
           name: release-aab
           path: build/app/outputs/bundle/release/app-release.aab
+
+# --- iOS Build Job ---
+ios-build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout My Code
+        uses: actions/checkout@v3
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.32.7'
+          architecture: x64
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Pod Install
+        run: |
+          cd ios
+          pod install --repo-update
+        
+      # Note: This builds an unsigned .ipa (suitable for QA/Simulator)
+      # To build for App Store, you would need to set up Certificates/Provisioning Profiles
+      - name: Build iOS
+        run: flutter build ios --release --no-codesign
+
+      - name: Zip iOS Build
+        run: |
+          cd build/ios/iphoneos
+          zip -r ios_build.zip Runner.app
+
+      - name: Upload iOS Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-ios
+          path: build/ios/iphoneos/ios_build.zip
