@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -35,10 +36,11 @@ class GameLevelCubit extends Cubit<int> {
     return levelId <= state;
   }
 
-  // Debug helper
+  // Debug helper — no-op in release builds.
   Future<void> resetProgress() async {
+    if (!kDebugMode) return;
     emit(1);
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt('unlocked_question_id', 15);
+    await prefs.setInt('unlocked_level', 1);
   }
 }

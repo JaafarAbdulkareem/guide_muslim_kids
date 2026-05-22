@@ -37,7 +37,6 @@ class MyApp extends StatelessWidget {
       designSize: const Size(360, 690),
       minTextAdapt: false,
       splitScreenMode: true,
-      useInheritedMediaQuery: true,
       builder: (_, child) {
         return MultiBlocProvider(
           providers: [

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
@@ -15,10 +17,10 @@ class TextToSpeechCubit extends Cubit<TextToSpeechState> {
     // 1. Get all voices
     List<dynamic> voices = await flutterTts.getVoices;
 
-    // 2. Print them so you can see the names in your Debug Console
+    // 2. Log them so the names are visible in the Debug Console (debug only)
     for (var voice in voices) {
       if (voice["locale"].toString().contains("ar")) {
-        print("Found Arabic Voice: ${voice["name"]} - ${voice["locale"]}");
+        log("Found Arabic Voice: ${voice["name"]} - ${voice["locale"]}");
       }
     }
 
@@ -46,8 +48,8 @@ class TextToSpeechCubit extends Cubit<TextToSpeechState> {
         // If no specific male voice is found, force the pitch very low
         await flutterTts.setPitch(0.7);
       }
-    } catch (e) {
-      print("Error: $e");
+    } catch (e, stack) {
+      log("TTS init error: $e", stackTrace: stack);
     }
 
     await flutterTts.setSpeechRate(0.5);
